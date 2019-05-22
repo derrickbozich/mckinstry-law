@@ -6,7 +6,7 @@ export default ({ data }) => (
   <Layout>
     <h1>{data.site.siteMetadata.title}</h1>
     <p>
-      Site under construction...
+      Site under construction.
     </p>
   </Layout>
 )
