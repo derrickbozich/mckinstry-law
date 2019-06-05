@@ -1,0 +1,33 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  outline: 2px solid black;
+
+  h1.brand{
+    margin: 0;
+    outline: 2px solid black;
+  }
+
+  li{
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  ul.mobile-nav{
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  ul.desktop-nav{
+    margin-bottom: 0;
+    
+    li{
+      display: inline;
+      margin-right: 8px;
+    }
+  }
+}

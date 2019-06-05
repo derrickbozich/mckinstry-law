@@ -9,6 +9,7 @@ module.exports = {
     title: `McKinstry Law Firm`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
