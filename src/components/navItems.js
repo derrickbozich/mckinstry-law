@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 function NavItems(props) {
-  const { isHeader } = props
+
 
   const [isExpanded, setIsExpanded] = useState(false)
 
@@ -64,35 +64,6 @@ function NavItems(props) {
       </ul>
     )
   }
-
-  // //Mobile View Expanded Bars
-  // else if (width < 700 && isExpanded) {
-  //   return (
-  //     <div>
-  //       <FontAwesomeIcon
-  //         className="bars"
-  //         icon={faBars}
-  //         // onClick={e => handleToggle(e)}
-  //       />
-  //       <ul className="mobile-nav">
-  //         <li>Practice Areas</li>
-  //         <li>Why Us</li>
-  //         <li>About</li>
-  //         <li>Contact</li>
-  //       </ul>
-  //     </div>
-  //   )
-  // } else {
-  //   return (
-  //     <ul>
-  //       <li>Home</li>
-  //       <li>Capabilities</li>
-  //       <li>Practice Areas</li>
-  //       <li>Why Us</li>
-  //       <li>Contact</li>
-  //     </ul>
-  //   )
-  // }
 }
 
 export default NavItems

@@ -1,0 +1,40 @@
+.capabilities-1{
+  padding: 3rem;
+  h1{
+    color: white ;
+    margin-top: 0;
+    text-align: center;
+  }
+  p{
+    color: grey;
+    text-align: center;
+  }
+
+  .button{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  background-color: black;
+}
+
+.capabilities-2{
+  display: flex;
+  justify-content: space-between;
+  .venn-diagram{
+    // height: 200px;
+    // width: 200px;
+    background-color: orange;
+    flex: 1;
+  }
+  .content{
+    flex: 1;
+    .header{
+      font-size: 2rem;
+    }
+    .body{
+      color: grey;
+    }
+
+  }
+}
