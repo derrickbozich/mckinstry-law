@@ -1,0 +1,56 @@
+.footer{
+  padding: 2rem 3rem;
+  h1{
+    color: white;
+    margin: 0;
+  }
+  color: white;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .left{
+    // outline: 2px solid white;
+
+  }
+  .right{
+    // outline: 2px solid white;
+    nav{
+      font-weight: bold;
+      ul{
+        li{
+          display: inline;
+          margin-right: 16px;
+          list-style: none;
+        }
+      }
+    }
+    .call-us-now-box{
+      display: flex;
+      // width: 30%;
+
+      .placeholder{
+        flex: 1;
+      }
+
+      .phone-number{
+        background-color: rgb(50, 50, 50);
+        padding: 1rem 0;
+        flex: 1;
+        text-align: center;
+      }
+      .call-us-now{
+        color: black;
+        background-color: rgb(240, 240, 240);
+        text-align: center;
+        padding: 1rem 0;
+        flex: 1;
+      }
+    }
+  }
+}
+.sub-footer{
+  width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+}

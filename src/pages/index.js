@@ -4,6 +4,9 @@ import Nav from "../components/nav"
 import Capabilities from "../components/capabilities"
 import PracticeAreas from "../components/practiceAreas"
 import WhyUs from "../components/whyUs"
+import About from "../components/about"
+import Contact from "../components/contact"
+import Footer from "../components/footer"
 import Img from "gatsby-image"
 import {  graphql } from "gatsby"
 
@@ -17,6 +20,9 @@ export default ({ data }) => (
     <Capabilities />
     <PracticeAreas />
     <WhyUs />
+    <About />
+    <Contact />
+    <Footer />
   </div>
 )
 
