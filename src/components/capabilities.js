@@ -1,6 +1,6 @@
 import React from "react"
 import Button from "./button"
-import ContentFooter from "./ContentFooter"
+import ContentFooter from "./contentFooter"
 
 function Capabilities() {
   return (
