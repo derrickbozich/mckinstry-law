@@ -14,7 +14,7 @@ function WhyUs() {
             icon={faAward}
             size="4x"
           />
-          <p class="body">
+          <p className="body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo adipisci, esse blanditiis.
           </p>
         </div>
@@ -25,7 +25,7 @@ function WhyUs() {
             icon={faAward}
             size="4x"
           />
-          <p class="body">
+          <p className="body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo adipisci, esse blanditiis.
           </p>
         </div>
@@ -36,18 +36,18 @@ function WhyUs() {
             icon={faAward}
             size="4x"
           />
-          <p class="body">
+          <p className="body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo adipisci, esse blanditiis.
           </p>
         </div>
-        
+
         <div className="box">
           <FontAwesomeIcon
             className="icon"
             icon={faAward}
             size="4x"
           />
-          <p class="body">
+          <p className="body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo adipisci, esse blanditiis.
           </p>
         </div>

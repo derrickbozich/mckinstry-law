@@ -8,7 +8,8 @@ function NavItems(props) {
   const [isExpanded, setIsExpanded] = useState(false)
 
   const useWindowWidth = () => {
-    const [width, setWidth] = useState(window.innerWidth)
+
+    const [width, setWidth] = useState(typeof window !== 'undefined' && window.innerWidth)
 
     useEffect(() => {
       const handleResize = () => setWidth(window.innerWidth)
