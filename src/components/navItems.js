@@ -4,7 +4,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 function NavItems(props) {
 
-
   const [isExpanded, setIsExpanded] = useState(false)
 
   const useWindowWidth = () => {

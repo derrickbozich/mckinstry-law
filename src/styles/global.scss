@@ -2,6 +2,37 @@ html {
   // background-color: lavenderblush;
 }
 
+.placeholder{
+  a{
+    margin: 0;
+  }
+  h4{
+      margin: 0;
+  }
+
+  .email{
+    text-decoration: none;
+    color: black;
+    // font-weight: bold;
+    font-size: 1rem;
+
+    &::before{
+      content: 'Email: ';
+      font-weight: bold;
+    }
+  }
+
+
+  .phone{
+
+    &::before{
+      content: 'Phone: ';
+      font-weight: bold;
+    }
+
+  }
+}
+
 .button{
   color: white;
   outline: 2px solid white;

@@ -40,18 +40,12 @@ function Capabilities() {
             small for us.
           </p>
         </div>
-
       </div>
       <div className="call-us-now">
         <div className="header">Call us now for your free consultation</div>
-        <div className="phone-number">
-          303-304-9413
-        </div>
-
+        <div className="phone-number">303-304-9413</div>
       </div>
-
     </div>
-
   )
 }
 
