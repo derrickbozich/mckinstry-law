@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 import { StaticQuery, graphql } from "gatsby"
 
 function PracticeAreas({ data }) {
@@ -19,7 +19,7 @@ function PracticeAreas({ data }) {
           }
         `}
         render={data => (
-          <Img fluid={data.imageOne.childImageSharp.fluid} />
+          <BackgroundImage fluid={data.imageOne.childImageSharp.fluid} />
         )}
       />
       <h1 className="header">

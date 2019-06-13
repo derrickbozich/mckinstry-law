@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 import { StaticQuery, graphql } from "gatsby"
 
 function About() {
@@ -18,7 +18,7 @@ function About() {
             }
           }
         `}
-        render={data => <Img fluid={data.imageOne.childImageSharp.fluid} />}
+        render={data => <BackgroundImage fluid={data.imageOne.childImageSharp.fluid} />}
       />
       <p className="body">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci

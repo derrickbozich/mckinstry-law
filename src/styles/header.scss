@@ -38,3 +38,39 @@
     }
   }
 }
+
+.slideshow{
+  width: 100%;
+  background-position: top center;
+  background-repeat: none;
+  background-size: cover;
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+
+
+  h1{
+    margin-bottom: 30vh;
+  }
+}
+
+@-webkit-keyframes fade {
+   0% {opacity: 0;}
+   10% {opacity: 1;}
+   80% {opacity: 1;}
+   100% {opacity: 0;}
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.fade {
+   -webkit-animation-name: fade;
+   animation-name: fade;
+}

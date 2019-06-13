@@ -24,9 +24,7 @@ import Container from "../components/container"
 // <Footer />
 
 export default () => (
-  <div>
-    <Container>
-      <Placeholder />
-    </Container>
-  </div>
+  <Container>
+    <Placeholder />
+  </Container>
 )

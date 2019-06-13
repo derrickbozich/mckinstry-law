@@ -1,6 +1,7 @@
-import React, { useState } from "react"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from 'gatsby'
+import React, { useState, useEffect } from "react"
+// import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 function SlideShow() {
   const [index, setIndex] = useState(0)
@@ -32,15 +33,29 @@ function SlideShow() {
     index === length ? setIndex(0) : setIndex(index + 1)
   const handlePrevious = () =>
     index === 0 ? setIndex(length) : setIndex(index - 1)
+
+  useEffect(() => {
+    let id = setInterval(() => {
+      handleNext()
+    }, 8000)
+
+    return () => {
+      clearInterval(id)
+    }
+  })
+
   const { node } = allFile.edges[index]
   return (
     <div>
       <div>
-        <Img
+        <BackgroundImage
           fluid={node.childImageSharp.fluid}
           key={node.id}
-          alt={node.name.replace(/-/g, ' ').substring(2)}
-        />
+          alt={node.name.replace(/-/g, " ").substring(2)}
+          className="slideshow fade"
+        >
+          <h1>Your Best Defense</h1>
+        </BackgroundImage>
       </div>
       <div>
         <button onClick={() => handlePrevious()}>Previous</button>

@@ -18,7 +18,7 @@ function Placeholder(props) {
       <p>Site Under Construction.</p>
       <p className="email">mckinstrylawfirm@gmail.com</p>
 
-      <p className="phone">303-314-9413</p>
+      <p className="phone">303-304-9413</p>
     </div>
   )
 }
