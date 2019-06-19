@@ -1,53 +1,155 @@
 .footer{
-  padding: 2rem 3rem;
-  h1{
-    color: white;
+  // padding: 2rem 3rem;
+  p{
     margin: 0;
+  }
+  address{
+    margin: 0 0 1rem;
+    // font-style: normal;
   }
   color: white;
   background: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  .left{
-    // outline: 2px solid white;
+  .footer-wrap{
+    padding: 1rem 0;
+    h1{
+      color: white;
+      margin: 0;
+      // outline: 2px solid white;
+    }
 
-  }
-  .right{
-    // outline: 2px solid white;
-    nav{
-      font-weight: bold;
-      ul{
-        li{
-          display: inline;
-          margin-right: 16px;
-          list-style: none;
+
+
+    .footer-top{
+
+      text-align: center;
+
+      @media only screen and (min-width : 1200px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-self: center;
+      }
+
+      h1.brand{
+        font-size: 1.5rem;
+      }
+
+
+      nav{
+        // display: inline-block;
+        // outline: 2px solid white;
+        font-weight: bold;
+        ul{
+          margin: 0;
+          li{
+            display: inline;
+            margin-right: 16px;
+            list-style: none;
+          }
         }
       }
-    }
-    .call-us-now-box{
-      display: flex;
-      // width: 30%;
 
-      .placeholder{
-        flex: 1;
+      @media only screen and (max-width : 1200px){
+        nav{
+          display: none;
+        }
       }
 
-      .phone-number{
-        background-color: rgb(50, 50, 50);
-        padding: 1rem 0;
-        flex: 1;
-        text-align: center;
+    }
+
+    .footer-middle{
+      text-align: center;
+      margin: 1rem 0;
+      @media only screen and (min-width : 1200px){
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        // text-align: left;
       }
-      .call-us-now{
-        color: black;
-        background-color: rgb(240, 240, 240);
+
+      .call-us-now-box{
+        display: flex;
+        align-self: center;
+        // width: 30%;
+        justify-content: center;
+
         text-align: center;
-        padding: 1rem 0;
-        flex: 1;
+
+
+
+        .phone-number{
+          background-color: rgb(50, 50, 50);
+          padding: 1rem;
+          // flex: 1;
+          text-align: center;
+        }
+        .call-us-now{
+          color: black;
+          background-color: rgb(240, 240, 240);
+          text-align: center;
+          padding: 1rem ;
+          // flex: 1;
+        }
+      }
+
+      .phone-number-left{
+        display: none;
+
+        @media only screen and (min-width : 1200px){
+          display: block;
+        }
+
+        &::before{
+          content: 'phone: ';
+          font-weight: bold;
+
+        }
+
+      }
+
+
+
+
+    }
+
+    .email{
+      &::before{
+        content: 'email: ';
+        font-weight: bold;
+      }
+      margin-bottom: 0.5rem;
+    }
+
+    .desktop-email{
+      display: none;
+      @media only screen and (min-width : 1200px){
+        display: block;
       }
     }
+
+    .mobile-email{
+      text-align: center;
+      display: block;
+      margin-bottom: 0.5rem;
+      @media only screen and (min-width : 1200px){
+        display: none;
+      }
+    }
+
+    .footer-bottom{
+      color: grey;
+      font-size: 0.8rem;
+      @media only screen and (min-width : 1200px){
+        text-align: left;
+      }
+
+      text-align: center;
+    }
+
+
+
   }
+
 }
 .sub-footer{
   width: 80%;

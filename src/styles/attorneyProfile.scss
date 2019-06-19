@@ -1,0 +1,62 @@
+.attorney-profile{
+
+  .wrap{
+    grid-template-columns:
+      minmax(400px, 650px)
+      minmax(400px, 650px);
+    grid-template-areas:
+      "image about"
+      "training about"
+      "education honors"
+      "legal legal";
+    grid-auto-rows: minmax(10px, auto);
+    grid-gap: 1rem;
+
+    @media only screen and (min-width : 600px) {
+      display: grid;
+    }
+
+    .box{
+      padding: 1rem;
+      .title{
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+  }
+
+  h1.header{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .image{
+    min-height: 300px;
+    min-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-area: image;
+  }
+
+  .training{
+    grid-area: training;
+    // background-color: red;
+  }
+  .about{
+    grid-area: about;
+    // background-color: blue;
+  }
+  .education{
+    grid-area: education;
+    // background-color: green;
+  }
+  .honors{
+    grid-area: honors;
+    // background-color: pink;
+  }
+  .legal{
+    grid-area: legal;
+    // background-color: yellow;
+  }
+
+}

@@ -1,14 +1,29 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 function Contact() {
+  const data = useStaticQuery(graphql`
+    query ContactQuery {
+      site {
+        siteMetadata {
+          phoneNumber
+          email
+        }
+      }
+    }
+  `)
+
+  const phoneNumber = data.site.siteMetadata.phoneNumber;
+  const email = data.site.siteMetadata.email;
   return (
-    <div className="contact">
-      <h1>Contact</h1>
+    <div className="contact narrow-container">
+      <h1 className="header">Contact</h1>
       <p className="info">
-        To schedule a free consultation please call or email Mr. McKinstry at
+        To schedule a free consultation please call or email Mr. McKinstry at:
       </p>
-      <h1>303-304-9413</h1>
-      <h3>mckinstrylawfirm@gmail.com</h3>
+      <p className="email"> {email}</p>
+
+      <p className="phone"> {phoneNumber}</p>
     </div>
   )
 }

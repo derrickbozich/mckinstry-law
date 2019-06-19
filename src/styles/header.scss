@@ -1,76 +1,97 @@
-.nav-wrap{
-  position: absolute;
-  z-index: 1;
-  width: 100vw;
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
   // outline: 2px solid black;
-  nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    // outline: 2px solid black;
 
-    h1.brand{
-      margin: 0;
-    }
+  h1.brand{
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .bars:hover{
+    cursor: pointer;
+  }
+
+  li{
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  ul.mobile-nav{
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+
+  ul.desktop-nav{
+    margin-bottom: 0;
 
     li{
-      list-style: none;
-      margin-bottom: 0;
-    }
-
-    ul.mobile-nav{
-      margin-bottom: 0;
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: 0;
-    }
-
-    ul.desktop-nav{
-      margin-bottom: 0;
-
-      li{
-        font-weight: bold;
-        display: inline;
-        margin-right: 8px;
-      }
+      font-weight: bold;
+      display: inline;
+      margin-right: 8px;
     }
   }
 }
 
-.slideshow{
+
+.hero{
   width: 100%;
   background-position: top center;
   background-repeat: none;
   background-size: cover;
-  -webkit-animation-duration: 8s;
-  animation-duration: 8s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
 
-
-
-  h1{
-    margin-bottom: 30vh;
+  .content{
+    padding-left: 15%;
+    h1.tag-line{
+      font-weight: bold;
+    }
+    p.sub-tag-line{
+      max-width: 60%;
+      margin-left: 0;
+      margin-bottom: 19rem;
+      font-size: 1.5rem;
+    }
   }
 }
 
-@-webkit-keyframes fade {
-   0% {opacity: 0;}
-   10% {opacity: 1;}
-   80% {opacity: 1;}
-   100% {opacity: 0;}
-}
+// .slideshow{
+//   width: 100%;
+//   background-position: top center;
+//   background-repeat: none;
+//   background-size: cover;
+//   -webkit-animation-duration: 8s;
+//   animation-duration: 8s;
+//   -webkit-animation-fill-mode: both;
+//   animation-fill-mode: both;
+//
+//
+//
+//   h1{
+//     margin-bottom: 30vh;
+//   }
+// }
 
-@keyframes fade {
-  0% {opacity: 0;}
-  10% {opacity: 1;}
-  80% {opacity: 1;}
-  100% {opacity: 0;}
-}
-
-.fade {
-   -webkit-animation-name: fade;
-   animation-name: fade;
-}
+// @-webkit-keyframes fade {
+//    0% {opacity: 0;}
+//    10% {opacity: 1;}
+//    80% {opacity: 1;}
+//    100% {opacity: 0;}
+// }
+//
+// @keyframes fade {
+//   0% {opacity: 0;}
+//   10% {opacity: 1;}
+//   80% {opacity: 1;}
+//   100% {opacity: 0;}
+// }
+//
+// .fade {
+//    -webkit-animation-name: fade;
+//    animation-name: fade;
+// }

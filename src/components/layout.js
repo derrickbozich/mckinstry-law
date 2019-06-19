@@ -1,13 +1,13 @@
 import React from "react"
-import Nav from "./nav"
-import Hero from "./hero"
 import Head from "./head"
+import Header from "./header"
+import Footer from "./footer"
 
 export default ({ children }) => (
   <div>
     <Head />
-    <Hero>
-      <Nav />
-    </Hero>
+    <Header />
+    {children}
+    <Footer />
   </div>
 )

@@ -1,8 +1,8 @@
-import React from 'react'
-import Img from "gatsby-image"
+import React from "react"
+import BackgroundImage from "gatsby-background-image"
 import { StaticQuery, graphql } from "gatsby"
 
-function Hero(){
+function Hero({ children }) {
   return (
     <StaticQuery
       query={graphql`
@@ -17,12 +17,23 @@ function Hero(){
         }
       `}
       render={data => (
-        <Img fluid={data.imageOne.childImageSharp.fluid} />
+        <BackgroundImage
+          fluid={data.imageOne.childImageSharp.fluid}
+          className="hero"
+        >
+          {children}
+          <div className="content container">
+            <h1 className="tag-line">Your Best Defense.</h1>
+            <p className="sub-tag-line">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+              tenetur assumenda officia provident explicabo porro, ipsa harum
+              molestias.
+            </p>
+          </div>
+        </BackgroundImage>
       )}
     />
   )
-
-
 }
 
-export default Hero;
+export default Hero

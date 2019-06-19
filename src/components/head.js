@@ -5,11 +5,11 @@ function Head(){
   return(
     <Helmet>
       <title>
-        McKinstry Law Firm | Denver DUI and Criminal Defense Attorney{" "}
+        The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney
       </title>
       <meta
         name="title"
-        content="McKinstry Law Firm | Denver DUI and Criminal Defense Attorney "
+        content="The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney"
       />
       <meta
         name="description"
@@ -20,7 +20,7 @@ function Head(){
       <meta property="og:url" content="https://metatags.io/" />
       <meta
         property="og:title"
-        content="McKinstry Law Firm | Denver DUI and Criminal Defense Attorney "
+        content="The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney"
       />
       <meta
         property="og:description"
@@ -35,7 +35,7 @@ function Head(){
       <meta property="twitter:url" content="https://metatags.io/" />
       <meta
         property="twitter:title"
-        content="McKinstry Law Firm | Denver DUI and Criminal Defense Attorney  "
+        content="The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney  "
       />
       <meta
         property="twitter:description"

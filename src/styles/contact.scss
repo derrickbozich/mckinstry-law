@@ -1,3 +1,36 @@
 .contact{
-  text-align: center;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  h1.header{
+    font-size: 3rem;
+  }
+  .info{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .email{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    &::before{
+      content: 'Email: ';
+      font-weight: bold;
+    }
+
+  }
+
+
+  .phone{
+    margin-bottom: 1rem;
+    &::before{
+      content: 'Phone: ';
+      font-weight: bold;
+    }
+  }
+
 }

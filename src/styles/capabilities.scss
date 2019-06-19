@@ -3,13 +3,26 @@
   .capabilities-1{
     padding: 3rem;
     h1{
-      color: white ;
+      color: white;
       margin-top: 0;
       text-align: center;
+      margin-bottom: 1rem;
     }
     p{
       color: grey;
       text-align: center;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+
+    .meet-patrick{
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.2rem;
     }
 
     .button{
@@ -18,66 +31,5 @@
     }
 
     background-color: black;
-  }
-
-  .capabilities-2{
-    display: flex;
-    justify-content: space-between;
-    padding: 3rem;
-    .venn-diagram{
-      // height: 200px;
-      // width: 200px;
-      background-color: orange;
-      border-radius: 50%;
-      flex: 1;
-    }
-    .content{
-      flex: 1;
-      .header{
-        font-size: 1.3rem;
-        margin-bottom: 0;
-      }
-      .body{
-        color: grey;
-      }
-      .content-footer{
-        font-size: 0.6rem;
-      }
-    }
-  }
-  .capabilities-3{
-    text-align: center;
-    .header{
-
-    }
-    .body{
-      color: grey;
-      width: 50%;
-      margin: 0 auto;
-    }
-  }
-
-  .call-us-now{
-    color: white;
-    background-color: black;
-    text-align: center;
-    padding: 2rem;
-    .header{
-      font-family: 'Work Sans';
-      position: relative;
-      display: inline-block;
-
-      &::after{
-        content: '';
-        border-bottom: 2px solid white;
-        width: 380px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-      }
-    }
-    .phone-number{
-        font-family: 'Work Sans';
-    }
   }
 }

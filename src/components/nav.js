@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import NavItems from './navItems'
 
 function Nav(props){
@@ -15,9 +15,11 @@ function Nav(props){
   `)
 
   return (
-    <nav>
+    <nav className='container'>
       <div>
-        <h1 className='brand'>{data.site.siteMetadata.title}</h1>
+        <h1 className='brand'>
+        <Link to='/'>{data.site.siteMetadata.title}</Link>
+        </h1>
       </div>
       <div>
           <NavItems/>

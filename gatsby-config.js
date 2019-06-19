@@ -6,12 +6,16 @@
 
 module.exports = {
   siteMetadata: {
-    title: `McKinstry Law Firm`,
+    title: `The McKinstry Law Firm`,
+    navItems: ['About The Firm', 'Practice Areas', 'Contact', 'Attorney Profile'],
+    phoneNumber: `303-304-9413`,
+    email: `mckinstrylawfirm@gmail.com`
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -29,11 +33,6 @@ module.exports = {
         },
       },
 
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+
   ],
 }

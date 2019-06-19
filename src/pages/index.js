@@ -1,30 +1,35 @@
 import React from "react"
-import Nav from "../components/nav"
-import Head from "../components/head"
-import Slideshow from "../components/slideshow"
+import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
 import PracticeAreas from "../components/practiceAreas"
-import WhyUs from "../components/whyUs"
 import About from "../components/about"
+import CallBar from "../components/CallBar"
+import BrandBar from "../components/BrandBar"
 import Contact from "../components/contact"
-import Footer from "../components/footer"
-import Placeholder from "../components/placeholder"
-import Container from "../components/container"
+import AttorneyProfile from "../components/attorneyProfile"
+// import Placeholder from "../components/placeholder"
 
-// <Head/>
-// <div className="nav-wrap">
-//   <Nav />
-// </div>
-// <Slideshow />
-// <Capabilities />
-// <PracticeAreas />
-// <WhyUs />
+// <Container>
+//   <Placeholder />
+// </Container>
+
+
 // <About />
+//
+// <PracticeAreas />
+//
 // <Contact />
-// <Footer />
 
 export default () => (
-  <Container>
-    <Placeholder />
-  </Container>
+  <Layout>
+    <Capabilities />
+    <About />
+    <CallBar />
+    <PracticeAreas />
+    <BrandBar />
+    <Contact />
+    <AttorneyProfile />
+
+
+  </Layout>
 )

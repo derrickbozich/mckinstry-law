@@ -1,0 +1,65 @@
+.hero-footer{
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+  p{
+    font-size: 1.5rem;
+  }
+}
+
+.single-page{
+
+  h1.header{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .wrap{
+    grid-template-columns:
+      minmax(400px, 650px)
+      minmax(400px, 650px);
+    grid-template-areas:
+      "big-para image"
+      "small-para small-para";
+
+    grid-auto-rows: minmax(10px, auto);
+    grid-gap: 1rem;
+
+    @media only screen and (min-width : 600px) {
+      display: grid;
+    }
+
+    .image{
+      min-height: 200px;
+      // max-height: 300px;
+      min-width: 200px;
+      // max-width: 300px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      grid-area: image;
+    }
+
+    .big-para{
+      grid-area: big-para;
+      font-size: 1.2rem;
+      // background-color: red;
+    }
+    .small-para{
+      grid-area: small-para;
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+      // background-color: blue;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+}

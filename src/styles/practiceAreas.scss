@@ -1,11 +1,46 @@
 .practice-areas{
+  margin-top: 3rem;
   .section-header{
-    
+    font-size: 3rem;
   }
-  .header{
+  .section-subheader{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
 
-  }
-  .body{
+  .box{
+    display: flex;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .text{
+      flex: 1;
+      background-color: rgb(240, 233, 222);
+      padding: 1rem;
+      .header{
+        margin-bottom: 1rem;
+
+      }
+      .body{
+        font-size: 1.2rem;
+        min-width: 300px;
+        margin-bottom: 1rem;
+      }
+
+      .link{
+        text-transform: uppercase;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+    }
+    .image{
+      flex: 1;
+      min-width: 300px;
+      min-height: 300px;
+    }
 
   }
 }

@@ -1,5 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700&display=swap');
 html {
   // background-color: lavenderblush;
+  // margin: 0;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+p, address, div, li {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+p{
+  margin: 0;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.narrow-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .narrow-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .narrow-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .narrow-container {
+    width: 970px;
+  }
 }
 
 .placeholder{
@@ -13,7 +85,6 @@ html {
   .email{
     text-decoration: none;
     color: black;
-    // font-weight: bold;
     font-size: 1rem;
 
     &::before{
@@ -24,14 +95,13 @@ html {
 
 
   .phone{
-
     &::before{
       content: 'Phone: ';
       font-weight: bold;
     }
-
   }
 }
+
 
 .button{
   color: white;
