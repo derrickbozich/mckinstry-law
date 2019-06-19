@@ -28,6 +28,7 @@ nav{
     margin-bottom: 0;
     position: absolute;
     background-color: rgba(240, 240, 240, 0.95);
+    border-radius: 3px;
     width: 300px;
     margin: 0 auto;
     text-align: center;
@@ -35,9 +36,8 @@ nav{
     z-index: 1;
     top: 40px;
     right: 1.5%;
+    font-size: 1.2rem;
 
-      // font-weight: bold;
-      font-size: 1.2rem;
     li{
       padding: 1rem;
       border-bottom: 2px solid black;
@@ -55,16 +55,12 @@ nav{
         background-color: rgba(228, 228, 228, 0.4);
         border-radius: 5px;
         margin-top: 1rem;
-        // top: 30;
-        // left: 0;
-        // width: 200px;
+
         li{
           display: block;
           border-bottom: none;
           padding: 0.5rem;
           list-style: circle;
-
-
 
           &:last-child{
             border-bottom: none;
@@ -73,8 +69,15 @@ nav{
       }
     }
     .down {
-      top: 0%;
+      top: 46%;
     }
+  }
+
+  ul.mobile-nav-expanded{
+    .down {
+      top: 8%;
+    }
+
   }
 
   .down {
@@ -95,7 +98,7 @@ nav{
     li{
       font-weight: bold;
       display: inline;
-      margin-right: 8px;
+      margin-right: 10px;
     }
 
     li.practice-areas{

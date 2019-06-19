@@ -6,24 +6,23 @@ import { StaticQuery, graphql } from "gatsby"
 
 export default () => (
   <Layout>
-    <HeroFooter title="Municipal Ordinance and General Violations" tag="tagline" />
-    <div className="single-page container">
+    <HeroFooter
+      title="Municipal Ordinance and General Violations"
+      tag="tagline"
+    />
+    <div className="single-page narrow-container municipal">
       <h1 className="header">Municipal Ordinance and General Violations</h1>
       <div className="wrap">
         <div className="big-para">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-          tenetur assumenda officia provident explicabo porro, ipsa harum
-          molestias. Ab eligendi adipisci autem eveniet delectus excepturi animi
-          at aut consectetur aliquam recusandae veritatis accusantium, velit
-          odit, necessitatibus porro libero reprehenderit nemo possimus magnam
-          quia et explicabo quaerat id! Harum, molestias. Consequatur nobis id
-          repellat aspernatur mollitia illo adipisci vitae, distinctio
-          asperiores? Nemo officiis voluptate voluptas quaerat reprehenderit,
-          perferendis doloremque quidem voluptatem explicabo? Inventore nesciunt
-          obcaecati accusantium beatae, necessitatibus numquam ex illo,
-          temporibus, aspernatur eligendi aperiam ab dolore! Excepturi,
-          voluptate eos iusto possimus reiciendis quae veniam nisi libero velit
-          labore doloribus nam!
+          In the state of Colorado, many cities and towns draft their own rules
+          and regulations. Many of these ordinances relate to public order and
+          safety, such as assault, theft, and solicitation for prostitution, as
+          well as weapons violations and threats. Municipal Ordinance crimes can
+          also be charged as ‘domestic violence’ offenses, with many of the same
+          consequences as state domestic violence charges. Furthermore, a guilty
+          plea or conviction at trial on a municipal charge can trigger
+          violations of a deferred judgment, supervised probation or parole in
+          other cases.
         </div>
         <StaticQuery
           query={graphql`
@@ -44,21 +43,22 @@ export default () => (
             />
           )}
         />
-        <div className="small-para">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-          tenetur assumenda officia provident explicabo porro, ipsa harum
-          molestias. Ab eligendi adipisci autem eveniet delectus excepturi animi
-          at aut consectetur aliquam recusandae veritatis accusantium, velit
-          odit, necessitatibus porro libero reprehenderit nemo possimus magnam
-          quia et explicabo quaerat id! Harum, molestias. Consequatur nobis id
-          repellat aspernatur mollitia illo adipisci vitae, distinctio
-          asperiores? Nemo officiis voluptate voluptas quaerat reprehenderit,
-          perferendis doloremque quidem voluptatem explicabo? Inventore nesciunt
-          obcaecati accusantium beatae, necessitatibus numquam ex illo,
-          temporibus, aspernatur eligendi aperiam ab dolore! Excepturi,
-          voluptate eos iusto possimus reiciendis quae veniam nisi libero velit
-          labore doloribus nam!
-        </div>
+      </div>
+      <div className="small-para">
+        Don’t let anyone tell you that it’s not serious because it’s just a
+        “muni” case. All of these charges can come with serious fines, and in
+        many cases the Assistant City Attorney will be asking for jail time.
+        This is especially true of domestic violence cases. If charged under a
+        municipal ordinance, you must defend your liberty and your reputation as
+        vigorously as you would in state court, and you will benefit from the
+        assistance of a criminal defense attorney who knows the system and can
+        identify and exploit the weaknesses in the municipality’s case. Whether
+        you’re charged with a fire or building code violation, or something as
+        serious as assault, you should not go it alone. <br />
+        Mr. McKinstry spent years in the courtroom handling such cases and has
+        litigated nearly one hundred municipal cases in front of Colorado
+        juries, ranging from sewer-line violations to domestic violence,
+        threats, harassment, and assault charges.
       </div>
     </div>
   </Layout>

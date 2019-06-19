@@ -7,9 +7,14 @@
 module.exports = {
   siteMetadata: {
     title: `The McKinstry Law Firm`,
-    navItems: ['About The Firm', 'Practice Areas', 'Contact', 'Attorney Profile'],
+    navItems: [
+      "About The Firm",
+      "Practice Areas",
+      "Contact",
+      "Attorney Profile",
+    ],
     phoneNumber: `303-304-9413`,
-    email: `mckinstrylawfirm@gmail.com`
+    email: `mckinstrylawfirm@gmail.com`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -23,16 +28,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+  
 
     {
       resolve: `gatsby-plugin-sharp`,
-        options: {
-          useMozJpeg: false,
-          stripMetadata: true,
-          defaultQuality: 75,
-        },
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 75,
       },
-
-
+    },
   ],
 }

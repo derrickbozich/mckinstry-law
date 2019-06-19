@@ -7,23 +7,15 @@ import { StaticQuery, graphql } from "gatsby"
 export default () => (
   <Layout>
     <HeroFooter title="Juvenile Offenses" tag="tagline" />
-    <div className="single-page container">
+    <div className="single-page narrow-container juvenile">
       <h1 className="header">Juvenile Offenses</h1>
       <div className="wrap">
         <div className="big-para">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-          tenetur assumenda officia provident explicabo porro, ipsa harum
-          molestias. Ab eligendi adipisci autem eveniet delectus excepturi animi
-          at aut consectetur aliquam recusandae veritatis accusantium, velit
-          odit, necessitatibus porro libero reprehenderit nemo possimus magnam
-          quia et explicabo quaerat id! Harum, molestias. Consequatur nobis id
-          repellat aspernatur mollitia illo adipisci vitae, distinctio
-          asperiores? Nemo officiis voluptate voluptas quaerat reprehenderit,
-          perferendis doloremque quidem voluptatem explicabo? Inventore nesciunt
-          obcaecati accusantium beatae, necessitatibus numquam ex illo,
-          temporibus, aspernatur eligendi aperiam ab dolore! Excepturi,
-          voluptate eos iusto possimus reiciendis quae veniam nisi libero velit
-          labore doloribus nam!
+          In the state of Colorado, juveniles can be charged with many of the
+          same crimes that adults may face, but the justice system is designed
+          to treat them differently. In juvenile offenses, there is an emphasis
+          on rehabilitation, but serious charges against a minor can still lead
+          to serious consequences, including incarceration in a state facility.
         </div>
         <StaticQuery
           query={graphql`
@@ -44,21 +36,24 @@ export default () => (
             />
           )}
         />
-        <div className="small-para">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-          tenetur assumenda officia provident explicabo porro, ipsa harum
-          molestias. Ab eligendi adipisci autem eveniet delectus excepturi animi
-          at aut consectetur aliquam recusandae veritatis accusantium, velit
-          odit, necessitatibus porro libero reprehenderit nemo possimus magnam
-          quia et explicabo quaerat id! Harum, molestias. Consequatur nobis id
-          repellat aspernatur mollitia illo adipisci vitae, distinctio
-          asperiores? Nemo officiis voluptate voluptas quaerat reprehenderit,
-          perferendis doloremque quidem voluptatem explicabo? Inventore nesciunt
-          obcaecati accusantium beatae, necessitatibus numquam ex illo,
-          temporibus, aspernatur eligendi aperiam ab dolore! Excepturi,
-          voluptate eos iusto possimus reiciendis quae veniam nisi libero velit
-          labore doloribus nam!
-        </div>
+      </div>
+      <div className="small-para">
+        If your son or daughter is facing criminal charges, it’s vital that you
+        seek legal assistance from an attorney with experience handling juvenile
+        offenses. Juveniles are entitled to the same presumption of innocence
+        and due process as adults, and the government is held to the same high
+        standards of proof in prosecuting juvenile defendants. <br /> The
+        scientific, medical, and behavioral health communities understand that
+        the human brain is still developing well into a young person’s twenties,
+        and all adolescents are susceptible to impulsive and reckless behavior.
+        It’s crucial that a child’s future not be derailed by a lapse in
+        judgment, even a serious one, and a criminal defense attorney who has
+        the necessary experience and proficiency can, in many cases, work with
+        the prosecution to achieve a satisfactory disposition. But if the case
+        goes to trial, you’ll want an attorney on your side who has litigated
+        juvenile delinquency cases. Mr. McKinstry has litigated juvenile
+        felonies and misdemeanors in state court, and knows how expose the
+        weaknesses that exist in every case in order to achieve an acquittal.
       </div>
     </div>
   </Layout>

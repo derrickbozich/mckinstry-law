@@ -16,7 +16,7 @@ export default ({ handleClick }) => {
 
   const navigationTopics = data.site.siteMetadata.navItems
   return (
-    <ul className="mobile-nav">
+    <ul className="mobile-nav mobile-nav-expanded">
       {navigationTopics.map((item, i) => {
         switch (item) {
           case "About The Firm":
