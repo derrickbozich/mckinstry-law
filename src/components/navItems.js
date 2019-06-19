@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Link } from "gatsby"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
-import { useStaticQuery, graphql } from "gatsby"
+import Bars from "./bars"
+import MobileNavBasic from "./mobileNavBasic"
+import DesktopNav from "./desktopNav"
+import MobileNavExpanded from "./mobileNavExpanded"
+import DesktopNavExpanded from "./desktopNavExpanded"
 
 function NavItems(props) {
   const [isExpanded, setIsExpanded] = useState(false)
+  const [practiceAreas, setPracticeAreas] = useState(false)
 
   const useWindowWidth = () => {
     const [width, setWidth] = useState(
@@ -13,13 +15,19 @@ function NavItems(props) {
     )
 
     useEffect(() => {
-      const handleResize = () => setWidth(window.innerWidth)
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+        if (window.innerWidth > breakPoint) {
+          setIsExpanded(false);
+          setPracticeAreas(false);
+        }
+
+      }
       window.addEventListener("resize", handleResize)
       return () => {
         window.removeEventListener("resize", handleResize)
       }
     })
-    console.log(`width: ${width}`)
     return width
   }
 
@@ -28,98 +36,51 @@ function NavItems(props) {
   const handleToggle = e => {
     e.preventDefault()
     setIsExpanded(!isExpanded)
-    console.log("click")
   }
 
-  const data = useStaticQuery(graphql`
-    query NavItemsQuery {
-      site {
-        siteMetadata {
-          navItems
-        }
-      }
-    }
-  `)
+  useEffect(() => {
+    console.log(`practice areas: ${practiceAreas}`)
+  })
 
-  const navigationTopics = data.site.siteMetadata.navItems
+  const handleClick = e => {
+    // e.preventDefault()
+
+    if (e.target.innerText === "Practice Areas") {
+      setPracticeAreas(!practiceAreas)
+    } else if (e.target.innerText.includes("Practice Areas")) {
+      setPracticeAreas(false)
+    } else {
+      setIsExpanded(!isExpanded)
+    }
+  }
+
   const breakPoint = 1000
 
   //Mobile View Collapsed Bars
-  if (width < breakPoint && !isExpanded) {
-    return (
-      <FontAwesomeIcon
-        className="bars"
-        icon={faBars}
-        onClick={e => handleToggle(e)}
-        size="lg"
-      />
-    )
-  } else if (width < breakPoint && isExpanded) {
+  if (width < breakPoint && !isExpanded && !practiceAreas) {
+    return <Bars onClick={e => handleToggle(e)} />
+  } else if (width < breakPoint && isExpanded && !practiceAreas) {
+    console.log("not in right block")
     return (
       <div>
-        <FontAwesomeIcon
-          className="bars"
-          icon={faBars}
-          onClick={e => handleToggle(e)}
-          size="lg"
-        />
-        <ul className="mobile-nav">
-          {navigationTopics.map((item, i) => {
-            return <li key={i}> {item} </li>
-          })}
-        </ul>
+        <Bars onClick={e => handleToggle(e)} />
+        <MobileNavBasic handleClick={handleClick} />
       </div>
     )
-  } else {
+  } else if (width < breakPoint && isExpanded && practiceAreas) {
     return (
-      <ul className="desktop-nav">
-        {navigationTopics.map((item, i) => {
-          switch (item) {
-            case 'About The Firm':
-              return(
-                <li key={i}>
-                 <Link to='/'>{item}</Link>
-                </li>
-
-              )
-              break;
-            case 'Practice Areas':
-              return(
-                <li key={i}>
-                 {item}
-                </li>
-
-              )
-              break;
-            case 'Contact':
-              return(
-                <li key={i}>
-                 <Link to='/'>{item}</Link>
-                </li>
-
-              )
-              break;
-            case 'Attorney Profile':
-              return(
-                <li key={i}>
-                 <Link to='/'>{item}</Link>
-                </li>
-
-              )
-              break;
-            default:
-            return(
-              <li key={i}>
-               <Link to='/'>{item}</Link>
-              </li>
-
-            )
-
-          }
-
-        })}
-      </ul>
+      <div>
+        <Bars onClick={e => handleToggle(e)} />
+        <MobileNavExpanded handleClick={handleClick} />
+      </div>
     )
+  } else if (width > breakPoint && !isExpanded && practiceAreas) {
+    return <DesktopNavExpanded handleClick={handleClick} />
+  } else if (width > breakPoint && !isExpanded && !practiceAreas) {
+    console.log("right if block")
+    return <DesktopNav handleClick={handleClick} />
+  } else {
+    return <DesktopNav handleClick={handleClick} />
   }
 }
 

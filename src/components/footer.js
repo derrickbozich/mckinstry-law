@@ -1,5 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import DesktopNav from "./desktopNav"
 
 function Footer() {
   const year = new Date().getFullYear()
@@ -8,7 +9,6 @@ function Footer() {
       site {
         siteMetadata {
           title
-          navItems
           phoneNumber
           email
         }
@@ -16,53 +16,22 @@ function Footer() {
     }
   `)
 
-  const navigationTopics = data.site.siteMetadata.navItems
   const title = data.site.siteMetadata.title
   const email = data.site.siteMetadata.email
   const phoneNumber = data.site.siteMetadata.phoneNumber
-
-  // <div className="left">
-  //   <h1>{title}</h1>
-  //   <address>
-  //     123 Pennsylvania Ave. <br />
-  //     Denver, CO 80201
-  //   </address>
-  //
-  //   <p>{phoneNumber}</p>
-  //
-  //   <p>
-  //     ©{year} {title}. All Rights Reserved
-  //   </p>
-  // </div>
-  // <div className="right">
-  //   <nav>
-  //     <ul>
-  //       <li>Home</li>
-  //       {navigationTopics.map((item, i) => {
-  //         return <li key={i}> {item} </li>
-  //       })}
-  //     </ul>
-  //   </nav>
-  //   <div className="call-us-now-box">
-  //     <div className="placeholder" />
-  //     <div className="phone-number">{phoneNumber}</div>
-  //     <div className="call-us-now">Call Us Now</div>
-  //   </div>
-  // </div>
 
   return (
     <div>
       <footer className="footer">
         <div className="container footer-wrap">
           <div className="footer-top">
-            <h1 className="brand">{title}</h1>
+            <Link to="/">
+              <h1 className="brand">{title}</h1>
+            </Link>
             <nav>
-              <ul>
-                <li>Home</li>
-                {navigationTopics.map((item, i) => {
-                  return <li key={i}> {item} </li>
-                })}
-              </ul>
+              <DesktopNav>
+                <Link to="/">Home</Link>
+              </DesktopNav>
             </nav>
           </div>
           <div className="footer-middle">

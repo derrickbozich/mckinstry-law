@@ -11,6 +11,10 @@ nav{
     font-size: 1.5rem;
   }
 
+  svg{
+    position: relative;
+  }
+
   .bars:hover{
     cursor: pointer;
   }
@@ -23,9 +27,66 @@ nav{
   ul.mobile-nav{
     margin-bottom: 0;
     position: absolute;
+    background-color: rgba(240, 240, 240, 0.95);
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
     z-index: 1;
-    top: 0;
-    left: 0;
+    top: 40px;
+    right: 1.5%;
+
+      // font-weight: bold;
+      font-size: 1.2rem;
+    li{
+      padding: 1rem;
+      border-bottom: 2px solid black;
+      font-weight: bold;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+
+    li.practice-areas-li{
+      position: relative;
+      ul.practice-areas-dropdown{
+        text-align: left;
+        z-index: 1;
+        background-color: rgba(228, 228, 228, 0.4);
+        border-radius: 5px;
+        margin-top: 1rem;
+        // top: 30;
+        // left: 0;
+        // width: 200px;
+        li{
+          display: block;
+          border-bottom: none;
+          padding: 0.5rem;
+          list-style: circle;
+
+
+
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .down {
+      top: 0%;
+    }
+  }
+
+  .down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    display: inline-block;
+    margin-left: 2px;
+    position: absolute;
+
   }
 
   ul.desktop-nav{
@@ -35,6 +96,41 @@ nav{
       font-weight: bold;
       display: inline;
       margin-right: 8px;
+    }
+
+    li.practice-areas{
+      position: relative;
+      margin-right: 16px;
+    }
+
+    // i {
+    //   border: solid black;
+    //   border-width: 0 3px 3px 0;
+    //   display: inline-block;
+    //   padding: 3px;
+    // }
+
+    .down {
+      top: 40%;
+    }
+
+    ul.practice-areas-dropdown{
+      position: absolute;
+      z-index: 1;
+      background-color: white;
+      border-radius: 5px;
+      top: 30;
+      left: 0;
+      width: 200px;
+      li{
+        display: block;
+        border-bottom: 2px solid black;
+        padding: 1rem;
+
+        &:last-child{
+          border-bottom: none;
+        }
+      }
     }
   }
 }
@@ -46,8 +142,10 @@ nav{
   background-repeat: none;
   background-size: cover;
 
+
   .content{
-    padding-left: 15%;
+    padding-left: 5%;
+    margin-top: 1.7rem;
     h1.tag-line{
       font-weight: bold;
     }
