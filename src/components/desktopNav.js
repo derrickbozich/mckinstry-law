@@ -14,11 +14,7 @@ export default ({ handleClick, children }) => {
   `)
 
   const navigationTopics = data.site.siteMetadata.navItems
-  const scroll = e => {
-    const target = document.querySelector(e.target.dataset.dest)
-    debugger
-    window.scrollTo(0, target.offsetTop)
-  }
+
   return (
     <div>
       <ul className="desktop-nav">
