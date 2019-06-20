@@ -14,21 +14,32 @@ export default ({ handleClick, children }) => {
   `)
 
   const navigationTopics = data.site.siteMetadata.navItems
+  const scroll = e => {
+    const target = document.querySelector(e.target.dataset.dest)
+    debugger
+    window.scrollTo(0, target.offsetTop)
+  }
   return (
     <div>
-
       <ul className="desktop-nav">
-        {children ? <li>{children}</li> : ''}
-
+        {children ? <li>{children}</li> : ""}
 
         {navigationTopics.map((item, i) => {
           switch (item) {
             case "About The Firm":
-              return (
-                <li key={i}>
-                  <Link to="/">{item}</Link>
-                </li>
-              )
+              if (window.location.pathname === "/") {
+                return (
+                  <li key={i}>
+                    <a href="#about">{item}</a>
+                  </li>
+                )
+              } else {
+                return (
+                  <li key={i}>
+                    <Link to="/#about">{item}</Link>
+                  </li>
+                )
+              }
 
             case "Practice Areas":
               if (children) {
@@ -39,27 +50,47 @@ export default ({ handleClick, children }) => {
                 )
               } else {
                 return (
-                  <li className="practice-areas" key={i} onClick={handleClick}>
+                  <li
+                    data-dest=".practice-areas"
+                    className="practice-areas"
+                    key={i}
+                    onClick={handleClick}
+                  >
                     {item}
                     <i className="arrow down"></i>
                   </li>
                 )
               }
 
-
             case "Contact":
-              return (
-                <li key={i}>
-                  <Link to="/">{item}</Link>
-                </li>
-              )
+              if (window.location.pathname === "/") {
+                return (
+                  <li key={i}>
+                    <a href="#contact">{item}</a>
+                  </li>
+                )
+              } else {
+                return (
+                  <li key={i}>
+                    <Link to="/#contact">{item}</Link>
+                  </li>
+                )
+              }
 
             case "Attorney Profile":
-              return (
-                <li key={i}>
-                  <Link to="/">{item}</Link>
-                </li>
-              )
+              if (window.location.pathname === "/") {
+                return (
+                  <li key={i}>
+                    <a href="#attorney-profile">{item}</a>
+                  </li>
+                )
+              } else {
+                return (
+                  <li key={i}>
+                    <Link to="/#attorney-profile">{item}</Link>
+                  </li>
+                )
+              }
 
             default:
               return (

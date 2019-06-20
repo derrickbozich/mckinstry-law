@@ -43,7 +43,7 @@ function PracticeAreas() {
     }
   `)
   return (
-    <div className="practice-areas narrow-container">
+    <div className="practice-areas narrow-container" id="practice-areas-id">
       <h1 className="section-header">Practice Areas </h1>
       <p className="section-subheader">Practice Areas </p>
 

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
-export default ( {handleClick}) => {
+export default ({ handleClick }) => {
   const data = useStaticQuery(graphql`
     query MoblieNaveBasicQuery {
       site {
@@ -19,13 +19,23 @@ export default ( {handleClick}) => {
       {navigationTopics.map((item, i) => {
         switch (item) {
           case "About The Firm":
-            return (
-              <li key={i}>
-                <Link to="/" onClick={handleClick}>
-                  {item}
-                </Link>
-              </li>
-            )
+            if (window.location.pathname === "/") {
+              return (
+                <li key={i}>
+                  <a onClick={handleClick} href="#about">
+                    {item}
+                  </a>
+                </li>
+              )
+            } else {
+              return (
+                <li key={i}>
+                  <Link onClick={handleClick} to="/#about">
+                    {item}
+                  </Link>
+                </li>
+              )
+            }
 
           case "Practice Areas":
             return (
@@ -36,22 +46,42 @@ export default ( {handleClick}) => {
             )
 
           case "Contact":
-            return (
-              <li key={i}>
-                <Link to="/" onClick={handleClick}>
-                  {item}
-                </Link>
-              </li>
-            )
+            if (window.location.pathname === "/") {
+              return (
+                <li key={i}>
+                  <a onClick={handleClick} href="#contact">
+                    {item}
+                  </a>
+                </li>
+              )
+            } else {
+              return (
+                <li key={i}>
+                  <Link onClick={handleClick} to="/">
+                    {item}
+                  </Link>
+                </li>
+              )
+            }
 
           case "Attorney Profile":
-            return (
-              <li key={i}>
-                <Link to="/" onClick={handleClick}>
-                  {item}
-                </Link>
-              </li>
-            )
+            if (window.location.pathname === "/") {
+              return (
+                <li key={i}>
+                  <a onClick={handleClick} href="#attorney-profile">
+                    {item}
+                  </a>
+                </li>
+              )
+            } else {
+              return (
+                <li key={i}>
+                  <Link onClick={handleClick} to="/">
+                    {item}
+                  </Link>
+                </li>
+              )
+            }
 
           default:
             return (

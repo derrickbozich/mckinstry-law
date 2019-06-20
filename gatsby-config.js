@@ -20,7 +20,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,7 +27,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-  
+
 
     {
       resolve: `gatsby-plugin-sharp`,

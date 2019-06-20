@@ -1,9 +1,10 @@
 .attorney-profile{
+  margin-bottom: 4rem;
 
   .wrap{
     grid-template-columns:
-      minmax(400px, 650px)
-      minmax(400px, 650px);
+      minmax(400px, 1fr)
+      minmax(400px, 1fr);
     grid-template-areas:
       "image about"
       "training about"
@@ -11,6 +12,16 @@
       "legal legal";
     grid-auto-rows: minmax(10px, auto);
     grid-gap: 1rem;
+
+    p{
+      margin-bottom: 1rem;
+    }
+
+    .bold{
+      font-weight: bold;
+      display: inline;
+    }
+
 
     @media only screen and (min-width : 600px) {
       display: grid;
@@ -41,9 +52,14 @@
   .training{
     grid-area: training;
     background-color: #E2DFDE;
+    .bold{
+      display: block;
+    }
   }
   .about{
     grid-area: about;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
 
   }
   .education{

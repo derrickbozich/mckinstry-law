@@ -16,7 +16,7 @@ function Contact() {
   const phoneNumber = data.site.siteMetadata.phoneNumber;
   const email = data.site.siteMetadata.email;
   return (
-    <div className="contact narrow-container">
+    <div className="contact narrow-container" id="contact">
       <h1 className="header">Contact</h1>
       <p className="info">
         To schedule a free consultation please call or email Mr. McKinstry at:
