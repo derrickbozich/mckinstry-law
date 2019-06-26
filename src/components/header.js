@@ -4,7 +4,7 @@ import Nav from "./nav"
 import Hero from "./hero"
 import Head from "./head"
 
-export default ({ children }) => {
+export default ({ children, headline, tagline, page }) => {
   const [isExpanded, setIsExpanded] = useState(false)
   const [practiceAreas, setPracticeAreas] = useState(false)
 
@@ -57,7 +57,7 @@ export default ({ children }) => {
   return(
     <div>
       <Head />
-      <Hero handleClick={handleClick}>
+      <Hero handleClick={handleClick} headline={headline} tagline={tagline} page={page}>
         <Nav handleClick={handleClick} handleToggle={handleToggle} width={width} isExpanded={isExpanded} practiceAreas={practiceAreas} breakPoint={breakPoint} />
       </Hero>
     </div>

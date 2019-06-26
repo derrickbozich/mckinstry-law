@@ -1,211 +1,245 @@
 .footer{
   padding: 65px 0;
-  p{
-    margin: 0;
-  }
-  address{
-    font-size: 22px;
-    line-height: 26px;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    margin: 0 0 1rem;
-    // font-style: normal;
-  }
   color: white;
-  background: black;
-  .footer-wrap{
-    // padding: 1rem 0;
-    h1{
-      color: white;
-      margin: 0;
-      // outline: 2px solid white;
-    }
-
-
-
-    .footer-top{
-
-      text-align: center;
-
-      @media only screen and (min-width : 1200px){
-        display: flex;
-        // flex-wrap: wrap;
-        justify-content: space-between;
-        align-self: start;
-      }
-
-      h1.brand{
-        font-size: 42px;
-        color: #9fd9c5;
-
-        @media only screen and (min-width : 1200px){
-          text-align: left;
-
+  background-color: black;
+  text-align: center;
+  nav{
+    display: block;
+    margin: auto;
+    margin-bottom: 33px;
+    ul.footer-nav{
+      li{
+        margin-right: 30px;
+        display: inline;
+        a{
+          color: white;
         }
       }
-
-
-      nav{
-        // display: inline-block;
-        // outline: 2px solid white;
-        // font-weight: bold;
-        align-items: flex-start ;
-
-
-        ul.desktop-nav{
-
-
-          li{
-                margin: 0;
-            // display: inline;
-            // margin-right: 16px;
-            list-style: none;
-
-            a{
-              color: white;
-            }
-          }
-        }
-      }
-
-      @media only screen and (max-width : 1200px){
-        nav{
-          display: none;
-        }
-      }
-
-    }
-
-    .footer-middle{
-      text-align: center;
-      margin: 1rem 0;
-      @media only screen and (min-width : 1200px){
-        text-align: left;
-        display: flex;
-        justify-content: space-between;
-        align-self: center;
-        // text-align: left;
-      }
-
-      .call-now-box{
-        font-size: 42px;
-        color: #9fd9c5;
-        font-weight: bold;
-
-        .call-now{
-          text-align: right;
-          font-family: 'Work Sans', sans-serif;
-        }
-        .phone-number{
-          position: relative;
-          font-family: 'Work Sans', sans-serif;
-          &:after{
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            border-bottom: 9px solid #9fd9c5;
-            width: 100%;
-          }
-
-        }
-      }
-
-      // .call-us-now-box{
-      //   display: flex;
-      //   align-self: center;
-      //   // width: 30%;
-      //   justify-content: center;
-      //
-      //   text-align: center;
-      //
-      //
-      //
-      //   .phone-number{
-      //     background-color: rgb(50, 50, 50);
-      //     padding: 1rem;
-      //     // flex: 1;
-      //     text-align: center;
-      //   }
-      //   .call-us-now{
-      //     color: black;
-      //     background-color: rgb(240, 240, 240);
-      //     text-align: center;
-      //     padding: 1rem ;
-      //     // flex: 1;
-      //   }
-      // }
-
-      // .phone-number-left{
-      //   display: none;
-      //
-      //   @media only screen and (min-width : 1200px){
-      //     display: block;
-      //   }
-      //
-      //   &::before{
-      //     content: 'phone: ';
-      //     font-weight: bold;
-      //
-      //   }
-      //
-      // }
-
-
-
-
-    }
-
-    .email{
-      // &::before{
-      //   content: 'email: ';
-      //   font-weight: bold;
-      // }
-      // margin-bottom: 0.5rem;
-
-      font-size: 22px;
-      font-weight: bold;
-      font-family: 'Work Sans', sans-serif;
-    }
-
-    .desktop-email{
-      display: none;
-      @media only screen and (min-width : 1200px){
-        display: block;
-      }
-    }
-
-    .mobile-email{
-      text-align: center;
-      display: block;
-      margin-bottom: 0.5rem;
-      @media only screen and (min-width : 1200px){
-        display: none;
-      }
-    }
-
-    .footer-bottom{
-      color: grey;
-      font-size: 0.8rem;
-      @media only screen and (min-width : 1200px){
-        text-align: left;
-      }
-      text-align: center;
     }
   }
-}
-.sub-footer{
-
-  font-size: 14px;
-  // margin: 2rem auto;
-
-  background-color: #9fd9c5;
-  .content{
-    padding: 53px 0 53px;
-    margin: 0 auto;
-    text-align: center;
-    width: 50%;
+  .title{
+    font-size: 32px;
+    color: #6fa2c8;
+    line-height: 42px;
 
   }
+  .tagline{
+    font-size: 22px;
+    color: #6fa2c8;
+    line-height: 26px;
+
+  }
+  .copyright{
+    margin-top: 25px;
+    font-size: 14px;
+
+  }
+  // p{
+  //   margin: 0;
+  // }
+  // address{
+  //   font-size: 22px;
+  //   line-height: 26px;
+  //   font-family: 'Work Sans', sans-serif;
+  //   font-weight: bold;
+  //   font-style: normal;
+  //   margin: 0 0 1rem;
+  //   // font-style: normal;
+  // }
+  // color: white;
+  // background: black;
+  // .footer-wrap{
+  //   // padding: 1rem 0;
+  //   h1{
+  //     color: white;
+  //     margin: 0;
+  //     // outline: 2px solid white;
+  //   }
+  //
+  //
+  //
+  //   .footer-top{
+  //
+  //     text-align: center;
+  //
+  //     @media only screen and (min-width : 1200px){
+  //       display: flex;
+  //       // flex-wrap: wrap;
+  //       justify-content: space-between;
+  //       align-self: start;
+  //     }
+  //
+  //     h1.brand{
+  //       font-size: 42px;
+  //       color: #9fd9c5;
+  //
+  //       @media only screen and (min-width : 1200px){
+  //         text-align: left;
+  //
+  //       }
+  //     }
+  //
+  //
+  //     nav{
+  //       // display: inline-block;
+  //       // outline: 2px solid white;
+  //       // font-weight: bold;
+  //       align-items: flex-start ;
+  //
+  //
+  //       ul.desktop-nav{
+  //
+  //
+  //         li{
+  //               margin: 0;
+  //           // display: inline;
+  //           // margin-right: 16px;
+  //           list-style: none;
+  //
+  //           a{
+  //             color: white;
+  //           }
+  //         }
+  //       }
+  //     }
+  //
+  //     @media only screen and (max-width : 1200px){
+  //       nav{
+  //         display: none;
+  //       }
+  //     }
+  //
+  //   }
+  //
+  //   .footer-middle{
+  //     text-align: center;
+  //     margin: 1rem 0;
+  //     @media only screen and (min-width : 1200px){
+  //       text-align: left;
+  //       display: flex;
+  //       justify-content: space-between;
+  //       align-self: center;
+  //       // text-align: left;
+  //     }
+  //
+  //     .call-now-box{
+  //       font-size: 42px;
+  //       color: #9fd9c5;
+  //       font-weight: bold;
+  //
+  //       .call-now{
+  //         text-align: right;
+  //         font-family: 'Work Sans', sans-serif;
+  //       }
+  //       .phone-number{
+  //         position: relative;
+  //         font-family: 'Work Sans', sans-serif;
+  //         &:after{
+  //           content: '';
+  //           position: absolute;
+  //           bottom: -10px;
+  //           left: 0;
+  //           border-bottom: 9px solid #9fd9c5;
+  //           width: 100%;
+  //         }
+  //
+  //       }
+  //     }
+  //
+  //     // .call-us-now-box{
+  //     //   display: flex;
+  //     //   align-self: center;
+  //     //   // width: 30%;
+  //     //   justify-content: center;
+  //     //
+  //     //   text-align: center;
+  //     //
+  //     //
+  //     //
+  //     //   .phone-number{
+  //     //     background-color: rgb(50, 50, 50);
+  //     //     padding: 1rem;
+  //     //     // flex: 1;
+  //     //     text-align: center;
+  //     //   }
+  //     //   .call-us-now{
+  //     //     color: black;
+  //     //     background-color: rgb(240, 240, 240);
+  //     //     text-align: center;
+  //     //     padding: 1rem ;
+  //     //     // flex: 1;
+  //     //   }
+  //     // }
+  //
+  //     // .phone-number-left{
+  //     //   display: none;
+  //     //
+  //     //   @media only screen and (min-width : 1200px){
+  //     //     display: block;
+  //     //   }
+  //     //
+  //     //   &::before{
+  //     //     content: 'phone: ';
+  //     //     font-weight: bold;
+  //     //
+  //     //   }
+  //     //
+  //     // }
+  //
+  //
+  //
+  //
+  //   }
+  //
+  //   .email{
+  //     // &::before{
+  //     //   content: 'email: ';
+  //     //   font-weight: bold;
+  //     // }
+  //     // margin-bottom: 0.5rem;
+  //
+  //     font-size: 22px;
+  //     font-weight: bold;
+  //     font-family: 'Work Sans', sans-serif;
+  //   }
+  //
+  //   .desktop-email{
+  //     display: none;
+  //     @media only screen and (min-width : 1200px){
+  //       display: block;
+  //     }
+  //   }
+  //
+  //   .mobile-email{
+  //     text-align: center;
+  //     display: block;
+  //     margin-bottom: 0.5rem;
+  //     @media only screen and (min-width : 1200px){
+  //       display: none;
+  //     }
+  //   }
+  //
+  //   .footer-bottom{
+  //     color: grey;
+  //     font-size: 0.8rem;
+  //     @media only screen and (min-width : 1200px){
+  //       text-align: left;
+  //     }
+  //     text-align: center;
+  //   }
+  // }
 }
+// .sub-footer{
+//
+//   font-size: 14px;
+//   // margin: 2rem auto;
+//
+//   background-color: #9fd9c5;
+//   .content{
+//     padding: 53px 0 53px;
+//     margin: 0 auto;
+//     text-align: center;
+//     width: 50%;
+//
+//   }
+// }

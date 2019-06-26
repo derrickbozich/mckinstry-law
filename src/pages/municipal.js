@@ -1,17 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
-import HeroFooter from "../components/heroFooter"
+import Capabilities from "../components/capabilities"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 
 export default () => (
-  <Layout>
-    <HeroFooter
-      title="Municipal Ordinance and General Violations"
-      tag="tagline"
-      id="municipal"
+  <Layout headline="Municipal Ordinance and General Violations" page="municipal">
+    <Capabilities
+    
+
     />
-    <div className="single-page narrow-container municipal" >
+    <div className="single-page narrow-container municipal" id="municipal" >
       <h1 className="header">Municipal Ordinance and General Violations</h1>
       <div className="wrap">
         <div className="big-para">

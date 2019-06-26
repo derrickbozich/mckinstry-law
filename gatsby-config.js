@@ -10,8 +10,9 @@ module.exports = {
     navItems: [
       "About",
       "Practice Areas",
-      "Contact",
       "Attorney Profile",
+      "Contact",
+
     ],
     phoneNumber: `303-304-9413`,
     email: `mckinstrylawfirm@gmail.com`,

@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
-import HeroFooter from "../components/heroFooter"
+import Capabilities from "../components/capabilities"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 
 export default () => (
-  <Layout>
-    <HeroFooter title="Domestic Violence" tag="tagline" id="domestic" />
-    <div className="single-page narrow-container domestic-violence">
+  <Layout headline="Domestic Violence" page='domestic'>
+    <Capabilities  />
+    <div className="single-page narrow-container domestic-violence" id="domestic">
       <h1 className="header">Domestic Violence</h1>
       <div className="wrap">
         <div className="big-para">

@@ -41,7 +41,7 @@ nav{
     li{
       padding: 1rem;
       border-bottom: 2px solid black;
-      font-weight: bold;
+      // font-weight: bold;
       &:last-child{
         border-bottom: none;
       }
@@ -51,7 +51,9 @@ nav{
 
     li.practice-areas-li{
       position: relative;
+      cursor: pointer;
       ul.practice-areas-dropdown{
+        cursor: default;
         text-align: left;
         z-index: 1;
         background-color: rgba(228, 228, 228, 0.4);
@@ -116,6 +118,9 @@ nav{
     li.practice-areas:hover{
       cursor: pointer;
       text-decoration: underline;
+      ul.practice-areas-dropdown{
+        cursor: default;
+      }
     }
 
     // i {
@@ -159,13 +164,14 @@ nav{
   // display: flex;
 
 
-  .content{
+  .hero-content{
     // padding-left: 5%;
     text-align: center;
     margin-top: 1.7rem;
     h1.tag-line{
       font-weight: bold;
       font-size: 86px;
+      color: #415169;
     }
     p.sub-tag-line{
       // max-width: 60%;
@@ -175,6 +181,7 @@ nav{
       font-size: 37px;
       margin-bottom: 19rem;
       font-size: 1.5rem;
+      color: #6fa2c8;
     }
   }
 }

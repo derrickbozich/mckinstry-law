@@ -37,6 +37,24 @@ a:hover{
   text-decoration: underline;
 }
 
+.overlay {
+  position: relative;
+}
+
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  opacity: 0.9;
+  width:100%;
+  height:100%;
+  display: none;
+  z-index:0;
+  background-image: linear-gradient(to bottom, #a8cfe6, #6fa2c8);
+}
+
+
 
 
 .container {
@@ -83,6 +101,28 @@ a:hover{
   }
 }
 
+.single-page-content {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .single-page-content {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .single-page-content {
+    width: 691px;
+  }
+}
+@media (min-width: 1200px) {
+  .single-page-content {
+    width: 691px;
+  }
+}
+
 .placeholder{
   a{
     margin: 0;
@@ -111,13 +151,6 @@ a:hover{
   }
 }
 
-
-.button{
-  color: white;
-  outline: 2px solid white;
-  padding: 1rem 2rem;
-  width: 250px;
-}
 
 .content-footer{
   color: black;

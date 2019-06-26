@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
-import HeroFooter from "../components/heroFooter"
+import Capabilities from "../components/capabilities"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 
 export default () => (
-  <Layout>
-    <HeroFooter title="State Felony and Misdemeanor" tag="tagline" id="felony" />
-    <div className="single-page narrow-container felony">
+  <Layout headline="State Felony and Misdemeanor" page='felony'>
+    <Capabilities />
+    <div className="single-page narrow-container felony" id="felony">
       <h1 className="header">State Felony and Misdemeanor</h1>
       <div className="wrap">
         <div className="big-para">

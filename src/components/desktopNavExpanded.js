@@ -20,10 +20,10 @@ export default ({ handleClick }) => {
     <ul className="desktop-nav">
       {navigationTopics.map((item, i) => {
         switch (item) {
-          case "About The Firm":
+          case "About":
             return (
               <li key={i}>
-                <Link to="/">{item}</Link>
+                <Link to="/#about">{item}</Link>
               </li>
             )
 
@@ -39,14 +39,14 @@ export default ({ handleClick }) => {
           case "Contact":
             return (
               <li key={i}>
-                <Link to="/">{item}</Link>
+                <Link to="/#contact">{item}</Link>
               </li>
             )
 
           case "Attorney Profile":
             return (
               <li key={i}>
-                <Link to="/">{item}</Link>
+                <Link to="/#attorney-profile">{item}</Link>
               </li>
             )
 

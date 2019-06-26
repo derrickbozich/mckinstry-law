@@ -8,23 +8,26 @@ function Capabilities() {
       site {
         siteMetadata {
           phoneNumber
+          email
         }
       }
     }
   `)
 
   const phoneNumber = data.site.siteMetadata.phoneNumber
+  const email = data.site.siteMetadata.email
 
   return (
     <div className="capabilities">
-    
-        <h1>Have a case you would like to discuss?</h1>
-        <p>
-          Call now for a free consultation
-        </p>
+
+        <h1>Schedule a free consultation.</h1>
         <p>
           {phoneNumber}
         </p>
+        <p>
+          {email}
+        </p>
+
 
 
 

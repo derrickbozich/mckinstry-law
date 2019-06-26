@@ -7,6 +7,8 @@ import About from "../components/about"
 // import BrandBar from "../components/BrandBar"
 import Contact from "../components/contact"
 import AttorneyProfile from "../components/attorneyProfile"
+// import BackgroundImage from "gatsby-background-image"
+import { useStaticQuery, graphql } from "gatsby"
 // import Placeholder from "../components/placeholder"
 
 // <Container>
@@ -19,15 +21,36 @@ import AttorneyProfile from "../components/attorneyProfile"
 //
 // <Contact />
 
-export default () => (
-  <Layout
-    title="The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney"
-    body="Patrick McKinstry is one of Denver's leading DUI and Criminal Defense Attorneys. Call today for a free consultation and discover how The McKinstry Law Firm can help you."
-  >
-    <Capabilities />
-    <About />
-    <PracticeAreas />
-    <Contact />
-    <AttorneyProfile />
-  </Layout>
-)
+
+
+export default () => {
+  const data = useStaticQuery(graphql`
+    query IndexQuery {
+      site {
+        siteMetadata {
+          title
+          phoneNumber
+          email
+        }
+      }
+    }
+  `)
+  return (
+    <Layout
+      metaTitle="The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney"
+      metaBody="Patrick McKinstry is one of Denver's leading DUI and Criminal Defense Attorneys. Call today for a free consultation and discover how The McKinstry Law Firm can help you."
+      headline={data.site.siteMetadata.title}
+      tagline='Your Best Defense'
+      page='home'
+    >
+      <Capabilities />
+      <About />
+      <PracticeAreas />
+        <Capabilities />
+
+      <AttorneyProfile />
+        <Contact />
+    </Layout>
+
+  )
+}

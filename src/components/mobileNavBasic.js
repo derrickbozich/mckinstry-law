@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export default ({ handleClick }) => {
   const data = useStaticQuery(graphql`
-    query MoblieNaveBasicQuery {
+    query MoblieNavBasicQuery {
       site {
         siteMetadata {
           navItems
