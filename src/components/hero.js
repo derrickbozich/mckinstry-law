@@ -25,9 +25,7 @@ function Hero({ children }) {
           <div className="content container">
             <h1 className="tag-line">Your Best Defense.</h1>
             <p className="sub-tag-line">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              tenetur assumenda officia provident explicabo porro, ipsa harum
-              molestias.
+              Criminal defense Law in Colorado
             </p>
           </div>
         </BackgroundImage>

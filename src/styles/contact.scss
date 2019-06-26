@@ -1,39 +1,59 @@
 .contact{
-  text-align: left;
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  background-color: black;
+  padding: 120px 0 120px;
+
 
   h1.header{
-    font-size: 3rem;
+    font-size: 42px;
     margin-bottom: 1rem;
+    color: white;
   }
+
   .info{
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #9fd9c5;
+    line-height: 26px;
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 42px;
   }
 
   .email{
     text-decoration: none;
     color: black;
-    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
     margin-bottom: 1rem;
     font-size: 1.3rem;
+    color: #9fd9c5;
+    line-height: 26px;
 
-    &::before{
-      content: 'Email: ';
-      font-weight: bold;
-    }
+    // &::before{
+    //   content: 'Email: ';
+    //   font-weight: bold;
+    // }
 
   }
 
 
   .phone{
     margin-bottom: 1rem;
-    font-size: 1.3rem;
-    &::before{
-      content: 'Phone: ';
-      font-weight: bold;
-    }
+    font-size: 22px;
+    color: #9fd9c5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    line-height: 26px;
+    // &::before{
+    //   content: 'Phone: ';
+    //   font-weight: bold;
+    // }
   }
 
 }

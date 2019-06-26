@@ -23,30 +23,38 @@ function Footer() {
   return (
     <div>
       <footer className="footer">
-        <div className="container footer-wrap">
+        <div className="narrow-container footer-wrap">
           <div className="footer-top">
             <Link to="/">
-              <h1 className="brand">{title}</h1>
+              <h1 className="brand">
+                The McKinstry <br /> Law Firm
+              </h1>
             </Link>
             <nav>
-              <DesktopNav>
-                <Link to="/">Home</Link>
-              </DesktopNav>
+              <DesktopNav>{/*   <Link to="/">Home</Link> */}</DesktopNav>
             </nav>
           </div>
           <div className="footer-middle">
             <div>
               <address>
-                123 Pennsylvania Ave.
+                44 Cook St., Suite 100
                 <br />
-                Denver, CO 80201
+                Denver, CO 80206
               </address>
-              <p className="phone-number-left">{phoneNumber}</p>
+              {/* <p className="phone-number-left">{phoneNumber}</p>*/}
               <p className="desktop-email email">{email}</p>
             </div>
-            <div className="call-us-now-box">
+            {/*
+                <div className="call-us-now-box">
+                  <div className="phone-number">{phoneNumber}</div>
+                  <div className="call-us-now">Call Now</div>
+                </div>
+
+                */}
+
+            <div className="call-now-box">
+              <div className="call-now">Call Now.</div>
               <div className="phone-number">{phoneNumber}</div>
-              <div className="call-us-now">Call Now</div>
             </div>
           </div>
           <p className="mobile-email">{email}</p>
@@ -58,11 +66,13 @@ function Footer() {
         </div>
       </footer>
       <div className="sub-footer">
-        The information on this website is for general information purposes
-        only. Nothing on this site should be taken as legal advice for any
-        individual case or situation. This information is not intended to
-        create, and receipt or viewing does not constitute, an attorney-client
-        relationship.
+        <div className="content">
+          The information on this website is for general information purposes
+          only. Nothing on this site should be taken as legal advice for any
+          individual case or situation. This information is not intended to
+          create, and receipt or viewing does not constitute, an attorney-client
+          relationship.
+        </div>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 .capabilities{
   // padding: 3rem 0;
-  .capabilities-1{
+
     padding: 3rem;
     h1{
       color: white;
@@ -9,27 +9,18 @@
       margin-bottom: 1rem;
     }
     p{
-      color: grey;
+      color: #9fd9c5;
       text-align: center;
-      width: 60%;
-      margin: auto;
-      margin-bottom: 2rem;
+      font-size: 22px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      // width: 60%;
+      // margin: auto;
+      // margin-bottom: 2rem;
     }
 
-    .meet-patrick{
-        color: white;
-        text-align: center;
-        text-decoration: underline;
-        font-weight: bold;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 1.2rem;
-    }
 
-    .button{
-      text-align: center;
-      margin: 0 auto;
-    }
 
     background-color: black;
-  }
+
 }

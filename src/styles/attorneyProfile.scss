@@ -1,20 +1,93 @@
 .attorney-profile{
+  margin-top: 115px;
   margin-bottom: 4rem;
+
+  h1.header{
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: #415169;
+  }
+
+  .main-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .image{
+      min-height: 300px;
+      min-width: 300px;
+      flex:1;
+
+      // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      @media only screen and (min-width : 760px) {
+        min-width: 417px;
+        max-height: 481px;
+        // max-width: 420px;
+      }
+      // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      // grid-area: image;
+    }
+
+    .about{
+
+      background-color: white;
+
+      .title{
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 25px;
+
+      }
+      .body{
+        font-size: 18px;
+        line-height: 24px;
+        p{
+          margin-bottom: 1rem;
+        }
+      }
+      @media only screen and (min-width : 760px) {
+        min-width: 400px;
+        text-align: left;
+        padding-right:42px;
+        flex: 3;
+      }
+
+    }
+
+  }
 
   .wrap{
     grid-template-columns:
       minmax(400px, 1fr)
       minmax(400px, 1fr);
     grid-template-areas:
-      "image about"
-      "training about"
-      "education honors"
-      "legal legal";
+      "about image"
+      "education training"
+      "legal training"
+      "legal honors"
+      "legal .";
     grid-auto-rows: minmax(10px, auto);
-    grid-gap: 1rem;
+    grid-gap: 40px;
+
+    .chunk{
+      font-size: 18px;
+      margin-bottom: 25px;
+      line-height: 24px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+    }
 
     p{
-      margin-bottom: 1rem;
+      font-size: 18px;
+      margin-bottom: 25px;
+      line-height: 24px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
 
     .bold{
@@ -23,56 +96,57 @@
     }
 
 
+
+
     @media only screen and (min-width : 600px) {
       display: grid;
     }
 
     .box{
-      padding: 1.3rem;
+      padding: 40px 37px 37px 37px;
+      background-color: #e9e9e9;
+      font-size: 18px;
       .title{
-        font-size: 1.3rem;
-        margin-bottom: 0.5rem;
+        font-size: 22px;
+        margin-bottom: 18px;
+        // margin-top: 49px;
       }
     }
 
   }
 
-  h1.header{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
 
-  .image{
-    min-height: 300px;
-    min-width: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    grid-area: image;
-  }
+
+
+
+
+
 
   .training{
     grid-area: training;
-    background-color: #E2DFDE;
+    // background-color: #E2DFDE;
     .bold{
       display: block;
     }
   }
-  .about{
-    grid-area: about;
-    font-size: 1.3rem;
-    line-height: 1.7rem;
 
-  }
   .education{
     grid-area: education;
-    background-color: #E2DFDE;
+    // background-color: #E2DFDE;
   }
   .honors{
     grid-area: honors;
-    background-color: #F5F5F7;
+    .chunk.bold{
+      display: block;
+      margin-bottom: 25px;
+    }
+
+    // background-color: #F5F5F7;
   }
   .legal{
     grid-area: legal;
-    background-color: #F9F6F4;
+
+    // background-color: #F9F6F4;
   }
 
 }

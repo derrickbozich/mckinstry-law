@@ -22,11 +22,11 @@ export default ({ handleClick, children }) => {
 
         {navigationTopics.map((item, i) => {
           switch (item) {
-            case "About The Firm":
+            case "About":
               if (window.location.pathname === "/") {
                 return (
                   <li key={i}>
-                    <a href="#about">{item}</a>
+                    <a href="/#about">{item}</a>
                   </li>
                 )
               } else {
@@ -62,7 +62,7 @@ export default ({ handleClick, children }) => {
               if (window.location.pathname === "/") {
                 return (
                   <li key={i}>
-                    <a href="#contact">{item}</a>
+                    <a href="/#contact">{item}</a>
                   </li>
                 )
               } else {
@@ -77,7 +77,7 @@ export default ({ handleClick, children }) => {
               if (window.location.pathname === "/") {
                 return (
                   <li key={i}>
-                    <a href="#attorney-profile">{item}</a>
+                    <a href="/#attorney-profile">{item}</a>
                   </li>
                 )
               } else {
@@ -91,7 +91,7 @@ export default ({ handleClick, children }) => {
             default:
               return (
                 <li key={i}>
-                  <Link to="/">{item}</Link>
+                  <Link className="default" to="/">{item}</Link>
                 </li>
               )
           }

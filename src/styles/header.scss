@@ -8,7 +8,7 @@ nav{
   h1.brand{
     margin-top: 1rem;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 28px;
   }
 
   svg{
@@ -46,6 +46,8 @@ nav{
         border-bottom: none;
       }
     }
+
+
 
     li.practice-areas-li{
       position: relative;
@@ -94,16 +96,26 @@ nav{
 
   ul.desktop-nav{
     margin-bottom: 0;
+    display: flex;
 
     li{
-      font-weight: bold;
+      // font-weight: bold;
       display: inline;
-      margin-right: 10px;
+      // margin-right: 30px;
+      font-size: 16px;
+      text-align: center;
+      padding: 0 1rem;
     }
 
     li.practice-areas{
       position: relative;
-      margin-right: 16px;
+      margin-top: 0;
+      // margin-right: 16px;
+    }
+
+    li.practice-areas:hover{
+      cursor: pointer;
+      text-decoration: underline;
     }
 
     // i {
@@ -144,17 +156,23 @@ nav{
   background-position: top center;
   background-repeat: none;
   background-size: cover;
+  // display: flex;
 
 
   .content{
-    padding-left: 5%;
+    // padding-left: 5%;
+    text-align: center;
     margin-top: 1.7rem;
     h1.tag-line{
       font-weight: bold;
+      font-size: 86px;
     }
     p.sub-tag-line{
-      max-width: 60%;
-      margin-left: 0;
+      // max-width: 60%;
+      // margin-left: 0;
+      font-family: 'QuattrocentoSans', sans-serif;
+      font-weight: bold;
+      font-size: 37px;
       margin-bottom: 19rem;
       font-size: 1.5rem;
     }

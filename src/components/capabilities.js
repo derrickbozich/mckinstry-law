@@ -1,19 +1,33 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 function Capabilities() {
+
+  const data = useStaticQuery(graphql`
+    query CapabilitiesQuery {
+      site {
+        siteMetadata {
+          phoneNumber
+        }
+      }
+    }
+  `)
+
+  const phoneNumber = data.site.siteMetadata.phoneNumber
+
   return (
     <div className="capabilities">
-      <div className="capabilities-1">
-        <h1>Bringing excellence to the forefront.</h1>
+    
+        <h1>Have a case you would like to discuss?</h1>
         <p>
-          We will work with you step by step to ensure that your case gets the
-          attention it deserves. Bringing over 20 years of experience to the
-          table to defend you and your rights. There is no case too big or too
-          small for us.
+          Call now for a free consultation
         </p>
-        <div className="meet-patrick">Meet Patrick McKinstry</div>
+        <p>
+          {phoneNumber}
+        </p>
 
-      </div>
+
+
     </div>
   )
 }

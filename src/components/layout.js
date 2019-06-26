@@ -3,9 +3,12 @@ import Head from "./head"
 import Header from "./header"
 import Footer from "./footer"
 
-export default ({ children }) => (
+export default ({ children, title, body }) => (
   <div>
-    <Head />
+    <Head
+      title={title}
+      body={body}
+    />
     <Header />
     {children}
     <Footer />

@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `The McKinstry Law Firm`,
     navItems: [
-      "About The Firm",
+      "About",
       "Practice Areas",
       "Contact",
       "Attorney Profile",
@@ -27,7 +27,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-
+    {
+      resolve: `gatsby-source-prismic`,
+      options: {
+        repositoryName: `mckinstry-law`,
+      },
+    },
 
     {
       resolve: `gatsby-plugin-sharp`,

@@ -13,8 +13,8 @@ function Nav(props) {
     }
   `)
 
-  return ( 
-    <nav className="container">
+  return (
+    <nav className="narrow-container">
       <div>
         <h1 className="brand">
           <Link to="/">{data.site.siteMetadata.title}</Link>

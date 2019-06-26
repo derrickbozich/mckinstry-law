@@ -38,9 +38,7 @@ function NavItems(props) {
     setIsExpanded(!isExpanded)
   }
 
-  useEffect(() => {
-    console.log(`practice areas: ${practiceAreas}`)
-  })
+
 
   const handleClick = e => {
     // e.preventDefault()
@@ -60,7 +58,6 @@ function NavItems(props) {
   if (width < breakPoint && !isExpanded && !practiceAreas) {
     return <Bars onClick={e => handleToggle(e)} />
   } else if (width < breakPoint && isExpanded && !practiceAreas) {
-    console.log("not in right block")
     return (
       <div>
         <Bars onClick={e => handleToggle(e)} />
@@ -77,7 +74,6 @@ function NavItems(props) {
   } else if (width > breakPoint && !isExpanded && practiceAreas) {
     return <DesktopNavExpanded handleClick={handleClick} />
   } else if (width > breakPoint && !isExpanded && !practiceAreas) {
-    console.log("right if block")
     return <DesktopNav handleClick={handleClick} />
   } else {
     return <DesktopNav handleClick={handleClick} />

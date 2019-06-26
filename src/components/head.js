@@ -1,20 +1,20 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-function Head() {
+function Head({title, body}) {
   return (
     <Helmet>
       {/* Primary Meta Tags */}
       <title>
-        The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney
+        {title}
       </title>
       <meta
         name="title"
-        content="The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney"
+        content={title}
       />
       <meta
         name="description"
-        content="Patrick McKinstry is one of Denver's leading DUI and Criminal Defense Attorneys. Call today for a free consultation and discover how McKinstry Law Firm can help you."
+        content={body}
       />
 
 
@@ -24,11 +24,11 @@ function Head() {
       <meta property="og:url" content="https://www.mckinstrylawfirm.com/" />
       <meta
         property="og:title"
-        content="The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney"
+        content={title}
       />
       <meta
         property="og:description"
-        content="Patrick McKinstry is one of Denver's leading DUI and Criminal Defense Attorneys. Call today for a free consultation and discover how McKinstry Law Firm can help you."
+        content={body}
       />
       <meta property="og:image" content="" />
 
@@ -40,11 +40,11 @@ function Head() {
       />
       <meta
         property="twitter:title"
-        content="The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney"
+        content={title}
       />
       <meta
         property="twitter:description"
-        content="Patrick McKinstry is one of Denver's leading DUI and Criminal Defense Attorneys. Call today for a free consultation and discover how McKinstry Law Firm can help you."
+        content={body}
       />
       <meta property="twitter:image" content="" />
     </Helmet>
