@@ -46,9 +46,13 @@
         // height: 33.33%;
         font-size: 18px;
         line-height: 24px;
-        min-width: 300px;
+
 
         margin-bottom: 1rem;
+
+        @media only screen and (min-width : 760px) {
+          min-width: 300px;
+        }
       }
 
       .content-footer{
@@ -67,9 +71,15 @@
 
     }
     .image{
-      flex: 1;
-      min-width: 300px;
+      // flex: 1;
+      @media only screen and (min-width : 760px) {
+        min-width: 300px;
+        flex: 1;
+        // min-height: 300px;
+      }
       min-height: 300px;
+      min-width: 100%;
+
     }
 
   }

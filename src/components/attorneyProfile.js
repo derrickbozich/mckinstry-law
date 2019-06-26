@@ -19,7 +19,7 @@ function AttorneyProfile() {
     <div className="attorney-profile narrow-container" id="attorney-profile">
       <h1 className="header"> Attorney Profile </h1>
       <div className="main-content">
-        <div className="about">
+        <div className="about-patrick">
           <h1 className="title">Patrick McKinstry</h1>
           <div className="body">
             <p>

@@ -22,7 +22,7 @@ import AttorneyProfile from "../components/attorneyProfile"
 export default () => (
   <Layout
     title="The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney"
-    body="Patrick McKinstry is one of Denver's leading DUI and Criminal Defense Attorneys. Call today for a free consultation and discover how McKinstry Law Firm can help you."
+    body="Patrick McKinstry is one of Denver's leading DUI and Criminal Defense Attorneys. Call today for a free consultation and discover how The McKinstry Law Firm can help you."
   >
     <Capabilities />
     <About />

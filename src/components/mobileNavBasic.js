@@ -18,11 +18,11 @@ export default ({ handleClick }) => {
     <ul className="mobile-nav">
       {navigationTopics.map((item, i) => {
         switch (item) {
-          case "About The Firm":
+          case "About":
             if (window.location.pathname === "/") {
               return (
                 <li key={i}>
-                  <a onClick={handleClick} href="#about">
+                  <a onClick={handleClick} href="/#about">
                     {item}
                   </a>
                 </li>
@@ -49,7 +49,7 @@ export default ({ handleClick }) => {
             if (window.location.pathname === "/") {
               return (
                 <li key={i}>
-                  <a onClick={handleClick} href="#contact">
+                  <a onClick={handleClick} href="/#contact">
                     {item}
                   </a>
                 </li>
@@ -57,7 +57,7 @@ export default ({ handleClick }) => {
             } else {
               return (
                 <li key={i}>
-                  <Link onClick={handleClick} to="/">
+                  <Link onClick={handleClick} to="/#contact">
                     {item}
                   </Link>
                 </li>
@@ -68,7 +68,7 @@ export default ({ handleClick }) => {
             if (window.location.pathname === "/") {
               return (
                 <li key={i}>
-                  <a onClick={handleClick} href="#attorney-profile">
+                  <a onClick={handleClick} href="/#attorney-profile">
                     {item}
                   </a>
                 </li>
@@ -76,7 +76,7 @@ export default ({ handleClick }) => {
             } else {
               return (
                 <li key={i}>
-                  <Link onClick={handleClick} to="/">
+                  <Link onClick={handleClick} to="/#attorney-profile">
                     {item}
                   </Link>
                 </li>

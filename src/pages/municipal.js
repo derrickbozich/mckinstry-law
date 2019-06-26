@@ -9,8 +9,9 @@ export default () => (
     <HeroFooter
       title="Municipal Ordinance and General Violations"
       tag="tagline"
+      id="municipal"
     />
-    <div className="single-page narrow-container municipal">
+    <div className="single-page narrow-container municipal" >
       <h1 className="header">Municipal Ordinance and General Violations</h1>
       <div className="wrap">
         <div className="big-para">

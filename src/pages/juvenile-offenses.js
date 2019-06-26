@@ -6,7 +6,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 export default () => (
   <Layout>
-    <HeroFooter title="Juvenile Offenses" tag="tagline" />
+    <HeroFooter title="Juvenile Offenses" tag="tagline" id="juvenile" />
     <div className="single-page narrow-container juvenile">
       <h1 className="header">Juvenile Offenses</h1>
       <div className="wrap">

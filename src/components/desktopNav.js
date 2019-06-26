@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
-export default ({ handleClick, children }) => {
+export default ({ handleClick, children, footer }) => {
   const data = useStaticQuery(graphql`
     query DesktopNavQuery {
       site {
@@ -38,10 +38,10 @@ export default ({ handleClick, children }) => {
               }
 
             case "Practice Areas":
-              if (children) {
+              if (footer) {
                 return (
                   <li key={i}>
-                    <Link to="/">{item}</Link>
+                    <Link to="/#practice-areas-id">{item}</Link>
                   </li>
                 )
               } else {

@@ -1,8 +1,8 @@
 import React from "react"
 
-function HeroFooter({ title, tag }) {
+function HeroFooter({ title, tag, id }) {
   return (
-    <div className="hero-footer">
+    <div className="hero-footer" id={id}>
       <div className="container">
         <h1> {title}</h1>
         <p>{tag}</p>

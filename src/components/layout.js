@@ -11,6 +11,6 @@ export default ({ children, title, body }) => (
     />
     <Header />
     {children}
-    <Footer />
+    <Footer/>
   </div>
 )

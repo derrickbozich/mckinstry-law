@@ -31,7 +31,7 @@ function Footer() {
               </h1>
             </Link>
             <nav>
-              <DesktopNav>{/*   <Link to="/">Home</Link> */}</DesktopNav>
+              <DesktopNav footer={true}>{/*   <Link to="/">Home</Link> */}</DesktopNav>
             </nav>
           </div>
           <div className="footer-middle">

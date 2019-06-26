@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import PracticeAreasNav from './practiceAreasNav'
 import { useStaticQuery, graphql } from "gatsby"
 
+
 export default ({ handleClick }) => {
   const data = useStaticQuery(graphql`
     query DesktopNavExpandedQuery {

@@ -62,6 +62,8 @@ function PracticeAreas() {
             <BackgroundImage
               fluid={data.imageOne.childImageSharp.fluid}
               className="image"
+              role='img'
+              aria-label="Car Keys resting on the side of a glass of whiskey, indicating that one might be driving under the influence DUI"
             />
           </div>
         </Link>
@@ -81,6 +83,9 @@ function PracticeAreas() {
             <BackgroundImage
               fluid={data.imageTwo.childImageSharp.fluid}
               className="image"
+              role='img'
+              aria-label="Alcatraz Prison, an view of the prison cells. State Felony And Misdemeanor"
+
             />
           </div>
         </Link>
@@ -100,6 +105,9 @@ function PracticeAreas() {
             <BackgroundImage
               fluid={data.imageThree.childImageSharp.fluid}
               className="image"
+              role='img'
+              aria-label="A teenager wearing a hoodie sitting down with their back against a wall. Their forehead is on their knee. Juvenile Offenses"
+
             />
           </div>
         </Link>
@@ -121,6 +129,9 @@ function PracticeAreas() {
             <BackgroundImage
               fluid={data.imageFour.childImageSharp.fluid}
               className="image"
+              role='img'
+              aria-label="A view of the skyline of Denver, Colorado. Municipal Ordinance and General Violations "
+
             />
           </div>
         </Link>
@@ -140,6 +151,8 @@ function PracticeAreas() {
             <BackgroundImage
               fluid={data.imageFive.childImageSharp.fluid}
               className="image"
+              role='img'
+              aria-label="A frustrated woman"
             />
           </div>
         </Link>

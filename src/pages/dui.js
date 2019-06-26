@@ -9,8 +9,8 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <HeroFooter title="DUI, DUI-Drug, and Related Violations" tag="tagline"/>
-      <div className="single-page narrow-container dui" id="dui" >
+      <HeroFooter title="DUI, DUI-Drug, and Related Violations" tag="tagline" id="dui"/>
+      <div className="single-page narrow-container dui" >
         <h1 className="header">DUI, DUI-Drug, and Related Violations</h1>
         <div className="wrap">
           <div className="big-para">

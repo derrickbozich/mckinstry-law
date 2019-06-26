@@ -7,6 +7,8 @@ function About() {
   return (
     <div className="about" id="about">
       <div className="narrow-container">
+      <h1 className="header-mobile">About The Firm</h1>
+
         <div className="content">
           <StaticQuery
             query={graphql`
@@ -28,7 +30,7 @@ function About() {
             )}
           />
           <div className="text">
-            <h1 className="header">About The Firm</h1>
+            <h1 className="header-desktop">About The Firm</h1>
             <div className="body">
               The McKinstry Law Firm is dedicated exclusively to the practice of
               criminal defense law in Colorado, and serves clients on the front

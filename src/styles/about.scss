@@ -1,5 +1,6 @@
 .about{
   text-align: left;
+  padding: 134px 0 134px;
   // background-color: #f9f5f2;
   // padding: 1rem;
 
@@ -15,11 +16,26 @@
   //   margin-bottom: 2rem;
   // }
 
+  h1.header-mobile{
+    // margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 42px;
+    color: #415169;
+    margin-bottom: 14px;
+    display: block;
+
+    @media only screen and (min-width : 990px) {
+      display: none;
+    }
+  }
+
   .content{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 134px 0 134px;
+
     .text {
       @media only screen and (min-width : 760px) {
         min-width: 400px;
@@ -31,7 +47,7 @@
       @media only screen and (min-width : 990px) {
         order: 1;
       }
-      h1.header{
+      h1.header-desktop{
         // margin-top: 3rem;
         font-size: 3rem;
         font-weight: 700;
@@ -39,6 +55,11 @@
         line-height: 42px;
         color: #415169;
         margin-bottom: 14px;
+        display: none;
+
+        @media only screen and (min-width : 990px) {
+          display: block;
+        }
       }
       .body{
         font-size: 18px;

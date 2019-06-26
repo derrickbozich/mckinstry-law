@@ -1,5 +1,5 @@
 .attorney-profile{
-  margin-top: 115px;
+  padding-top: 115px;
   margin-bottom: 4rem;
 
   h1.header{
@@ -28,7 +28,7 @@
       // grid-area: image;
     }
 
-    .about{
+    .about-patrick{
 
       background-color: white;
 
@@ -58,8 +58,10 @@
 
   .wrap{
     grid-template-columns:
-      minmax(400px, 1fr)
-      minmax(400px, 1fr);
+      // minmax(400px, 1fr)
+      // minmax(400px, 1fr);
+      1fr
+      1fr;
     grid-template-areas:
       "about image"
       "education training"

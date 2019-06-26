@@ -6,6 +6,12 @@ html {
   // background-color: lavenderblush;
   // margin: 0;
    scroll-behavior: smooth;
+
+   @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
 }
 
 * { margin:0; padding:0; box-sizing:border-box; }

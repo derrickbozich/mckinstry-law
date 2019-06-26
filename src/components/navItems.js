@@ -5,7 +5,7 @@ import DesktopNav from "./desktopNav"
 import MobileNavExpanded from "./mobileNavExpanded"
 import DesktopNavExpanded from "./desktopNavExpanded"
 
-function NavItems(props) {
+function NavItems() {
   const [isExpanded, setIsExpanded] = useState(false)
   const [practiceAreas, setPracticeAreas] = useState(false)
 
@@ -74,9 +74,9 @@ function NavItems(props) {
   } else if (width > breakPoint && !isExpanded && practiceAreas) {
     return <DesktopNavExpanded handleClick={handleClick} />
   } else if (width > breakPoint && !isExpanded && !practiceAreas) {
-    return <DesktopNav handleClick={handleClick} />
+    return <DesktopNav handleClick={handleClick} footer={false} />
   } else {
-    return <DesktopNav handleClick={handleClick} />
+    return <DesktopNav handleClick={handleClick} footer={false} />
   }
 }
 
