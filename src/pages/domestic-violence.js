@@ -2,31 +2,16 @@ import React from "react"
 import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
 import Contact from "../components/contact"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 
 export default () => {
-  const data = useStaticQuery(graphql`
-    query DomesticQuery {
-      prismicDui {
-        data {
-          body {
-            html
-          }
-        }
-      }
-    }
-  `)
-
-
-  const body = data.prismicDui.data.body.text
-
   return (
-    <Layout headline="Domestic Violence" page='domestic'>
+    <Layout headline="Domestic Violence" page="domestic">
       <Capabilities />
       <div className="single-page single-page-content domestic">
         <h1 className="header">Domestic Violence</h1>
 
-        <div className="body">{body}</div>
+        <div className="body">filler</div>
         <Link to="/#contact">
           {" "}
           <div className="content-footer">Contact McKinstry</div>

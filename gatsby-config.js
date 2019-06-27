@@ -7,6 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: `The McKinstry Law Firm`,
+    metaTitle: `Denver DUI and Criminal Defense Attorney | The McKinstry Law Firm`,
     navItems: ["About", "Practice Areas", "Attorney Profile", "Contact"],
     phoneNumber: `(303) 398-7050`,
     email: `mckinstrylawfirm@gmail.com`,
@@ -26,12 +27,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-prismic`,
-      options: {
-        repositoryName: `mckinstry-law`,
-      },
-    },
+
 
     {
       resolve: `gatsby-plugin-sharp`,

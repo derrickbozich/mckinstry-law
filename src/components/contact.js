@@ -20,13 +20,13 @@ import Img from "gatsby-image"
 // </GoogleMapReact>
 
 function Contact() {
-  const location = {
-    center: {
-      lat: 39.716927,
-      lng: -104.947369,
-    },
-    zoom: 13,
-  }
+  // const location = {
+  //   center: {
+  //     lat: 39.716927,
+  //     lng: -104.947369,
+  //   },
+  //   zoom: 13,
+  // }
   const data = useStaticQuery(graphql`
     query ContactQuery {
       site {
@@ -46,12 +46,12 @@ function Contact() {
     }
   `)
 
-  const Marker = ({ text }) => <div className="marker">{text}</div>
+  // const Marker = ({ text }) => <div className="marker">{text}</div>
 
   const phoneNumber = data.site.siteMetadata.phoneNumber
   const email = data.site.siteMetadata.email
   const title = data.site.siteMetadata.title
-  const key = "AIzaSyB17xhI5X9XSkXDDUIIG_Q-M6J520ctynM"
+  // const key = "AIzaSyB17xhI5X9XSkXDDUIIG_Q-M6J520ctynM"
   return (
     <div className="contact" id="contact">
       <div className="narrow-container">
@@ -75,12 +75,14 @@ function Contact() {
             </p>
           </div>
           <div className="map">
-            <Img
-              fluid={data.imageOne.childImageSharp.fluid}
-              className="image"
-              role="img"
-              aria-label="Car Keys resting on the side of a glass of whiskey, indicating that one might be driving under the influence DUI"
-            />
+            <a target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/44+Cook+St,+Denver,+CO+80206/@39.7167326,-104.9490596,17z/data=!3m1!4b1!4m5!3m4!1s0x876c7e9bb741e409:0xdbbe34e6b855e3cc!8m2!3d39.7167326!4d-104.9468709">
+              <Img
+                fluid={data.imageOne.childImageSharp.fluid}
+                className="image"
+                role="img"
+                aria-label="Car Keys resting on the side of a glass of whiskey, indicating that one might be driving under the influence DUI"
+              />
+            </a>
           </div>
         </div>
       </div>
