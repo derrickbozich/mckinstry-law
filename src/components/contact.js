@@ -1,6 +1,23 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import GoogleMapReact from "google-map-react"
+import Img from "gatsby-image"
+// import GoogleMapReact from "google-map-react"
+
+// <GoogleMapReact
+//   bootstrapURLKeys={{ key: key }}
+//   defaultCenter={{
+//     lat: location.center.lat,
+//     lng: location.center.lng,
+//   }}
+//   defaultZoom={location.zoom}
+// >
+//   <Marker
+//     lat={location.center.lat}
+//     lng={location.center.lng}
+//     className="marker"
+//
+//   />
+// </GoogleMapReact>
 
 function Contact() {
   const location = {
@@ -19,10 +36,17 @@ function Contact() {
           title
         }
       }
+      imageOne: file(relativePath: { eq: "map.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
-  const Marker = ({ text }) => <div className='marker'>{text}</div>
+  const Marker = ({ text }) => <div className="marker">{text}</div>
 
   const phoneNumber = data.site.siteMetadata.phoneNumber
   const email = data.site.siteMetadata.email
@@ -35,7 +59,7 @@ function Contact() {
           <div className="text">
             <h1 className="header">Contact</h1>
             <h1 className="title"> {title}</h1>
-            <address  className="bold">
+            <address className="bold">
               44 Cook St., Suite 100 <br />
               Denver, CO 80206 <br />
             </address>
@@ -51,21 +75,12 @@ function Contact() {
             </p>
           </div>
           <div className="map">
-            <GoogleMapReact
-              bootstrapURLKeys={{ key: key }}
-              defaultCenter={{
-                lat: location.center.lat,
-                lng: location.center.lng,
-              }}
-              defaultZoom={location.zoom}
-            >
-              <Marker
-                lat={location.center.lat}
-                lng={location.center.lng}
-                className="marker"
-
-              />
-            </GoogleMapReact>
+            <Img
+              fluid={data.imageOne.childImageSharp.fluid}
+              className="image"
+              role="img"
+              aria-label="Car Keys resting on the side of a glass of whiskey, indicating that one might be driving under the influence DUI"
+            />
           </div>
         </div>
       </div>
