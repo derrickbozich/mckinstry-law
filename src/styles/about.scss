@@ -1,6 +1,6 @@
 .about{
   text-align: left;
-  padding: 60px 0 60px;
+  padding: 20px 0 40px;
 
   @media only screen and (min-width : 990px) {
      text-align: left;
@@ -11,14 +11,16 @@
   }
 
   h1.header-mobile{
-    font-size: 3rem;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 34px;
     line-height: 42px;
-    color: #415169;
+    color: #6fa2c8;
     margin-bottom: 14px;
     display: block;
 
+    @media only screen and (min-width : 500px) {
+      font-size: 42px;
+    }
     @media only screen and (min-width : 990px) {
       display: none;
     }
@@ -45,7 +47,7 @@
         font-weight: 700;
         font-size: 42px;
         line-height: 42px;
-        color: #415169;
+        color: #6fa2c8;
         margin-bottom: 14px;
         display: none;
 
@@ -58,11 +60,24 @@
         font-size: 18px;
         text-align: left;
         line-height: 24px;
+        // @media only screen and (min-width : 990px) {
+        //   text-align: left;
+        // }
       }
 
       .content-footer.meet-patrick{
+        font-size: 18px;
+        // text-align: center;
+        // margin-left: 20vw;
+        // margin-left: auto;
+        // margin-right: auto;
+        // display: inline-block;
+        // @media only screen and (min-width : 990px) {
+        //   margin-left: auto;
+        //   margin-right: auto;
+        // }
         &::after{
-          width: 190px;
+          width: 211px;
         }
       }
     }

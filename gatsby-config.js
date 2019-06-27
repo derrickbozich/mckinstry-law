@@ -13,6 +13,7 @@ module.exports = {
     email: `mckinstrylawfirm@gmail.com`,
     image: "/images/about.jpg",
     url: "https://www.mckinstrylawfirm.com",
+    siteUrl: "https://www.mckinstrylawfirm.com",
     description:
       "Patrick McKinstry is one of Denver's leading DUI and Criminal Defense Attorneys. Call today for a free consultation and discover how The McKinstry Law Firm can help you.",
   },
@@ -20,6 +21,8 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

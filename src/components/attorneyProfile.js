@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 function AttorneyProfile() {
   const data = useStaticQuery(graphql`
     query AttorneyProfileQuery {
-      imageOne: file(relativePath: { eq: "about.jpg" }) {
+      imageOne: file(relativePath: { eq: "profile.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -48,7 +48,7 @@ function AttorneyProfile() {
             </p>
           </div>
         </div>
-        <Img fluid={data.imageOne.childImageSharp.fluid} className="image" />
+        <Img fluid={data.imageOne.childImageSharp.fluid} className="image" alt='Patrick McKinstry, founder of The McKinstry Law Firm' />
 
       </div>
       <div className="wrap">

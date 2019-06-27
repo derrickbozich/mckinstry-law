@@ -30,7 +30,7 @@ export default ({ children, headline, tagline, page }) => {
     document.title =
       "The McKinstry Law Firm | Criminal Defense and DUI Attorney | Denver, Colorado"
     console.log(title)
-  })
+  }, [])
   return (
     <div>
       <Seo title={title} description={description} url={url} image={image} />

@@ -17,7 +17,7 @@ function Nav(props) {
     <nav className="narrow-container">
       <div>
         <h1 className="brand">
-          <Link to="/">{data.site.siteMetadata.title}</Link>
+          <Link to="/">{data.site.siteMetadata.title}, LLC</Link>
         </h1>
       </div>
       <div>

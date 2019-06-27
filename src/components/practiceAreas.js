@@ -93,7 +93,7 @@ function PracticeAreas() {
         <Link className="p-area" to="/juvenile-offenses">
           <div className="box">
             <div className="text">
-              <h1 className="header">Juvenile Offenses</h1>
+              <h1 className="header">Juvenile Offenses: Felony, Misdemeanor, and Municipal</h1>
               <div className="body">
                 In the state of Colorado, juveniles can be charged with many of
                 the same crimes that adults may face, but the justice system is
@@ -106,7 +106,7 @@ function PracticeAreas() {
               fluid={data.imageThree.childImageSharp.fluid}
               className="image"
               role='img'
-              aria-label="A teenager wearing a hoodie sitting down with their back against a wall. Their forehead is on their knee. Juvenile Offenses"
+              aria-label="A teenager wearing a hoodie, in handcuffs, sitting down with their back against a wall. Their forehead is on their knee. Juvenile Offenses"
 
             />
           </div>
@@ -152,7 +152,7 @@ function PracticeAreas() {
               fluid={data.imageFive.childImageSharp.fluid}
               className="image"
               role='img'
-              aria-label="A frustrated woman"
+              aria-label="A person grabbing another's arm in an attempt to defend themselves"
             />
           </div>
         </Link>

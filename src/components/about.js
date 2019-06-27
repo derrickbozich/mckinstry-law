@@ -26,6 +26,7 @@ function About() {
               <Img
                 fluid={data.imageOne.childImageSharp.fluid}
                 className="about-image"
+                alt='Patrick McKinstry, founder of The McKinstry Law Firm'
               />
             )}
           />

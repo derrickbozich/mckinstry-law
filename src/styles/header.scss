@@ -3,12 +3,38 @@ nav{
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-top: 3px;
+  @media only screen and (min-width : 400px) {
+    margin-top: 30px;
+
+  }
   // outline: 2px solid black;
 
   h1.brand{
-    margin-top: 1rem;
-    font-weight: bold;
-    font-size: 28px;
+    // margin-top: 1rem;
+    width: 60%;
+    @media only screen and (min-width : 400px) {
+        width: 100%;
+    }
+    a{
+      font-weight: bold;
+
+
+      font-size: 16px;
+      color: #415169;
+
+      @media only screen and (min-width : 800px) {
+        font-size: 32px;
+      }
+
+      @media only screen and (min-width : 600px) {
+        font-size: 28px;
+      }
+    }
+
+
+
+
   }
 
   svg{
@@ -140,7 +166,7 @@ nav{
       z-index: 1;
       background-color: white;
       border-radius: 5px;
-      top: 30;
+      top: 30px;
       left: -25;
       width: 323px;
       li{
@@ -161,7 +187,7 @@ nav{
 
 .hero{
   width: 100%;
-  background-position: top center;
+  background-position: center center;
   background-repeat: none;
   background-size: cover;
   // display: flex;
@@ -170,21 +196,78 @@ nav{
   .hero-content{
     // padding-left: 5%;
     text-align: center;
-    margin-top: 1.7rem;
+    margin-top: 10%;
     h1.tag-line{
       font-weight: bold;
-      font-size: 86px;
+      font-size: 22px;
       color: #415169;
+
+      margin-top: 10%;
+
+
+      @media only screen and (min-width : 400px) and (max-width : 450px) {
+        font-size: 30px;
+        margin-top: 14%;
+      }
+
+      @media only screen and (min-width : 450px) and (max-width : 600px) {
+        font-size: 34px;
+        margin-top: 14%;
+      }
+
+      @media only screen and (min-width : 600px) and (max-width : 1000px) {
+        font-size: 42px;
+        margin-top: 14%;
+      }
+
+      @media only screen and (min-width : 1000px) and (max-width : 1200px) {
+        font-size: 72px;
+      }
+
+
+      @media only screen and (min-width : 1200px) {
+        font-size: 86px;
+        margin-top: 14%;
+        margin-bottom: 10px;
+      }
     }
     p.sub-tag-line{
       // max-width: 60%;
       // margin-left: 0;
       font-family: 'QuattrocentoSans', sans-serif;
       font-weight: bold;
-      font-size: 37px;
-      margin-bottom: 19rem;
-      font-size: 1.5rem;
+      font-size: 22px;
+      margin-bottom: 50%;
       color: #6fa2c8;
+
+      @media only screen and (min-width : 400px) and (max-width : 450px) {
+        font-size: 26px;
+        margin-bottom: 44%;
+        // margin-top: 14%;
+      }
+
+      @media only screen and (min-width : 450px) and (max-width : 600px) {
+        font-size: 34px;
+        margin-bottom: 42%;
+        // margin-top: 14%;
+      }
+
+      @media only screen and (min-width : 600px) and (max-width : 1000px) {
+        font-size: 40px;
+        margin-bottom: 36%;
+        // margin-top: 14%;
+      }
+
+      @media only screen and (min-width : 1000px) and (max-width : 1200px) {
+        font-size: 40px;
+        margin-bottom: 40%;
+        // margin-top: 14%;
+      }
+
+      @media only screen and (min-width : 1200px)  {
+        font-size: 46px;
+        margin-bottom: 36%;
+      }
     }
   }
 }

@@ -36,7 +36,7 @@ function Contact() {
           title
         }
       }
-      imageOne: file(relativePath: { eq: "map.jpg" }) {
+      imageOne: file(relativePath: { eq: "map.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -51,7 +51,7 @@ function Contact() {
   const phoneNumber = data.site.siteMetadata.phoneNumber
   const email = data.site.siteMetadata.email
   const title = data.site.siteMetadata.title
-  // const key = "AIzaSyB17xhI5X9XSkXDDUIIG_Q-M6J520ctynM"
+
   return (
     <div className="contact" id="contact">
       <div className="narrow-container">

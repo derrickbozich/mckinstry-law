@@ -40,7 +40,7 @@ function NavItems() {
   }
 
   useEffect(()=>{
-    console.log(`practiceAreas: ${practiceAreas}`);
+    // console.log(`practiceAreas: ${practiceAreas}`);
   })
 
 
@@ -51,7 +51,7 @@ function NavItems() {
 
     if (e.target.innerText.includes("Practice Areas")) {
       setPracticeAreas(!practiceAreas)
-      console.log(`practice areas click` );
+      // console.log(`practice areas click` );
     }
   }
 
