@@ -62,7 +62,7 @@ function PracticeAreas() {
             <BackgroundImage
               fluid={data.imageOne.childImageSharp.fluid}
               className="image"
-              role='img'
+              role="img"
               aria-label="Car Keys resting on the side of a glass of whiskey, indicating that one might be driving under the influence DUI"
             />
           </div>
@@ -83,9 +83,8 @@ function PracticeAreas() {
             <BackgroundImage
               fluid={data.imageTwo.childImageSharp.fluid}
               className="image"
-              role='img'
+              role="img"
               aria-label="Alcatraz Prison, an view of the prison cells. State Felony And Misdemeanor"
-
             />
           </div>
         </Link>
@@ -93,7 +92,9 @@ function PracticeAreas() {
         <Link className="p-area" to="/juvenile-offenses">
           <div className="box">
             <div className="text">
-              <h1 className="header">Juvenile Offenses: Felony, Misdemeanor, and Municipal</h1>
+              <h1 className="header">
+                Juvenile Offenses: Felony, Misdemeanor, and Municipal
+              </h1>
               <div className="body">
                 In the state of Colorado, juveniles can be charged with many of
                 the same crimes that adults may face, but the justice system is
@@ -105,9 +106,8 @@ function PracticeAreas() {
             <BackgroundImage
               fluid={data.imageThree.childImageSharp.fluid}
               className="image"
-              role='img'
+              role="img"
               aria-label="A teenager wearing a hoodie, in handcuffs, sitting down with their back against a wall. Their forehead is on their knee. Juvenile Offenses"
-
             />
           </div>
         </Link>
@@ -119,9 +119,9 @@ function PracticeAreas() {
                 Municipal Ordinance and General Violations
               </h1>
               <div className="body">
-                While DUI is one of the most commonly charged traffic offenses
-                in Colorado, it is also a serious criminal offense that has the
-                potential to impact an individual’s …
+                In the state of Colorado, many cities and towns draft their own
+                rules and regulations. Many of these ordinances relate to public
+                order and safety...{" "}
               </div>
               <div className="content-footer">Learn More</div>
             </div>
@@ -129,9 +129,8 @@ function PracticeAreas() {
             <BackgroundImage
               fluid={data.imageFour.childImageSharp.fluid}
               className="image"
-              role='img'
+              role="img"
               aria-label="A view of the skyline of Denver, Colorado. Municipal Ordinance and General Violations "
-
             />
           </div>
         </Link>
@@ -151,7 +150,7 @@ function PracticeAreas() {
             <BackgroundImage
               fluid={data.imageFive.childImageSharp.fluid}
               className="image"
-              role='img'
+              role="img"
               aria-label="A person grabbing another's arm in an attempt to defend themselves"
             />
           </div>

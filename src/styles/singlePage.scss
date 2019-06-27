@@ -1,16 +1,21 @@
-.hero-footer{
-  background-color: black;
-  color: white;
-  padding: 2rem 0;
-  p{
-    font-size: 1.5rem;
-  }
-}
-
 .single-page-hero{
   .hero-content{
     h1.tag-line{
-      color: white;
+      color: #415169;
+      font-size: 42px;
+      padding-top: 20%;
+      @media only screen and (min-width : 600px) and (max-width : 800px) {
+        font-size: 60px;
+        padding-top: 10%;
+      }
+      @media only screen and (min-width : 800px) and (max-width : 1200px) {
+        font-size: 72px;
+        padding-top: 2%;
+      }
+      @media only screen and (min-width : 1200px) {
+        font-size: 86px;
+        padding-top: 2%;
+      }
     }
   }
 }
@@ -18,131 +23,29 @@
 .single-page{
 
   h1.header{
-    font-size: 42px;
-    margin-top: 107px;
+    font-size: 30px;
+    margin-top: 20px;
     margin-bottom: 1rem;
     color: #6fa2c8;
+    @media only screen and (min-width : 650px) {
+      font-size: 42px;
+      margin-top: 107px;
+    }
   }
 
   .body{
     font-size: 18px;
     line-height: 24px;
+
+    p{
+      margin-bottom: 15px;
+    }
   }
   .content-footer{
-    margin-bottom: 107px;
+    margin-bottom: 50px;
     width: 153px;
+    @media only screen and (min-width : 650px) {
+      margin-bottom: 107px;
+    }
   }
 }
-
-  // .wrap{
-    // grid-template-columns:
-    //   minmax(400px, 500px)
-    //   minmax(400px, 500px);
-    // grid-template-areas:
-    //   "big-para image"
-    //   "small-para small-para";
-    //
-    // grid-auto-rows: minmax(10px, auto);
-    // grid-gap: 1rem;
-    //
-    // @media only screen and (min-width : 600px) {
-    //   display: grid;
-    // }
-    //
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-direction: row;
-
-    // .image{
-    //   // min-height: 200px;
-    //   // max-height: 600px;
-    //   // min-width: 500px;
-    //
-    //
-    //   @media only screen and (min-width : 760px) {
-    //     min-width: 462px;
-    //     max-height: 481px;
-    //     max-width: 720px;
-    //     flex: 1;
-    //   }
-    //
-    //   height: 100%;
-    //   width: 100%;
-    //
-    //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    //   // grid-area: image;
-    //   margin-bottom: 3rem;
-
-      // @media only screen and (min-width : 500px) {
-      //   min-width: 300px;
-      // }
-    // }
-
-    // .big-para{
-    //   // grid-area: big-para;
-    //   font-size: 1.2rem;
-    //   margin-bottom: 3rem;
-    //
-    //
-    //
-    //   @media only screen and (min-width : 760px) {
-    //     min-width: 400px;
-    //     text-align: left;
-    //     padding-right:1rem;
-    //     flex: 1;
-    //   }
-    // }
-
-
-  // }
-  // .small-para{
-  //   grid-area: small-para;
-  //   font-size: 1.3rem;
-  //   margin-bottom: 5rem;
-  // }
-// }
-
-// .single-page.dui{
-//   .big-para{
-//     font-size: 1.4rem;
-//   }
-//   .small-para{
-//
-//   }
-// }
-
-// .single-page.domestic-violence{
-//   .big-para{
-//     font-size: 1.4rem;
-//   }
-//   .small-para{
-//
-//   }
-// }
-
-// .single-page.municipal{
-//   .big-para{
-//     font-size: 1.4rem;
-//   }
-//   .small-para{
-//
-//   }
-// }
-//
-// .single-page.juvenile{
-//   .big-para{
-//     font-size: 1.4rem;
-//   }
-//   .small-para{
-//
-//   }
-// }
-//
-// .single-page.felony{
-//   .big-para{
-//     font-size: 1.4rem;
-//   }
-//   .small-para{
-//
-//   }
-// }

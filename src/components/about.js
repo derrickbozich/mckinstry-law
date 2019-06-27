@@ -7,7 +7,7 @@ function About() {
   return (
     <div className="about" id="about">
       <div className="narrow-container">
-      <h1 className="header-mobile">About The Firm</h1>
+        <h1 className="header-mobile">About The Firm</h1>
 
         <div className="content">
           <StaticQuery
@@ -26,7 +26,7 @@ function About() {
               <Img
                 fluid={data.imageOne.childImageSharp.fluid}
                 className="about-image"
-                alt='Patrick McKinstry, founder of The McKinstry Law Firm'
+                alt="Patrick McKinstry, founder of The McKinstry Law Firm"
               />
             )}
           />

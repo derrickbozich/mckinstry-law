@@ -9,8 +9,6 @@ import { useStaticQuery, graphql } from "gatsby"
 // import Placeholder from "../components/placeholder"
 
 
-
-
 export default () => {
   const data = useStaticQuery(graphql`
     query IndexQuery {
@@ -24,7 +22,7 @@ export default () => {
     }
   `)
   return (
-    <Layout 
+    <Layout
       headline={data.site.siteMetadata.title}
       tagline='Your Best Defense'
       page='home'

@@ -3,7 +3,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-top: 3px;
+  margin-top: 8px;
   @media only screen and (min-width : 400px) {
     margin-top: 30px;
 
@@ -12,7 +12,8 @@ nav{
 
   h1.brand{
     // margin-top: 1rem;
-    width: 60%;
+    // width: 60%;
+    margin-bottom: 3px;
     @media only screen and (min-width : 400px) {
         width: 100%;
     }
@@ -51,6 +52,7 @@ nav{
   }
 
   ul.mobile-nav{
+    z-index: 2;
     margin-bottom: 0;
     position: absolute;
     background-color: white;
@@ -59,7 +61,6 @@ nav{
     margin: 0 auto;
     text-align: center;
     color: black;
-    z-index: 1;
     top: 40px;
     right: 1.5%;
     font-size: 18px;
@@ -237,7 +238,7 @@ nav{
       font-family: 'QuattrocentoSans', sans-serif;
       font-weight: bold;
       font-size: 22px;
-      margin-bottom: 50%;
+      margin-bottom: 40%;
       color: #6fa2c8;
 
       @media only screen and (min-width : 400px) and (max-width : 450px) {

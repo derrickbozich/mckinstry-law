@@ -25,8 +25,8 @@ function AttorneyProfile() {
             <p>
               For almost fifteen years Mr. McKinstry has litigated in District,
               County, Juvenile, and Municipal Courts in the Denver metropolitan
-              area. He has first-chaired more than one hundred and fifty jury
-              trials, and in excess of a thousand trials to the Court.
+              area. He has first-chaired nearly one hundred and fifty jury
+              trials, and hundreds of trials to the Court.
             </p>
             <p>
               Mr. McKinstry is a graduate of the National Institute for Trial
@@ -46,10 +46,19 @@ function AttorneyProfile() {
               Marine Force Atlantic, and was awarded the Navy and Marine Corps
               Commendation Medal.
             </p>
+            <p>
+              Mr. McKinstry is a fourth-generation Coloradan. His family ranched
+              on the Western slope, and raised champion Arabian horses. His
+              grandfather trained with the legendary 10th Mountain Division at
+              Camp Hale, and fought in Italy’s Apennine Mountains in 1945.
+            </p>
           </div>
         </div>
-        <Img fluid={data.imageOne.childImageSharp.fluid} className="image" alt='Patrick McKinstry, founder of The McKinstry Law Firm' />
-
+        <Img
+          fluid={data.imageOne.childImageSharp.fluid}
+          className="image"
+          alt="Patrick McKinstry, founder of The McKinstry Law Firm"
+        />
       </div>
       <div className="wrap">
         <div className="training box">
@@ -77,7 +86,7 @@ function AttorneyProfile() {
               <div className="bold">
                 Marine Corps Combat Development Command
               </div>{" "}
-              Basic Officers’ Course, Quantico, VA
+              Basic Officers’ Course, Quantico, VA - 1994
             </div>
           </div>
         </div>
@@ -124,7 +133,8 @@ function AttorneyProfile() {
               </div>{" "}
               Assistant City Attorney assigned to prosecution. Handled thousands
               of criminal cases, general municipal violations, and juvenile
-              offenses.
+              offenses. Several years in the Mental Health Unit, litigating
+              mental health certifications, and involuntary commitments.
             </div>
             <div className="chunk">
               <div className="bold">
@@ -139,7 +149,7 @@ function AttorneyProfile() {
                 Criminal Defense Firm, Denver Metro Area. 2006-2007
               </div>{" "}
               Associate Attorney in a boutique criminal defense firm
-              specializing in DUI, DUI- Drugs, DUR, and related violations.
+              specializing in DUI, DUI-Drugs, DUR, and related violations.
             </div>
           </div>
         </div>

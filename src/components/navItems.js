@@ -51,7 +51,11 @@ function NavItems() {
 
     if (e.target.innerText.includes("Practice Areas")) {
       setPracticeAreas(!practiceAreas)
+      // setIsExpanded(false)
       // console.log(`practice areas click` );
+    } else if (e.target.innerText.indexOf("Practice Areas") === -1) {
+        setPracticeAreas(false)
+        setIsExpanded(false)
     }
   }
 

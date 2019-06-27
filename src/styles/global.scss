@@ -5,11 +5,11 @@
 html {
  scroll-behavior: smooth;
 
- @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-  }
+ // @media (prefers-reduced-motion: reduce) {
+ //    html {
+ //      scroll-behavior: auto;
+ //    }
+ //  }
 }
 
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -162,6 +162,7 @@ a:hover{
   &::after{
     content: '';
     border-bottom: 6px solid black;
+
 
     width: 100%;
     position: absolute;

@@ -60,7 +60,7 @@ function Contact() {
             <h1 className="header">Contact</h1>
             <h1 className="title"> {title}</h1>
             <address className="bold">
-              44 Cook St., Suite 100 <br />
+              44 Cook Street, Suite 100 <br />
               Denver, CO 80206 <br />
             </address>
             <p className="bold phone"> {phoneNumber}</p>

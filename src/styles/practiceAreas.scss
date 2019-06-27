@@ -1,7 +1,7 @@
 #practice-areas-id{
   background-image: linear-gradient(to bottom, #415169, #6fa2c8);
   padding-bottom: 202px;
-  padding: 30px 0 40px;
+  padding: 20px 0 1px;
 
   @media only screen and (min-width : 650px) {
     padding: 145px 0 202px;
@@ -10,9 +10,10 @@
   .section-header{
     font-size: 34px;
     color: #6fa2c8;
-    padding-bottom: 35px;
+    padding-bottom: 14px;
     @media only screen and (min-width : 500px) {
       font-size: 42px;
+      padding-bottom: 35px;
     }
   }
 
@@ -21,11 +22,14 @@
   }
 
   .box{
-    display: flex;
+    // display: flex;
     margin-bottom: 55px;
     flex-wrap: wrap;
     flex-direction: row;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @media only screen and (min-width : 650px) {
+      display: flex;
+    }
 
     .text{
       flex: 1;
@@ -35,6 +39,11 @@
       align-items: center;
       background-color: white;
       padding: 42px;
+      text-align: center;
+
+      @media only screen and (min-width : 650px) {
+        text-align: left;
+      }
 
       .header{
         flex: 0 0 100%;
@@ -61,9 +70,27 @@
       .content-footer{
         flex: 0 0 100%;
         font-size: 18px;
+        display: inline-block;
+        text-align: center;
+
+        @media only screen and (min-width : 650px) {
+          text-align: left;
+        }
+
 
         &::after{
           width: 103px;
+          // width: 100%;
+          top: 25px;
+          left: 50%;
+          margin-left: -51px;
+
+          @media only screen and (min-width : 650px) {
+            left: 0;
+            margin-left: 0px;
+          }
+          // transform: translateX(0%);
+
         }
       }
     }
