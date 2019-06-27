@@ -36,19 +36,22 @@ function NavItems() {
   const handleToggle = e => {
     e.preventDefault()
     setIsExpanded(!isExpanded)
+    setPracticeAreas(false)
   }
+
+  useEffect(()=>{
+    console.log(`practiceAreas: ${practiceAreas}`);
+  })
 
 
 
   const handleClick = e => {
     // e.preventDefault()
 
-    if (e.target.innerText === "Practice Areas") {
+
+    if (e.target.innerText.includes("Practice Areas")) {
       setPracticeAreas(!practiceAreas)
-    } else if (e.target.innerText.includes("Practice Areas")) {
-      setPracticeAreas(false)
-    } else {
-      setIsExpanded(!isExpanded)
+      console.log(`practice areas click` );
     }
   }
 
@@ -71,12 +74,20 @@ function NavItems() {
         <MobileNavExpanded handleClick={handleClick} />
       </div>
     )
-  } else if (width > breakPoint && !isExpanded && practiceAreas) {
+  }else if (width < breakPoint && !isExpanded && practiceAreas ) {
+    return (
+      <div>
+        <Bars onClick={e => handleToggle(e)} />
+        <MobileNavBasic handleClick={handleClick} />
+      </div>
+    )
+
+  } else if (width > breakPoint && practiceAreas) {
     return <DesktopNavExpanded handleClick={handleClick} />
-  } else if (width > breakPoint && !isExpanded && !practiceAreas) {
-    return <DesktopNav handleClick={handleClick} footer={false} />
+  } else if (width > breakPoint && !practiceAreas) {
+    return <DesktopNav handleClick={handleClick} />
   } else {
-    return <DesktopNav handleClick={handleClick} footer={false} />
+    return 'default'
   }
 }
 

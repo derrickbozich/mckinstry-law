@@ -7,15 +7,13 @@
 module.exports = {
   siteMetadata: {
     title: `The McKinstry Law Firm`,
-    navItems: [
-      "About",
-      "Practice Areas",
-      "Attorney Profile",
-      "Contact",
-
-    ],
-    phoneNumber: `303-304-9413`,
+    navItems: ["About", "Practice Areas", "Attorney Profile", "Contact"],
+    phoneNumber: `(303) 398-7050`,
     email: `mckinstrylawfirm@gmail.com`,
+    image: "/images/about.jpg",
+    url: "https://www.mckinstrylawfirm.com",
+    description:
+      "Patrick McKinstry is one of Denver's leading DUI and Criminal Defense Attorneys. Call today for a free consultation and discover how The McKinstry Law Firm can help you.",
   },
   plugins: [
     `gatsby-plugin-sass`,

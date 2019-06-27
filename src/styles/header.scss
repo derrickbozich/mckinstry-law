@@ -27,7 +27,7 @@ nav{
   ul.mobile-nav{
     margin-bottom: 0;
     position: absolute;
-    background-color: rgba(240, 240, 240, 0.95);
+    background-color: white;
     border-radius: 3px;
     width: 300px;
     margin: 0 auto;
@@ -36,7 +36,7 @@ nav{
     z-index: 1;
     top: 40px;
     right: 1.5%;
-    font-size: 1.2rem;
+    font-size: 18px;
 
     li{
       padding: 1rem;
@@ -54,9 +54,9 @@ nav{
       cursor: pointer;
       ul.practice-areas-dropdown{
         cursor: default;
-        text-align: left;
+        text-align: center;
         z-index: 1;
-        background-color: rgba(228, 228, 228, 0.4);
+        background-color: white;
         border-radius: 5px;
         margin-top: 1rem;
 
@@ -64,6 +64,7 @@ nav{
           display: block;
           border-bottom: none;
           padding: 0.5rem;
+          font-size: 16px;
           list-style: circle;
 
           &:last-child{
@@ -79,7 +80,7 @@ nav{
 
   ul.mobile-nav-expanded{
     .down {
-      top: 8%;
+      top: 9.5%;
     }
 
   }
@@ -140,10 +141,12 @@ nav{
       background-color: white;
       border-radius: 5px;
       top: 30;
-      left: 0;
-      width: 200px;
+      left: -25;
+      width: 323px;
       li{
         display: block;
+        text-align: left;
+
         border-bottom: 2px solid black;
         padding: 1rem;
 

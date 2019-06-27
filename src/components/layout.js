@@ -1,14 +1,12 @@
 import React from "react"
-import Head from "./head"
+// import Head from "./head"
+import Seo from "./SEO"
 import Header from "./header"
 import Footer from "./footer"
 
-export default ({ children, metaTitle, metaBody, headline, tagline, page }) => (
+export default ({ children, headline, tagline, page }) => (
   <div>
-    <Head
-      title={metaTitle}
-      body={metaBody}
-    />
+    <Seo />
     <Header headline={headline} tagline={tagline} page={page}  />
     {children}
     <Footer/>

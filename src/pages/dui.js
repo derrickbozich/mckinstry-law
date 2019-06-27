@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
 import Contact from "../components/contact"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -10,14 +10,14 @@ export default () => {
       prismicDui {
         data {
           body {
-            text
+            html
           }
         }
       }
     }
   `)
 
-  const body = data.prismicDui.data.body.text
+  const body = data.prismicDui.data.body.html
 
   return (
     <Layout headline="DUI, DUI-Drug, and Related Violations" page="dui">
@@ -25,8 +25,11 @@ export default () => {
       <div className="single-page single-page-content dui">
         <h1 className="header">Driving Under the Influence</h1>
 
-        <div className="body">{body}</div>
-        <div className="content-footer">Contact McKinstry</div>
+        <div className="body" dangerouslySetInnerHTML={{ __html: body }}></div>
+        <Link to="/#contact">
+          {" "}
+          <div className="content-footer">Contact McKinstry</div>
+        </Link>
       </div>
       <Contact />
     </Layout>

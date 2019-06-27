@@ -1,60 +1,38 @@
 import React from "react"
 import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import Contact from "../components/contact"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
-export default () => (
-  <Layout headline="Juvenile Offenses" page="juvenile">
-    <Capabilities title="Juvenile Offenses" tag="tagline" />
-    <div className="single-page narrow-container juvenile" id="juvenile" >
-      <h1 className="header">Juvenile Offenses</h1>
-      <div className="wrap">
-        <div className="big-para">
-          In the state of Colorado, juveniles can be charged with many of the
-          same crimes that adults may face, but the justice system is designed
-          to treat them differently. In juvenile offenses, there is an emphasis
-          on rehabilitation, but serious charges against a minor can still lead
-          to serious consequences, including incarceration in a state facility.
-        </div>
-        <StaticQuery
-          query={graphql`
-            query {
-              imageOne: file(relativePath: { eq: "juvenile.jpeg" }) {
-                childImageSharp {
-                  fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          `}
-          render={data => (
-            <Img
-              fluid={data.imageOne.childImageSharp.fluid}
-              className="image"
-            />
-          )}
-        />
+export default () => {
+  const data = useStaticQuery(graphql`
+    query JuvenileQuery {
+      prismicDui {
+        data {
+          body {
+            html
+          }
+        }
+      }
+    }
+  `)
+
+
+  const body = data.prismicDui.data.body.text
+
+  return (
+    <Layout headline="Juvenile Offenses" page="juvenile">
+      <Capabilities />
+      <div className="single-page single-page-content juvenile">
+        <h1 className="header">Juvenile Offenses</h1>
+
+        <div className="body">{body}</div>
+        <Link to="/#contact">
+          {" "}
+          <div className="content-footer">Contact McKinstry</div>
+        </Link>
       </div>
-      <div className="small-para">
-        If your son or daughter is facing criminal charges, it’s vital that you
-        seek legal assistance from an attorney with experience handling juvenile
-        offenses. Juveniles are entitled to the same presumption of innocence
-        and due process as adults, and the government is held to the same high
-        standards of proof in prosecuting juvenile defendants. <br /> The
-        scientific, medical, and behavioral health communities understand that
-        the human brain is still developing well into a young person’s twenties,
-        and all adolescents are susceptible to impulsive and reckless behavior.
-        It’s crucial that a child’s future not be derailed by a lapse in
-        judgment, even a serious one, and a criminal defense attorney who has
-        the necessary experience and proficiency can, in many cases, work with
-        the prosecution to achieve a satisfactory disposition. But if the case
-        goes to trial, you’ll want an attorney on your side who has litigated
-        juvenile delinquency cases. Mr. McKinstry has litigated juvenile
-        felonies and misdemeanors in state court, and knows how expose the
-        weaknesses that exist in every case in order to achieve an acquittal.
-      </div>
-    </div>
-  </Layout>
-)
+      <Contact />
+    </Layout>
+  )
+}

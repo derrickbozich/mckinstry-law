@@ -1,17 +1,18 @@
 .contact{
   text-align: center;
 
-  @media only screen and (min-width : 650px) {
+  @media only screen and (min-width : 741px) {
      text-align: left;
+     padding: 120px 0 120px;
   }
   // margin-top: 2rem;
   background-image: linear-gradient(to top, #7589a3, #415169);
-  padding: 120px 0 120px;
+  padding: 60px 0 60px;
 
   .marker{
-    background-color: blue;
+    background-color: red;
 
-    border: 2px solid red;
+    border: 2px solid black;
     border-radius: 50%;
     height: 15px;
     width: 15px;
@@ -19,10 +20,16 @@
 
   .wrap{
     display: flex;
+    flex-wrap: wrap;
     .map{
       height: 400px;
       width: 100%;
       flex: 1;
+      min-width: 290px;
+      @media only screen and (min-width : 650px) {
+        min-width: 300px;
+
+      }
 
 
 
@@ -30,11 +37,14 @@
     .text{
       flex: 1;
       color: white;
+      padding-right: 12px;
       p{
         font-size: 18px;
       }
       .title{
-        font-size: 32px;
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 8px;
       }
       .bold{
         font-family: 'Work Sans', sans-serif;
@@ -42,11 +52,13 @@
         font-size: 18px;
         line-height: 20px;
         font-style: normal;
+        margin-bottom: 5px;
       }
       address{
 
       }
       .phone{
+        margin: 10px 0;
 
       }
       .email{
@@ -55,9 +67,22 @@
       .disclaimer{
         margin-top: 30px;
         font-size: 14px;
-        width: 300px;
+
+        margin: auto;
+        margin: 40px auto;
+        @media only screen and (min-width : 741px) {
+          margin-left: 0;
+
+
+        }
+        @media only screen and (min-width : 541px) {
+
+          width: 400px;
+
+        }
 
       }
+
 
     }
   }
@@ -65,7 +90,7 @@
 
   h1.header{
     font-size: 42px;
-    margin-bottom: 1rem;
+    margin-bottom: 35px;
     color: white;
   }
 

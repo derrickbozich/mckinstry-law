@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import FooterNav from "./footerNav"
 
 function Footer() {
@@ -73,14 +73,19 @@ function Footer() {
   return (
     <div>
       <footer className="footer">
-        <nav>
-          <FooterNav footer={true} />
-        </nav>
-        <h1 className="title">{title}</h1>
-        <h1 className="tagline">Criminal Defense in Colorado</h1>
-        <p className="copyright">
-             ©{year} {title}. All Rights Reserved
-           </p>
+        <div className="narrow-container">
+          <nav>
+            <FooterNav footer={true} />
+          </nav>
+          <Link to="/">
+            <h1 className="title">{title}</h1>
+          </Link>
+
+          <h1 className="tagline">Criminal Defense in Colorado</h1>
+          <p className="copyright">
+            ©{year} {title}. All Rights Reserved
+          </p>
+        </div>
       </footer>
     </div>
   )

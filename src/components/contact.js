@@ -8,7 +8,7 @@ function Contact() {
       lat: 39.716927,
       lng: -104.947369,
     },
-    zoom: 14,
+    zoom: 13,
   }
   const data = useStaticQuery(graphql`
     query ContactQuery {
@@ -39,8 +39,8 @@ function Contact() {
               44 Cook St., Suite 100 <br />
               Denver, CO 80206 <br />
             </address>
-            <p className="bold"> {phoneNumber}</p>
-            <p className="bold"> {email}</p>
+            <p className="bold phone"> {phoneNumber}</p>
+            <p className="bold email"> {email}</p>
             <p className="disclaimer">
               {" "}
               The information on this website is for general information

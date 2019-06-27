@@ -1,65 +1,38 @@
 import React from "react"
 import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import Contact from "../components/contact"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
-export default () => (
-  <Layout headline="Municipal Ordinance and General Violations" page="municipal">
-    <Capabilities
-    
+export default () => {
+  const data = useStaticQuery(graphql`
+    query MunicipalQuery {
+      prismicDui {
+        data {
+          body {
+            html
+          }
+        }
+      }
+    }
+  `)
 
-    />
-    <div className="single-page narrow-container municipal" id="municipal" >
-      <h1 className="header">Municipal Ordinance and General Violations</h1>
-      <div className="wrap">
-        <div className="big-para">
-          In the state of Colorado, many cities and towns draft their own rules
-          and regulations. Many of these ordinances relate to public order and
-          safety, such as assault, theft, and solicitation for prostitution, as
-          well as weapons violations and threats. Municipal Ordinance crimes can
-          also be charged as ‘domestic violence’ offenses, with many of the same
-          consequences as state domestic violence charges. Furthermore, a guilty
-          plea or conviction at trial on a municipal charge can trigger
-          violations of a deferred judgment, supervised probation or parole in
-          other cases.
-        </div>
-        <StaticQuery
-          query={graphql`
-            query {
-              imageOne: file(relativePath: { eq: "municipal.jpeg" }) {
-                childImageSharp {
-                  fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          `}
-          render={data => (
-            <Img
-              fluid={data.imageOne.childImageSharp.fluid}
-              className="image"
-            />
-          )}
-        />
+
+  const body = data.prismicDui.data.body.text
+
+  return (
+    <Layout headline="Municipal Ordinance and General Violations" page="municipal">
+      <Capabilities />
+      <div className="single-page single-page-content municipal">
+        <h1 className="header">Municipal Ordinance and General Violations</h1>
+
+        <div className="body">{body}</div>
+        <Link to="/#contact">
+          {" "}
+          <div className="content-footer">Contact McKinstry</div>
+        </Link>
       </div>
-      <div className="small-para">
-        Don’t let anyone tell you that it’s not serious because it’s just a
-        “muni” case. All of these charges can come with serious fines, and in
-        many cases the Assistant City Attorney will be asking for jail time.
-        This is especially true of domestic violence cases. If charged under a
-        municipal ordinance, you must defend your liberty and your reputation as
-        vigorously as you would in state court, and you will benefit from the
-        assistance of a criminal defense attorney who knows the system and can
-        identify and exploit the weaknesses in the municipality’s case. Whether
-        you’re charged with a fire or building code violation, or something as
-        serious as assault, you should not go it alone. <br />
-        Mr. McKinstry spent years in the courtroom handling such cases and has
-        litigated nearly one hundred municipal cases in front of Colorado
-        juries, ranging from sewer-line violations to domestic violence,
-        threats, harassment, and assault charges.
-      </div>
-    </div>
-  </Layout>
-)
+      <Contact />
+    </Layout>
+  )
+}
