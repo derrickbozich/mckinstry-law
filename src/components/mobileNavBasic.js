@@ -19,7 +19,7 @@ export default ({ handleClick }) => {
       {navigationTopics.map((item, i) => {
         switch (item) {
           case "About":
-            if (window.location.pathname === "/") {
+            if (typeof window !== 'undefined' && window.location.pathname === "/") {
               return (
                 <li key={i}>
                   <a onClick={handleClick} href="/#about">
@@ -46,7 +46,7 @@ export default ({ handleClick }) => {
             )
 
           case "Contact":
-            if (window.location.pathname === "/") {
+            if (typeof window !== 'undefined' && window.location.pathname === "/") {
               return (
                 <li key={i}>
                   <a onClick={handleClick} href="/#contact">
@@ -65,7 +65,7 @@ export default ({ handleClick }) => {
             }
 
           case "Attorney Profile":
-            if (window.location.pathname === "/") {
+            if (typeof window !== 'undefined' && window.location.pathname === "/") {
               return (
                 <li key={i}>
                   <a onClick={handleClick} href="/#attorney-profile">

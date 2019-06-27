@@ -21,7 +21,10 @@ export default ({ handleClick, children, footer }) => {
         {navigationTopics.map((item, i) => {
           switch (item) {
             case "About":
-              if (window.location.pathname === "/") {
+              if (
+                typeof window !== "undefined" &&
+                window.location.pathname === "/"
+              ) {
                 return (
                   <li key={i}>
                     <a href="/#about">{item}</a>
@@ -36,7 +39,10 @@ export default ({ handleClick, children, footer }) => {
               }
 
             case "Practice Areas":
-              if (window.location.pathname === "/") {
+              if (
+                typeof window !== "undefined" &&
+                window.location.pathname === "/"
+              ) {
                 return (
                   <li key={i}>
                     <a href="/#practice-areas-id">{item}</a>
@@ -51,7 +57,10 @@ export default ({ handleClick, children, footer }) => {
               }
 
             case "Contact":
-              if (window.location.pathname === "/") {
+              if (
+                typeof window !== "undefined" &&
+                window.location.pathname === "/"
+              ) {
                 return (
                   <li key={i}>
                     <a href="/#contact">{item}</a>
@@ -66,7 +75,10 @@ export default ({ handleClick, children, footer }) => {
               }
 
             case "Attorney Profile":
-              if (window.location.pathname === "/") {
+              if (
+                typeof window !== "undefined" &&
+                window.location.pathname === "/"
+              ) {
                 return (
                   <li key={i}>
                     <a href="/#attorney-profile">{item}</a>
