@@ -20,7 +20,7 @@ export default () => {
         </div>
         <Link to="/#contact">
           {" "}
-          <div className="content-footer">Contact McKinstry</div>
+          <div className="content-footer">Contact Mr. McKinstry</div>
         </Link>
       </div>
       <Contact />

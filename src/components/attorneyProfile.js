@@ -58,6 +58,8 @@ function AttorneyProfile() {
           fluid={data.imageOne.childImageSharp.fluid}
           className="image"
           alt="Patrick McKinstry, founder of The McKinstry Law Firm"
+          style={{}}
+          objectPosition= 'right center'
         />
       </div>
       <div className="wrap">

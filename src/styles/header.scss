@@ -19,12 +19,15 @@
     // outline: 2px solid black;
 
     h1.brand{
-      // margin-top: 1rem;
-      // width: 60%;
       margin-bottom: 3px;
-      // @media only screen and (min-width : 400px) {
-      //     width: 100%;
-      // }
+
+      @media only screen and (min-width : 800px) {
+        font-size: 32px;
+      }
+
+      @media only screen and (min-width : 600px) and (max-width : 800px) {
+        font-size: 28px;
+      }
       a{
         font-weight: bold;
         font-size: 16px;

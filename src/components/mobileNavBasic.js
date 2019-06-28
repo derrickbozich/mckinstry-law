@@ -17,7 +17,7 @@ export default ({ handleClick }) => {
   return (
     <ul className="mobile-nav">
       {navigationTopics.map((item, i) => {
-        switch (item) {
+        switch (item) { 
           case "About":
             if (typeof window !== 'undefined' && window.location.pathname === "/") {
               return (
