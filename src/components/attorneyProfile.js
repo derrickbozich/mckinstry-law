@@ -117,7 +117,7 @@ function AttorneyProfile() {
             </div>
             <div className="chunk">
               <div className="bold"> M.B.A. </div> 2002, W.P. Carey School of
-              Business, Arizona University State
+              Business, Arizona State University
             </div>
             <div className="chunk">
               <div className="bold"> B.A. </div> 1993, International Affairs,
@@ -148,7 +148,7 @@ function AttorneyProfile() {
             </div>
             <div className="chunk">
               <div className="bold">
-                Criminal Defense Firm, Denver Metro Area. 2006-2007
+                Criminal Defense Firm, Denver Metro Area 2006-2007
               </div>{" "}
               Associate Attorney in a boutique criminal defense firm
               specializing in DUI, DUI-Drug, DUR, and related violations.
