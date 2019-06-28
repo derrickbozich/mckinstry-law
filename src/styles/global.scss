@@ -22,7 +22,7 @@ p, address, div, li {
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
-// p{
+// p{ 
 //   margin: 0;
 // }
 
@@ -33,6 +33,10 @@ a{
 
 a:hover{
   text-decoration: underline;
+}
+
+.nav-anchor{
+  position: relative;
 }
 
 // .overlay {

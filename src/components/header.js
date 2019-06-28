@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 
 import Nav from "./nav"
 import Hero from "./hero"
-import Head from "./head"
+// import Head from "./head"
 
 export default ({ children, headline, tagline, page }) => {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -55,10 +55,10 @@ export default ({ children, headline, tagline, page }) => {
 
 
   return(
-    <div>
-      <Head />
+    <div className="nav-anchor">
+    <Nav handleClick={handleClick} handleToggle={handleToggle} width={width} isExpanded={isExpanded} practiceAreas={practiceAreas} breakPoint={breakPoint} />
+
       <Hero handleClick={handleClick} headline={headline} tagline={tagline} page={page}>
-        <Nav handleClick={handleClick} handleToggle={handleToggle} width={width} isExpanded={isExpanded} practiceAreas={practiceAreas} breakPoint={breakPoint} />
       </Hero>
     </div>
 

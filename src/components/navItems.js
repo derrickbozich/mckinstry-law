@@ -21,6 +21,7 @@ function NavItems() {
           setIsExpanded(false);
           setPracticeAreas(false);
         }
+        console.log(width);
 
       }
       window.addEventListener("resize", handleResize)

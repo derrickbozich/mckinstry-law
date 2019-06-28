@@ -12,35 +12,35 @@ function Hero({ children, headline, tagline, page }) {
           }
         }
       }
-      imageTwo: file(relativePath: { eq: "dui-bg.jpeg" }) {
+      imageTwo: file(relativePath: { eq: "dui-bg.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      imageThree: file(relativePath: { eq: "felony-bg.jpeg" }) {
+      imageThree: file(relativePath: { eq: "felony-bg.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      imageFour: file(relativePath: { eq: "juvenile-bg.jpeg" }) {
+      imageFour: file(relativePath: { eq: "juvenile-bg.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      imageFive: file(relativePath: { eq: "municipal-bg.jpeg" }) {
+      imageFive: file(relativePath: { eq: "municipal-bg.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      imageSix: file(relativePath: { eq: "domestic-bg.jpeg" }) {
+      imageSix: file(relativePath: { eq: "domestic-bg.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid

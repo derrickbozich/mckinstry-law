@@ -64,7 +64,9 @@ function Contact() {
               Denver, CO 80206 <br />
             </address>
             <p className="bold phone"> {phoneNumber}</p>
-            <p className="bold email"> {email}</p>
+            <a target="_blank" rel="noopener noreferrer" href={`mailto:${email}`} className="bold email">
+              {email}
+            </a>
             <p className="disclaimer">
               {" "}
               The information on this website is for general information
@@ -75,7 +77,11 @@ function Contact() {
             </p>
           </div>
           <div className="map">
-            <a target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/44+Cook+St,+Denver,+CO+80206/@39.7167326,-104.9490596,17z/data=!3m1!4b1!4m5!3m4!1s0x876c7e9bb741e409:0xdbbe34e6b855e3cc!8m2!3d39.7167326!4d-104.9468709">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/place/44+Cook+St,+Denver,+CO+80206/@39.7167326,-104.9490596,17z/data=!3m1!4b1!4m5!3m4!1s0x876c7e9bb741e409:0xdbbe34e6b855e3cc!8m2!3d39.7167326!4d-104.9468709"
+            >
               <Img
                 fluid={data.imageOne.childImageSharp.fluid}
                 className="image"

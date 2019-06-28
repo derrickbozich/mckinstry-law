@@ -1,6 +1,6 @@
 .capabilities{
   // padding: 3rem 0;
-  z-index: 1; 
+  z-index: 1;
   @media only screen and (min-width : 650px) {
     padding: 3.2rem;
   }
@@ -31,6 +31,16 @@
       // margin: auto;
       // margin-bottom: 2rem;
     }
+
+    a{
+      p{
+
+      }
+      p:hover{
+        text-decoration: underline;
+      }
+    }
+
 
 
 

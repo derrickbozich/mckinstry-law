@@ -14,7 +14,7 @@ function Nav(props) {
   `)
 
   return (
-    <nav className="narrow-container">
+    <nav >
       <div>
         <h1 className="brand">
           <Link to="/">{data.site.siteMetadata.title}, LLC</Link>

@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 function Capabilities() {
-
   const data = useStaticQuery(graphql`
     query CapabilitiesQuery {
       site {
@@ -19,18 +18,11 @@ function Capabilities() {
 
   return (
     <div className="capabilities">
-
-        <h1>Schedule a free consultation.</h1>
-        <p>
-          {phoneNumber}
-        </p>
-        <p>
-          {email}
-        </p>
-
-
-
-
+      <h1>Schedule a free consultation.</h1>
+      <p>{phoneNumber}</p>
+      <a target="_blank" rel="noopener noreferrer" href={`mailto:${email}`}>
+        <p>{email}</p>
+      </a>
     </div>
   )
 }

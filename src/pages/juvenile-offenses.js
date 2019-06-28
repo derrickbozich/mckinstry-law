@@ -6,10 +6,10 @@ import { Link } from "gatsby"
 
 export default () => {
   return (
-    <Layout headline="Juvenile Offenses" page="juvenile">
+    <Layout headline="Juvenile Offenses: Felony, Misdemeanor, and Municipal" page="juvenile">
       <Capabilities />
       <div className="single-page single-page-content juvenile">
-        <h1 className="header">Juvenile Offenses</h1>
+        <h1 className="header">Juvenile Offenses: Felony, Misdemeanor, and Municipal</h1>
 
         <div className="body">
           <p>
