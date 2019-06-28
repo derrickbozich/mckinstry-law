@@ -284,27 +284,97 @@
   .hero{
     .hero-content.dui{
       h1.tag-line{
-        font-size: 34px;
+        font-size: 40px;
+        @media only screen and (min-width : 450px) and (max-width : 600px) {
+          font-size: 46px;
+        }
+        @media only screen and (min-width : 600px) and (max-width : 1000px) {
+          font-size: 62px;
+        }
+
+        @media only screen and (min-width : 1000px) and (max-width : 1200px) {
+          font-size: 72px;
+        }
+
+        @media only screen and (min-width : 1200px) {
+          font-size: 86px;
+        }
       }
     }
     .hero-content.felony{
       h1.tag-line{
-        font-size: 34px;
+        font-size: 40px;
+        @media only screen and (min-width : 450px) and (max-width : 600px) {
+          font-size: 46px;
+        }
+        @media only screen and (min-width : 600px) and (max-width : 1000px) {
+          font-size: 62px;
+        }
+
+        @media only screen and (min-width : 1000px) and (max-width : 1200px) {
+          font-size: 72px;
+        }
+
+        @media only screen and (min-width : 1200px) {
+          font-size: 86px;
+        }
       }
     }
     .hero-content.juvenile{
       h1.tag-line{
-        font-size: 34px;
+        font-size: 40px;
+        @media only screen and (min-width : 450px) and (max-width : 600px) {
+          font-size: 46px;
+        }
+        @media only screen and (min-width : 600px) and (max-width : 1000px) {
+          font-size: 62px;
+        }
+
+        @media only screen and (min-width : 1000px) and (max-width : 1200px) {
+          font-size: 72px;
+        }
+
+        @media only screen and (min-width : 1200px) {
+          font-size: 86px;
+        }
       }
     }
     .hero-content.municipal{
       h1.tag-line{
-        font-size: 34px;
+        font-size: 40px;
+        @media only screen and (min-width : 450px) and (max-width : 600px) {
+          font-size: 46px;
+        }
+        @media only screen and (min-width : 600px) and (max-width : 1000px) {
+          font-size: 62px;
+        }
+
+        @media only screen and (min-width : 1000px) and (max-width : 1200px) {
+          font-size: 72px;
+        }
+
+        @media only screen and (min-width : 1200px) {
+          font-size: 86px;
+        }
       }
     }
     .hero-content.domestic{
       h1.tag-line{
-        font-size: 34px;
+        font-size: 40px;
+        @media only screen and (min-width : 450px) and (max-width : 600px) {
+          font-size: 46px;
+        }
+        @media only screen and (min-width : 600px) and (max-width : 1000px) {
+          font-size: 62px;
+        }
+
+        @media only screen and (min-width : 1000px) and (max-width : 1200px) {
+          font-size: 72px;
+        }
+
+        @media only screen and (min-width : 1200px) {
+          font-size: 86px;
+        }
       }
     }
 
