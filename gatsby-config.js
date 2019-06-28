@@ -16,7 +16,7 @@ module.exports = {
     url: "https://www.mckinstrylawfirm.com",
     siteUrl: "https://www.mckinstrylawfirm.com",
     description:
-      "Patrick McKinstry is one of Denver's leading DUI and Criminal Defense Attorneys. Call today for a free consultation and discover how The McKinstry Law Firm can help you.",
+      "Patrick McKinstry is one of Colorado's leading DUI and Criminal Defense Attorneys based in Denver. Call today for a free consultation and discover how The McKinstry Law Firm can help you.",
   },
   plugins: [
     `gatsby-plugin-sass`,
