@@ -22,11 +22,11 @@
   }
 
   .box{
-    // display: flex;
     margin-bottom: 55px;
     flex-wrap: wrap;
     flex-direction: row;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     @media only screen and (min-width : 650px) {
       display: flex;
     }
@@ -50,10 +50,6 @@
         font-size: 22px;
         line-height: 26px;
         margin-bottom: 10px;
-
-        @media only screen and (min-width : 650px) {
-          // margin-bottom: 0px;
-        }
       }
 
       .body{
@@ -77,10 +73,8 @@
           text-align: left;
         }
 
-
         &::after{
           width: 103px;
-          // width: 100%;
           top: 25px;
           left: 50%;
           margin-left: -51px;
@@ -89,8 +83,6 @@
             left: 0;
             margin-left: 0px;
           }
-          // transform: translateX(0%);
-
         }
       }
     }

@@ -18,7 +18,7 @@
     }
     // outline: 2px solid black;
 
-    h1.brand{
+    h2.brand{
       margin-bottom: 3px;
       font-size: 16px;
 
@@ -71,7 +71,7 @@
         }
       }
     }
-
+ 
     svg{
       position: relative;
     }
@@ -223,46 +223,39 @@
     }
   }
 
-
   .hero{
     width: 100%;
     background-position: center center;
     background-repeat: none;
     background-size: cover;
-    // display: flex;
-
 
     .hero-content{
-      // padding-left: 5%;
       text-align: center;
       margin-top: 10%;
       h1.tag-line{
         font-weight: bold;
-        font-size: 22px;
+        font-size: 38px;
         color: #415169;
-
         margin-top: 20%;
 
-
         @media only screen and (min-width : 400px) and (max-width : 450px) {
-          font-size: 30px;
+          font-size: 50px;
           margin-top: 23%;
         }
 
         @media only screen and (min-width : 450px) and (max-width : 600px) {
-          font-size: 34px;
+          font-size: 54px;
           margin-top: 23%;
         }
 
         @media only screen and (min-width : 600px) and (max-width : 1000px) {
-          font-size: 42px;
+          font-size: 62px;
           margin-top: 23%;
         }
 
         @media only screen and (min-width : 1000px) and (max-width : 1200px) {
           font-size: 72px;
         }
-
 
         @media only screen and (min-width : 1200px) {
           font-size: 86px;
@@ -271,36 +264,30 @@
         }
       }
       p.sub-tag-line{
-        // max-width: 60%;
-        // margin-left: 0;
         font-family: 'QuattrocentoSans', sans-serif;
         font-weight: bold;
         font-size: 22px;
-        margin-bottom: 40%;
+        margin-bottom: 60%;
         color: #6fa2c8;
 
         @media only screen and (min-width : 400px) and (max-width : 450px) {
           font-size: 26px;
-          margin-bottom: 44%;
-          // margin-top: 14%;
+          margin-bottom: 58%;
         }
 
         @media only screen and (min-width : 450px) and (max-width : 600px) {
           font-size: 32px;
-          margin-bottom: 42%;
-          // margin-top: 14%;
+          margin-bottom: 55%;
         }
 
         @media only screen and (min-width : 600px) and (max-width : 1000px) {
           font-size: 40px;
-          margin-bottom: 36%;
-          // margin-top: 14%;
+          margin-bottom: 51%;
         }
 
         @media only screen and (min-width : 1000px) and (max-width : 1200px) {
           font-size: 40px;
           margin-bottom: 40%;
-          // margin-top: 14%;
         }
 
         @media only screen and (min-width : 1200px)  {
@@ -333,6 +320,7 @@
         }
       }
     }
+
     .hero-content.felony{
       h1.tag-line{
         font-size: 40px;
@@ -352,6 +340,7 @@
         }
       }
     }
+
     .hero-content.juvenile{
       h1.tag-line{
         font-size: 40px;
@@ -371,6 +360,7 @@
         }
       }
     }
+
     .hero-content.municipal{
       h1.tag-line{
         font-size: 40px;
@@ -390,6 +380,7 @@
         }
       }
     }
+
     .hero-content.domestic{
       h1.tag-line{
         font-size: 40px;
@@ -409,6 +400,5 @@
         }
       }
     }
-
   }
 }

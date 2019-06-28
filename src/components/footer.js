@@ -17,9 +17,9 @@ function Footer() {
   // <div className="narrow-container footer-wrap">
   //   <div className="footer-top">
   //     <Link to="/">
-  //       <h1 className="brand">
+  //       <h2 className="brand">
   //         The McKinstry <br /> Law Firm
-  //       </h1>
+  //       </h2>
   //     </Link>
   //     <nav>
   //       <DesktopNav footer={true}>{/*   <Link to="/">Home</Link> */}</DesktopNav>
@@ -78,10 +78,10 @@ function Footer() {
             <FooterNav footer={true} />
           </nav>
           <Link to="/">
-            <h1 className="title">{title}</h1>
+            <h2 className="title">{title}</h2>
           </Link>
 
-          <h1 className="tagline">Criminal Defense in Colorado</h1>
+          <h2 className="tagline">Criminal Defense in Colorado</h2>
           <p className="copyright">
             ©{year} {title}. All Rights Reserved
           </p>

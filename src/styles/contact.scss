@@ -12,7 +12,7 @@
      padding: 120px 0 120px;
   }
 
-  h1.header{
+  h2.header{
     font-size: 34px;
     margin-bottom: 20px;
     color: white;
@@ -42,17 +42,16 @@
       min-width: 290px;
       @media only screen and (min-width : 650px) {
         min-width: 320px;
-        // height: 400px;
       }
-
-
-
     }
     .text{
       flex: 1;
       color: white;
       padding-right: 12px;
       p{
+        font-size: 18px;
+      }
+      a {
         font-size: 18px;
       }
       .title{
@@ -75,8 +74,10 @@
       address{
 
       }
-      .phone{
+      a.phone{
         margin: 10px 0;
+        display: block;
+        color: white;
 
       }
       a.email{
@@ -86,23 +87,16 @@
       .disclaimer{
         margin-top: 30px;
         font-size: 14px;
-
         margin: auto;
         margin: 40px auto;
         @media only screen and (min-width : 991px) {
           margin-left: 0;
-
-
         }
+
         @media only screen and (min-width : 541px) {
-
           width: 400px;
-
         }
-
       }
-
-
     }
   }
 

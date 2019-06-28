@@ -10,7 +10,7 @@
      padding: 134px 0 134px;
   }
 
-  h1.header-mobile{
+  h2.header-mobile{
     font-weight: 700;
     font-size: 34px;
     line-height: 42px;
@@ -42,7 +42,7 @@
       @media only screen and (min-width : 990px) {
         order: 1;
       }
-      h1.header-desktop{
+      h2.header-desktop{
         font-size: 3rem;
         font-weight: 700;
         font-size: 42px;
@@ -71,15 +71,12 @@
         font-size: 18px;
         text-align: center;
         position: relative;
-        // margin-left: 12vw;
-        // margin-left: auto;
-        // margin-right: auto;
-        // display: inline-block;
+
         @media only screen and (min-width : 990px) {
           text-align: left;
         }
+
         &::after{
-          // left: 50%;
           width: 211px;
           top: 25px;
           left: 50%;

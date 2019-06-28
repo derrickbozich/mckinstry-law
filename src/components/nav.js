@@ -17,9 +17,9 @@ function Nav(props) {
     return(
       <nav>
         <div>
-          <h1 className="brand">
+          <h2 className="brand">
           {`${data.site.siteMetadata.title}, LLC`}
-          </h1>
+          </h2>
         </div>
         <div>
           <NavItems />

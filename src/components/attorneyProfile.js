@@ -17,10 +17,10 @@ function AttorneyProfile() {
 
   return (
     <div className="attorney-profile narrow-container" id="attorney-profile">
-      <h1 className="header"> Attorney Profile </h1>
+      <h2 className="header"> Attorney Profile </h2>
       <div className="main-content">
         <div className="about-patrick">
-          <h1 className="title">Patrick McKinstry</h1>
+          <h2 className="title">Patrick McKinstry</h2>
           <div className="body">
             <p>
               For almost fifteen years Mr. McKinstry has litigated in District,
@@ -64,7 +64,7 @@ function AttorneyProfile() {
       </div>
       <div className="wrap">
         <div className="training box">
-          <h1 className="title">Training</h1>
+          <h2 className="title">Training</h2>
           <div className="body">
             <div className="chunk">
               <div className="bold">
@@ -94,7 +94,7 @@ function AttorneyProfile() {
         </div>
 
         <div className="honors box">
-          <h1 className="title">Honors</h1>
+          <h2 className="title">Honors</h2>
           <div className="body">
             <div className="bold chunk">
               Mr. McKinstry has twice been selected by the Denver Judicial
@@ -109,7 +109,7 @@ function AttorneyProfile() {
         </div>
 
         <div className="education box">
-          <h1 className="title">Education</h1>
+          <h2 className="title">Education</h2>
           <div className="body">
             <div className="chunk">
               <div className="bold">J.D. </div> 2002, Sandra Day O’Connor
@@ -127,7 +127,7 @@ function AttorneyProfile() {
         </div>
 
         <div className="legal box">
-          <h1 className="title">Legal Experience</h1>
+          <h2 className="title">Legal Experience</h2>
           <div className="body">
             <div className="chunk">
               <div className="bold">

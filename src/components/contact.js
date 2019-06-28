@@ -32,6 +32,7 @@ function Contact() {
       site {
         siteMetadata {
           phoneNumber
+          telPhoneNumber
           email
           title
         }
@@ -49,6 +50,7 @@ function Contact() {
   // const Marker = ({ text }) => <div className="marker">{text}</div>
 
   const phoneNumber = data.site.siteMetadata.phoneNumber
+  const telPhoneNumber = data.site.siteMetadata.telPhoneNumber
   const email = data.site.siteMetadata.email
   const title = data.site.siteMetadata.title
 
@@ -57,14 +59,22 @@ function Contact() {
       <div className="narrow-container">
         <div className="wrap">
           <div className="text">
-            <h1 className="header">Contact</h1>
-            <h1 className="title"> {title}</h1>
+            <h2 className="header">Contact</h2>
+            <h2 className="title"> {title}</h2>
             <address className="bold">
               44 Cook Street, Suite 100 <br />
               Denver, CO 80206 <br />
             </address>
-            <p className="bold phone"> {phoneNumber}</p>
-            <a target="_blank" rel="noopener noreferrer" href={`mailto:${email}`} className="bold email">
+            <a className="bold phone" href={`tel:${telPhoneNumber}`}>
+              {phoneNumber}
+            </a>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`mailto:${email}`}
+              className="bold email"
+            >
               {email}
             </a>
             <p className="disclaimer">

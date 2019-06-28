@@ -10,6 +10,7 @@ module.exports = {
     metaTitle: `The McKinstry Law Firm | Denver DUI and Criminal Defense Attorney`,
     navItems: ["About", "Practice Areas", "Attorney Profile", "Contact"],
     phoneNumber: `(303) 398-7050`,
+    telPhoneNumber: `1-303-398-7050`,
     email: `mckinstrylawfirm@gmail.com`,
     image: "/images/about.jpg",
     url: "https://www.mckinstrylawfirm.com",

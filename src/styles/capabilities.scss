@@ -1,49 +1,37 @@
 .capabilities{
-  // padding: 3rem 0;
   z-index: 1;
+  background-color: black;
+  padding: 2rem 15px;
+
   @media only screen and (min-width : 650px) {
     padding: 3.2rem;
   }
-  padding: 2rem 15px;
 
-
-    h1{
-      color: white;
-      margin-top: 0;
-      text-align: center;
-      // margin-bottom: 1rem;
-      font-size: 24px;
-      @media only screen and (min-width : 650px) {
-        font-size: 32px;
-      }
+  h2{
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+    @media only screen and (min-width : 650px) {
+      font-size: 32px;
     }
-    p{
-      color: #6fa2c8;
-      text-align: center;
-      font-size: 18px;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: bold;
-      margin: 10px 0;
-      @media only screen and (min-width : 650px) {
-        font-size: 22px;
-      }
-      // width: 60%;
-      // margin: auto;
-      // margin-bottom: 2rem;
+  }
+
+  p{
+    color: #6fa2c8;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+    @media only screen and (min-width : 650px) {
+      font-size: 22px;
     }
+  }
 
-    a{
-      p{
-
-      }
-      p:hover{
-        text-decoration: underline;
-      }
+  a{
+    p:hover{
+      text-decoration: underline;
     }
-
-
-
-
-    background-color: black;
-
+  }
 }

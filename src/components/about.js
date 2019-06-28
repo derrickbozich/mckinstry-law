@@ -1,13 +1,12 @@
 import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
-// import ScrollableAnchor from "react-scrollable-anchor"
 
 function About() {
   return (
     <div className="about" id="about">
       <div className="narrow-container">
-        <h1 className="header-mobile">About The Firm</h1>
+        <h2 className="header-mobile">About The Firm</h2>
 
         <div className="content">
           <StaticQuery
@@ -31,7 +30,7 @@ function About() {
             )}
           />
           <div className="text">
-            <h1 className="header-desktop">About The Firm</h1>
+            <h2 className="header-desktop">About The Firm</h2>
             <div className="body">
               The McKinstry Law Firm is dedicated exclusively to the practice of
               criminal defense law in Colorado, and serves clients on the front
