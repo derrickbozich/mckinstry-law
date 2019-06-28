@@ -151,7 +151,7 @@ function AttorneyProfile() {
                 Criminal Defense Firm, Denver Metro Area. 2006-2007
               </div>{" "}
               Associate Attorney in a boutique criminal defense firm
-              specializing in DUI, DUI-Drugs, DUR, and related violations.
+              specializing in DUI, DUI-Drug, DUR, and related violations.
             </div>
           </div>
         </div>

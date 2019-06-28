@@ -60,7 +60,7 @@ function Contact() {
         <div className="wrap">
           <div className="text">
             <h2 className="header">Contact</h2>
-            <h2 className="title"> {title}</h2>
+            <h2 className="title"> {`${title}, LLC`}</h2>
             <address className="bold">
               44 Cook Street, Suite 100 <br />
               Denver, CO 80206 <br />
