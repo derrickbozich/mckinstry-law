@@ -49,6 +49,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
               <meta name="twitter:description" content={seo.description} />
             )}
             {seo.image && <meta name="twitter:image" content={seo.image} />}
+            <meta name="google-site-verification" content="Naq-Pelb5VOMDF2uW2u1GJ-Uc7Vxg1P72Qs_4WadujM" />
           </Helmet>
         </>
       )
