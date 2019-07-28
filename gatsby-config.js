@@ -11,7 +11,7 @@ module.exports = {
     navItems: ["About", "Practice Areas", "Attorney Profile", "Contact"],
     phoneNumber: `(303) 398-7050`,
     telPhoneNumber: `1-303-398-7050`,
-    email: `mckinstrylawfirm@gmail.com`,
+    email: `patrick@mckinstrylawfirm.com`,
     image: "/images/about.jpg",
     url: "https://www.mckinstrylawfirm.com",
     siteUrl: "https://www.mckinstrylawfirm.com",
