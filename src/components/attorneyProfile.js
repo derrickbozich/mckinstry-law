@@ -26,7 +26,7 @@ function AttorneyProfile() {
               For almost fifteen years Mr. McKinstry has litigated in District,
               County, Juvenile, and Municipal Courts in the Denver metropolitan
               area. He has first-chaired nearly one hundred and fifty jury
-              trials, and hundreds of trials to the Court. 
+              trials, and hundreds of trials to the Court.
             </p>
             <p>
               Mr. McKinstry is a graduate of the National Institute for Trial
@@ -110,6 +110,12 @@ function AttorneyProfile() {
             <div className="bold chunk">
               Mr. McKinstry received the Navy and Marine Corps Commendation
               Medal as a USMC Captain.
+            </div>
+            <div className="bold chunk">
+              Mr. McKinstry is a Martindale-Hubbell AV Preeminent Rated Attorney
+              for 2019. His peers have ranked him at the highest level of
+              professional excellence for legal knowledge, communication skills,
+              and ethical standards.
             </div>
           </div>
         </div>
