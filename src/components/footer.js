@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import FooterNav from "./footerNav"
+import Img from "gatsby-image"
 
 function Footer() {
   const year = new Date().getFullYear()
@@ -9,6 +10,13 @@ function Footer() {
       site {
         siteMetadata {
           title
+        }
+      }
+      imageOne: file(relativePath: { eq: "rating.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
@@ -82,9 +90,22 @@ function Footer() {
           </Link>
 
           <h2 className="tagline">Criminal Defense in Colorado</h2>
+
           <p className="copyright">
             ©{year} {title}. All Rights Reserved
           </p>
+          <a
+            href="https://www.martindale.com/denver/colorado/patrick-c-mckinstry-3723684-a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img
+              fluid={data.imageOne.childImageSharp.fluid}
+              className="rating"
+              role="img"
+              aria-label="Car Keys resting on the side of a glass of whiskey, indicating that one might be driving under the influence DUI"
+            />
+          </a>
         </div>
       </footer>
     </div>

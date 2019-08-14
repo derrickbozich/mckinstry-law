@@ -10,6 +10,18 @@
     padding-top: 65px;
     padding-bottom: 65px;
   }
+  .rating.gatsby-image-wrapper{
+    margin: 0 auto;
+    height: 88px;
+    width: 200px;
+
+    margin-bottom: 25px;
+
+      img{
+        object-fit: scale-down !important;
+      }
+
+  }
 
   nav{
     display: block;
@@ -74,7 +86,7 @@
     margin-bottom: 25px;
 
     @media only screen and (min-width : 400px) {
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
 
 
@@ -83,6 +95,7 @@
   .copyright{
 
     font-size: 14px;
+    margin-bottom: 15px;
 
   }
   // p{
