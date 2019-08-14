@@ -113,9 +113,7 @@ function AttorneyProfile() {
             </div>
             <div className="bold chunk">
               Mr. McKinstry is a Martindale-Hubbell AV Preeminent Rated Attorney
-              for 2019. His peers have ranked him at the highest level of
-              professional excellence for legal knowledge, communication skills,
-              and ethical standards.
+              for 2019.
             </div>
           </div>
         </div>
