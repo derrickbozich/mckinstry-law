@@ -74,9 +74,9 @@ function AttorneyProfile() {
           <div className="body">
             <div className="chunk">
               <div className="bold">
-                The Office of Alternate Defense Council{" "}
+                Office of the Alternate Defense Counsel{" "}
               </div>
-              Trial Advocacy Training - February 2020
+              Trial Advocacy Training, February 10–14, 2020
             </div>
             <div className="chunk">
               <div className="bold">
