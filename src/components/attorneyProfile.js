@@ -74,6 +74,12 @@ function AttorneyProfile() {
           <div className="body">
             <div className="chunk">
               <div className="bold">
+                The Office of Alternate Defense Council{" "}
+              </div>
+              Trial Advocacy Training - February 2020
+            </div>
+            <div className="chunk">
+              <div className="bold">
                 Colorado Bar Association Leadership Training{" "}
               </div>
               January – May, 2015
