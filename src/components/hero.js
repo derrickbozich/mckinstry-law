@@ -7,28 +7,28 @@ function Hero({ children, headline, tagline, page }) {
     query heroQuery {
       imageOne: file(relativePath: { eq: "hero-crop.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       imageTwo: file(relativePath: { eq: "dui-bg.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       imageThree: file(relativePath: { eq: "felony-bg.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       imageFour: file(relativePath: { eq: "juvenile-bg.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1400) {
             ...GatsbyImageSharpFluid
           }
         }

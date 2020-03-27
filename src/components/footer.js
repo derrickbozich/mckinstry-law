@@ -14,7 +14,7 @@ function Footer() {
       }
       imageOne: file(relativePath: { eq: "rating.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }

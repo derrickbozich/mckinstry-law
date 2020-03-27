@@ -7,7 +7,7 @@ function AttorneyProfile() {
     query AttorneyProfileQuery {
       imageOne: file(relativePath: { eq: "profile.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
