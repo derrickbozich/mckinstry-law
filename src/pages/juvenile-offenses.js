@@ -38,7 +38,7 @@ export default () => {
             a satisfactory disposition. But if the case goes to trial, you’ll
             want an attorney on your side who has litigated juvenile delinquency
             cases. Mr. McKinstry has litigated juvenile felonies and
-            misdemeanors in state court, and knows how expose the weaknesses
+            misdemeanors in state court, and knows how to expose the weaknesses
             that exist in every case, offering your best chance at an acquittal.
           </p>
         </div>
