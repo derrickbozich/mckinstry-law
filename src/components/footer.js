@@ -86,10 +86,10 @@ function Footer() {
             <FooterNav footer={true} />
           </nav>
           <Link to="/">
-            <h2 className="title">{title}</h2>
+            <p className="title">{title}</p>
           </Link>
 
-          <h2 className="tagline">Criminal Defense in Colorado</h2>
+          <p className="tagline">Your Best Defense</p>
 
           <p className="copyright">
             ©{year} {title}. All Rights Reserved

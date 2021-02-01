@@ -50,7 +50,7 @@ function PracticeAreas() {
         <Link className="p-area" to="/dui#dui">
           <div className="box">
             <div className="text">
-              <h2 className="header">DUI, DUI-Drug and Related Violations</h2>
+              <h3 className="header">DUI, DUI-Drug and Related Violations</h3>
               <div className="body">
                 While DUI is one of the most commonly charged traffic offenses
                 in Colorado, it is also a serious criminal offense that has the
@@ -71,7 +71,7 @@ function PracticeAreas() {
         <Link className="p-area" to="/state-felony-and-misdemeanor">
           <div className="box">
             <div className="text">
-              <h2 className="header">State Felony and Misdemeanor</h2>
+              <h3 className="header">State Felony and Misdemeanor</h3>
               <div className="body">
                 If you are facing misdemeanor or felony charges in the state of
                 Colorado, then you already know how frightening, disruptive, and
@@ -92,9 +92,9 @@ function PracticeAreas() {
         <Link className="p-area" to="/juvenile-offenses">
           <div className="box">
             <div className="text">
-              <h2 className="header">
+              <h3 className="header">
                 Juvenile Offenses: Felony, Misdemeanor, and Municipal
-              </h2>
+              </h3>
               <div className="body">
                 In the state of Colorado, juveniles can be charged with many of
                 the same crimes that adults may face, but the justice system is
@@ -115,9 +115,9 @@ function PracticeAreas() {
         <Link className="p-area" to="/municipal">
           <div className="box">
             <div className="text">
-              <h2 className="header">
+              <h3 className="header">
                 Municipal Ordinance and General Violations
-              </h2>
+              </h3>
               <div className="body">
                 In the state of Colorado, many cities and towns draft their own
                 rules and regulations. Many of these ordinances relate to public
@@ -138,7 +138,7 @@ function PracticeAreas() {
         <Link className="p-area" to="/domestic-violence">
           <div className="box">
             <div className="text">
-              <h2 className="header">Domestic Violence</h2>
+              <h3 className="header">Domestic Violence</h3>
               <div className="body">
                 Domestic violence is a legal term, and a sentence enhancer, that
                 attaches to a criminal offense allegedly committed by one person

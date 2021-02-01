@@ -17,9 +17,9 @@ function Nav(props) {
     return(
       <nav>
         <div>
-          <h2 className="brand">
+          <h3 className="brand">
           {`${data.site.siteMetadata.title}, LLC`}
-          </h2>
+        </h3>
         </div>
         <div>
           <NavItems />
@@ -31,9 +31,9 @@ function Nav(props) {
     return (
       <nav>
         <div>
-          <h1 className="brand">
+          <h3 className="brand">
             <Link to="/">{data.site.siteMetadata.title}, LLC</Link>
-          </h1>
+          </h3>
         </div>
         <div>
           <NavItems />

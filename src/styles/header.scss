@@ -18,7 +18,7 @@
     }
     // outline: 2px solid black;
 
-    h2.brand{
+    .brand{
       margin-bottom: 3px;
       font-size: 16px;
 
@@ -71,7 +71,7 @@
         }
       }
     }
- 
+
     svg{
       position: relative;
     }
@@ -232,7 +232,7 @@
     .hero-content{
       text-align: center;
       margin-top: 10%;
-      h1.tag-line{
+      .tag-line{
         font-weight: bold;
         font-size: 38px;
         color: #415169;
@@ -263,7 +263,7 @@
           margin-bottom: 10px;
         }
       }
-      p.sub-tag-line{
+      .sub-tag-line{
         font-family: 'QuattrocentoSans', sans-serif;
         font-weight: bold;
         font-size: 22px;
@@ -302,7 +302,7 @@
 .nav-anchor{
   .hero{
     .hero-content.dui{
-      h1.tag-line{
+      .tag-line{
         font-size: 40px;
         @media only screen and (min-width : 450px) and (max-width : 600px) {
           font-size: 46px;
@@ -322,7 +322,7 @@
     }
 
     .hero-content.felony{
-      h1.tag-line{
+      .tag-line{
         font-size: 40px;
         @media only screen and (min-width : 450px) and (max-width : 600px) {
           font-size: 46px;
@@ -342,7 +342,7 @@
     }
 
     .hero-content.juvenile{
-      h1.tag-line{
+      .tag-line{
         font-size: 40px;
         @media only screen and (min-width : 450px) and (max-width : 600px) {
           font-size: 46px;
@@ -362,7 +362,7 @@
     }
 
     .hero-content.municipal{
-      h1.tag-line{
+      .tag-line{
         font-size: 40px;
         @media only screen and (min-width : 450px) and (max-width : 600px) {
           font-size: 46px;
@@ -382,7 +382,7 @@
     }
 
     .hero-content.domestic{
-      h1.tag-line{
+      .tag-line{
         font-size: 40px;
         @media only screen and (min-width : 450px) and (max-width : 600px) {
           font-size: 46px;

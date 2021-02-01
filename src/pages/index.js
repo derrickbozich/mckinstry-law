@@ -24,7 +24,7 @@ export default () => {
   return (
     <Layout
       headline={data.site.siteMetadata.title}
-      tagline='Your Best Defense'
+      tagline='Criminal Defense in Colorado'
       page='home'
     >
       <Capabilities />

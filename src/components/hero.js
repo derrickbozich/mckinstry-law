@@ -87,8 +87,8 @@ function Hero({ children, headline, tagline, page }) {
     <BackgroundImage role='img' aria-label={description} fluid={image} className={overlay ? 'hero overlay single-page-hero '+ page : 'hero ' + page}>
       {children}
       <div className={`hero-content container ${page}`}>
-        <h1 className="tag-line"> {headline} </h1>
-        <p className="sub-tag-line">{tagline}</p>
+        <h2 className="tag-line"> {headline} </h2>
+        <h1 className="sub-tag-line">{tagline}</h1>
       </div>
     </BackgroundImage>
   )

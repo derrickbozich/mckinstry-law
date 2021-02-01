@@ -20,7 +20,7 @@ function AttorneyProfile() {
       <h2 className="header"> Attorney Profile </h2>
       <div className="main-content">
         <div className="about-patrick">
-          <h2 className="title">Patrick McKinstry</h2>
+          <h3 className="title">Patrick McKinstry</h3>
           <div className="body">
             <p>
               For almost fifteen years Mr. McKinstry has litigated in District,
@@ -70,7 +70,7 @@ function AttorneyProfile() {
       </div>
       <div className="wrap">
         <div className="training box">
-          <h2 className="title">Training</h2>
+          <h3 className="title">Training</h3>
           <div className="body">
             <div className="chunk">
               <div className="bold">
@@ -125,7 +125,7 @@ function AttorneyProfile() {
         </div>
 
         <div className="education box">
-          <h2 className="title">Education</h2>
+          <h3 className="title">Education</h3>
           <div className="body">
             <div className="chunk">
               <div className="bold">J.D. </div> 2002, Sandra Day O’Connor

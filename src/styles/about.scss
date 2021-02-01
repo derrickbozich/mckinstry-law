@@ -10,8 +10,8 @@
      padding: 134px 0 134px;
   }
 
-  h2.header-mobile{
-    font-weight: 700; 
+  .header-mobile{
+    font-weight: 700;
     font-size: 34px;
     line-height: 42px;
     color: #6fa2c8;
@@ -42,7 +42,7 @@
       @media only screen and (min-width : 990px) {
         order: 1;
       }
-      h2.header-desktop{
+      .header-desktop{
         font-size: 3rem;
         font-weight: 700;
         font-size: 42px;

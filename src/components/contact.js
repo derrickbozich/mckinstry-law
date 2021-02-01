@@ -59,8 +59,8 @@ function Contact() {
       <div className="narrow-container">
         <div className="wrap">
           <div className="text">
-            <h2 className="header">Contact</h2>
-            <h2 className="title"> {`${title}, LLC`}</h2>
+            <h3 className="header">Contact</h3>
+            <h4 className="title"> {`${title}, LLC`}</h4>
             <address className="bold">
               44 Cook Street, Suite 100 <br />
               Denver, CO 80206 <br />
