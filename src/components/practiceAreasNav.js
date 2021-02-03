@@ -6,7 +6,7 @@ export default ({handleClick}) => {
   return (
     <ul className="practice-areas-dropdown">
       <li>
-        <Link onClick={handleClick} to="/dui">
+        <Link onClick={handleClick} to="/denver-dui-lawyer">
           DUI
         </Link>
       </li>
