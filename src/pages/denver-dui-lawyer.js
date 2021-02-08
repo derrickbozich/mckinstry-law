@@ -10,7 +10,7 @@ export default () => {
       headline="DUI, DWAI, Drug and Related Violations"
       page="dui"
       title="Denver DUI Defense | The McKinstry Law Firm | DWAI Attorney"
-      description=" "
+      description='remove'
     >
       <Capabilities />
       <div className="single-page single-page-content dui">
