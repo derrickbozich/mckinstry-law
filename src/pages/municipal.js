@@ -8,7 +8,7 @@ export default () => {
 
 
   return (
-    <Layout headline="Municipal Ordinance and General Violations" page="municipal">
+    <Layout headline="Municipal Ordinance and General Violations" page="municipal" subPage={true}>
       <Capabilities />
       <div className="single-page single-page-content municipal">
         <h1 className="header">Municipal Ordinance and General Violations</h1>

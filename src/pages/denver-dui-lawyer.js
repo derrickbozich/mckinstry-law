@@ -11,6 +11,7 @@ export default () => {
       page="dui"
       title="Denver DUI Defense | The McKinstry Law Firm | DWAI Attorney"
       description='remove'
+      subPage={true}
     >
       <Capabilities />
       <div className="single-page single-page-content dui">

@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 export default () => {
   return (
-    <Layout headline="Domestic Violence" page="domestic">
+    <Layout headline="Domestic Violence" page="domestic" subPage={true}>
       <Capabilities />
       <div className="single-page single-page-content domestic">
         <h1 className="header">Domestic Violence</h1>

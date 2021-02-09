@@ -2,7 +2,7 @@ import React from "react"
 import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Hero({ children, headline, tagline, page }) {
+function Hero({ children, headline, tagline, page, subPage }) {
   const data = useStaticQuery(graphql`
     query heroQuery {
       imageOne: file(relativePath: { eq: "hero-crop.jpeg" }) {
@@ -83,12 +83,21 @@ function Hero({ children, headline, tagline, page }) {
       image = data.imageOne.childImageSharp.fluid
       break
   }
+  if (subPage) {
+    headline = <h1 className="tag-line"> {headline} </h1>;
+    tagline = <div className="sub-tag-line"></div>;
+  } else {
+    headline = <h2 className="tag-line"> {headline} </h2>;
+    tagline = <h1 className="sub-tag-line">{tagline}</h1>
+
+  }
   return (
     <BackgroundImage role='img' aria-label={description} fluid={image} className={overlay ? 'hero overlay single-page-hero '+ page : 'hero ' + page}>
       {children}
       <div className={`hero-content container ${page}`}>
-        <h2 className="tag-line"> {headline} </h2>
-        <h1 className="sub-tag-line">{tagline}</h1>
+
+         {headline}
+        {tagline}
       </div>
     </BackgroundImage>
   )

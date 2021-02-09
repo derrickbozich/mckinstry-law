@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 export default () => {
   return (
-    <Layout headline="Juvenile Offenses: Felony, Misdemeanor, and Municipal" page="juvenile">
+    <Layout headline="Juvenile Offenses: Felony, Misdemeanor, and Municipal" page="juvenile" subPage={true}>
       <Capabilities />
       <div className="single-page single-page-content juvenile">
         <h1 className="header">Juvenile Offenses: Felony, Misdemeanor, and Municipal</h1>

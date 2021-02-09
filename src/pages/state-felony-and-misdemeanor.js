@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 
 export default () => {
   return (
-    <Layout headline="State Felony and Misdemeanor" page="felony">
+    <Layout headline="State Felony and Misdemeanor" page="felony" subPage={true}>
       <Capabilities />
       <div className="single-page single-page-content felony">
         <h1 className="header">State Felony and Misdemeanor</h1>
