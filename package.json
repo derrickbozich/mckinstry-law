@@ -19,6 +19,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.6.0",
     "gatsby": "^2.5.7",
     "gatsby-background-image": "^0.7.0",
     "gatsby-cli": "^2.12.58",
@@ -32,8 +33,10 @@
     "gatsby-plugin-sitemap": "^2.2.0",
     "gatsby-source-filesystem": "^2.0.38",
     "gatsby-transformer-sharp": "^2.1.21",
+    "install": "^0.13.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.4.3",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1"
   },

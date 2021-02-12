@@ -47,7 +47,7 @@ function PracticeAreas() {
       <div className="narrow-container content">
         <h2 className="section-header">Practice Areas </h2>
 
-        <Link className="p-area" to="/dui#dui">
+        <Link className="p-area" to="/denver-dui-lawyer">
           <div className="box">
             <div className="text">
               <h3 className="header">DUI, DUI-Drug and Related Violations</h3>

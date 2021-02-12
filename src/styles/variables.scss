@@ -1,0 +1,35 @@
+$navy: #415169;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+$mobile-width: 550px;
+$tablet-width: 768px;
+$max-width: 1480px;
+
+
+@mixin small-desktop {
+  @media (min-width: $tablet-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+@mixin variableBPDown($max-width) {
+  @media (max-width: $max-width) {
+    @content;
+  }
+}
+@mixin variableBPUp($min-width) {
+  @media (min-width: $min-width) {
+    @content;
+  }
+}

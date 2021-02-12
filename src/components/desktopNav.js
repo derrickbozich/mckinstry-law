@@ -57,6 +57,26 @@ export default ({ handleClick, children, footer }) => {
                   </li>
                 )
               }
+            case "Locations":
+              if (footer) {
+                return (
+                  <li key={i}>
+                    <Link to="/#practice-areas-id">{item}</Link>
+                  </li>
+                )
+              } else {
+                return (
+                  <li
+                    data-dest=".locations"
+                    className="locations"
+                    key={i}
+                    onClick={handleClick}
+                  >
+                    {item}
+                    <i className="arrow down"></i>
+                  </li>
+                )
+              }
 
             case "Contact":
               if (typeof window !== 'undefined' && window.location.pathname === "/") {

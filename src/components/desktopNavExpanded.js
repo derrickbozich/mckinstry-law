@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import PracticeAreasNav from './practiceAreasNav'
+import LocationsNav from './locationsNav'
 import { useStaticQuery, graphql } from "gatsby"
 
 
@@ -33,6 +34,14 @@ export default ({ handleClick }) => {
                 {item}
                 <i className="arrow down"></i>
                 <PracticeAreasNav handleClick={handleClick} />
+              </li>
+            )
+          case "Locations":
+            return (
+              <li className="practice-areas" key={i} onClick={handleClick}>
+                {item}
+                <i className="arrow down"></i>
+                <LocationsNav handleClick={handleClick} />
               </li>
             )
 
