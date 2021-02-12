@@ -1,5 +1,4 @@
 import React from "react"
-// import { Link } from "gatsby"
 import Links from "./links"
 import Hero from "./hero"
 import { Navbar, Nav, Container } from "react-bootstrap"

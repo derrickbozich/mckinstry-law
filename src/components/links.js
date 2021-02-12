@@ -36,8 +36,24 @@ const Links = () => {
       link: "/#locations",
       dropdownItems: [
         {
+          title: "Adams County",
+          link: "/adams-county-criminal-defense-attorney",
+        },
+        {
+          title: "Arapahoe County",
+          link: "/arapahoe-county-criminal-defense-attorney",
+        },
+        {
           title: "Cherry Creek",
           link: "/cherry-creek-criminal-defense-attorney",
+        },
+        {
+          title: "Douglas County",
+          link: "/douglas-county-criminal-defense-attorney",
+        },
+        {
+          title: "Jefferson County",
+          link: "/jefferson-county-criminal-defense-attorney",
         },
       ],
     },

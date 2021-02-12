@@ -8,9 +8,9 @@ import Contact from "../components/contact"
 export default () => {
   return (
     <Layout
-      headline="Defense Lawyer in Cherry Creek"
+      headline="Defense Lawyer in Jefferson County, CO"
       page="cherry-creek"
-      title="Cherry Creek Criminal Lawyers | The McKinstry Law Firm, LLC"
+      title="Jefferson County Criminal Lawyers | The McKinstry Law Firm, LLC"
       description="remove"
       subPage={true}
     >
