@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `The McKinstry Law Firm`,
     metaTitle: `Denver Criminal Defense Attorney | The McKinstry Law Firm, LLC`,
-    navItems: ["About", "Practice Areas", "Locations", "Attorney Profile", "Contact"],
+    navItems: ["About", "Practice Areas", "Attorney Profile", "Contact"],
     // pages: ["About", "Practice Areas", "Locations", "Attorney Profile", "Contact"],
     phoneNumber: `(303) 398-7050`,
     telPhoneNumber: `1-303-398-7050`,

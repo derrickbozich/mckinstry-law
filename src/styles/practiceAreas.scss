@@ -1,37 +1,41 @@
-#practice-areas-id{
+@import "./variables.scss";
+
+#practice-areas-id {
   background-image: linear-gradient(to bottom, #415169, #6fa2c8);
-  padding-bottom: 202px;
-  padding: 20px 0 1px;
+  padding: 145px 0 202px;
 
-  @media only screen and (min-width : 650px) {
-    padding: 145px 0 202px;
+  @include mobile {
+    padding-bottom: 202px;
+    padding: 50px 0 1px;
   }
 
-  .section-header{
-    font-size: 34px;
+  .section-header {
     color: #6fa2c8;
-    padding-bottom: 14px;
-    @media only screen and (min-width : 500px) {
-      font-size: 42px;
-      padding-bottom: 35px;
+    font-size: 42px;
+    padding-bottom: 35px;
+
+    @include mobile {
+      font-size: 34px;
+      padding-bottom: 14px;
     }
+
   }
 
-  a.p-area:hover{
+  a.p-area:hover {
     text-decoration: none;
   }
 
-  .box{
+  .box {
     margin-bottom: 55px;
     flex-wrap: wrap;
     flex-direction: row;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-    @media only screen and (min-width : 650px) {
+
+    @media only screen and (min-width: 650px) {
       display: flex;
     }
 
-    .text{
+    .text {
       flex: 1;
       align-items: flex-end;
       display: flex;
@@ -39,59 +43,37 @@
       align-items: center;
       background-color: white;
       padding: 42px;
-      text-align: center;
+      text-align: left;
 
-      @media only screen and (min-width : 650px) {
-        text-align: left;
+      @include mobile {
+        padding: 32px;
       }
 
-      .header{
+      .header {
         flex: 0 0 100%;
         font-size: 22px;
         line-height: 26px;
         margin-bottom: 10px;
       }
 
-      .body{
+      .body {
         flex: 0 0 100%;
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 1rem;
+        min-width: 300px;
 
-        @media only screen and (min-width : 760px) {
-          min-width: 300px;
-        }
-      }
-
-      .content-footer{
-        flex: 0 0 100%;
-        font-size: 18px;
-        display: inline-block;
-        text-align: center;
-
-        @media only screen and (min-width : 650px) {
-          text-align: left;
-        }
-
-        &::after{
-          width: 103px;
-          top: 25px;
-          left: 50%;
-          margin-left: -51px;
-
-          @media only screen and (min-width : 650px) {
-            left: 0;
-            margin-left: 0px;
-          }
+        @include mobile {
+          margin-bottom: 0;
         }
       }
     }
 
-    .image{
+    .image {
       min-height: 300px;
       min-width: 100%;
 
-      @media only screen and (min-width : 760px) {
+      @media only screen and (min-width: 760px) {
         min-width: 300px;
         flex: 1;
       }

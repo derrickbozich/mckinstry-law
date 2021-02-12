@@ -36,6 +36,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: black;
 }
 
 .nav-anchor {
@@ -43,8 +44,8 @@ a:hover {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 24px;
+  padding-left: 24px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -65,8 +66,8 @@ a:hover {
 }
 
 .narrow-container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 24px;
+  padding-left: 24px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -87,8 +88,8 @@ a:hover {
 }
 
 .single-page-content {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 24px;
+  padding-left: 24px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -132,29 +133,5 @@ a:hover {
       content: "Phone: ";
       font-weight: bold;
     }
-  }
-}
-
-.content-footer {
-  color: black;
-  text-transform: capitalize;
-  font-family: "Work Sans";
-  font-weight: bold;
-  position: relative;
-  margin-top: 21px;
-
-  &::after {
-    content: "";
-    border-bottom: 6px solid black;
-    width: 100%;
-    position: absolute;
-    top: 25px;
-    left: 0;
-  }
-}
-
-.content-footer:hover {
-  &:after {
-    border-bottom: 6px solid rgba(0, 0, 0, 0.75);
   }
 }

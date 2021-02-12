@@ -6,8 +6,6 @@ import About from "../components/about"
 import Contact from "../components/contact"
 import AttorneyProfile from "../components/attorneyProfile"
 import { useStaticQuery, graphql } from "gatsby"
-// import Placeholder from "../components/placeholder"
-
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -15,8 +13,6 @@ export default () => {
       site {
         siteMetadata {
           title
-          phoneNumber
-          email
         }
       }
     }
@@ -24,17 +20,15 @@ export default () => {
   return (
     <Layout
       headline={data.site.siteMetadata.title}
-      tagline='Criminal Defense in Colorado'
-      page='home'
+      tagline="Criminal Defense in Colorado"
+      page="home"
     >
       <Capabilities />
       <About />
       <PracticeAreas />
-        <Capabilities />
-
+      <Capabilities />
       <AttorneyProfile />
-        <Contact />
+      <Contact />
     </Layout>
-
   )
 }

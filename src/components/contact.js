@@ -1,32 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-// import GoogleMapReact from "google-map-react"
-
-// <GoogleMapReact
-//   bootstrapURLKeys={{ key: key }}
-//   defaultCenter={{
-//     lat: location.center.lat,
-//     lng: location.center.lng,
-//   }}
-//   defaultZoom={location.zoom}
-// >
-//   <Marker
-//     lat={location.center.lat}
-//     lng={location.center.lng}
-//     className="marker"
-//
-//   />
-// </GoogleMapReact>
 
 function Contact() {
-  // const location = {
-  //   center: {
-  //     lat: 39.716927,
-  //     lng: -104.947369,
-  //   },
-  //   zoom: 13,
-  // }
+
   const data = useStaticQuery(graphql`
     query ContactQuery {
       site {
@@ -47,7 +24,6 @@ function Contact() {
     }
   `)
 
-  // const Marker = ({ text }) => <div className="marker">{text}</div>
 
   const phoneNumber = data.site.siteMetadata.phoneNumber
   const telPhoneNumber = data.site.siteMetadata.telPhoneNumber

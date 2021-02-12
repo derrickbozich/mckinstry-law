@@ -1,4 +1,4 @@
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import React from "react"
 import { Nav, NavDropdown } from "react-bootstrap"
 
@@ -62,9 +62,9 @@ const Links = () => {
       )
     } else {
       link = (
-        <Nav.Link to={item.link} key={index}>
+        <Link to={item.link} key={index} className='nav-link'>
           {item.title}
-        </Nav.Link>
+        </Link>
       )
     }
     return link
