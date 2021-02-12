@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Nav, NavDropdown } from "react-bootstrap"
+import { NavDropdown } from "react-bootstrap"
 
 const Links = () => {
   const data = [
