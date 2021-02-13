@@ -15,7 +15,7 @@ export default () => {
       subPage={true}
     >
       <Capabilities />
-      <CountyContent />
+      <CountyContent location='Jefferson County' />
       <Contact />
     </Layout>
   )

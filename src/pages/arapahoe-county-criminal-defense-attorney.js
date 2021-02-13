@@ -14,7 +14,7 @@ export default () => {
       subPage={true}
     >
       <Capabilities />
-      <CountyContent />
+      <CountyContent location='Arapahoe County' />
 
       <Contact />
     </Layout>

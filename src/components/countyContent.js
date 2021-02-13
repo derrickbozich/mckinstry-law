@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-function CountyContent() {
+function CountyContent({ location }) {
   return (
     <div className="single-page single-page-content cherry-creek">
       <h2 className="header">DUI & DWAI Related Offenses</h2>
@@ -123,8 +123,8 @@ function CountyContent() {
 
       <div className="body">
         <p>
-          Felony Burglary charges are on the increase in Cherry Creek, the rest
-          of Denver, and in Colorado Courts along the Front Range. The McKinstry
+          Felony Burglary charges are on the increase in {location}, the rest of
+          Denver, and in Colorado Courts along the Front Range. The McKinstry
           Law Firm specializes in Felony Burglary defense. We have achieved
           excellent results for clients facing Burglary charges in Colorado
           District Courts.
@@ -246,17 +246,17 @@ function CountyContent() {
 
       <div className="body">
         <p>
-          If you are facing misdemeanor charges in Cherry Creek, then you
-          already know how frightening, disruptive, and disorienting the
-          experience can be, but there is no time for defeatism, and you must
-          take measures to defend your reputation and your liberty. You should
-          retain a criminal defense attorney who will work with you to develop
-          the case, collect all necessary discovery, and employ investigators
-          when necessary to ensure that you have all the information you are
-          entitled to, including potentially exculpatory evidence. Your attorney
-          may have to compel the government to hand over evidence that is
-          helpful to you. In representing you in your defense, your attorney
-          must do everything possible to protect your liberty.
+          If you are facing misdemeanor charges in {location}, then you already
+          know how frightening, disruptive, and disorienting the experience can
+          be, but there is no time for defeatism, and you must take measures to
+          defend your reputation and your liberty. You should retain a criminal
+          defense attorney who will work with you to develop the case, collect
+          all necessary discovery, and employ investigators when necessary to
+          ensure that you have all the information you are entitled to,
+          including potentially exculpatory evidence. Your attorney may have to
+          compel the government to hand over evidence that is helpful to you. In
+          representing you in your defense, your attorney must do everything
+          possible to protect your liberty.
         </p>
         <p>
           While the The McKinstry Law Firm is prepared to defend your freedom
@@ -311,9 +311,9 @@ function CountyContent() {
         </p>
         <p>
           For almost fifteen years Mr. McKinstry has litigated in District,
-          County, Juvenile, and Municipal Courts in the Cherry Creek area. He
-          has first-chaired nearly one hundred and fifty jury trials, and
-          hundreds of trials to the Court.
+          County, Juvenile, and Municipal Courts in the {location} area. He has
+          first-chaired nearly one hundred and fifty jury trials, and hundreds
+          of trials to the Court.
         </p>
         <p>
           Mr. McKinstry is a graduate of the National Institute for Trial

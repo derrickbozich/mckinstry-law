@@ -4,20 +4,27 @@
   .hero-content {
     h1.tag-line {
       color: #415169;
-      font-size: 42px;
-      padding-top: 20%;
-      @media only screen and (min-width: 600px) and (max-width: 800px) {
-        font-size: 60px;
-        padding-top: 10%;
+      font-size: 72px;
+      line-height: 80px;
+
+      @include mobile{
+        padding-top: 76px;
+        font-size: 32px;
+        line-height: 42px
       }
-      @media only screen and (min-width: 800px) and (max-width: 1200px) {
-        font-size: 72px;
-        padding-top: 2%;
-      }
-      @media only screen and (min-width: 1200px) {
-        font-size: 86px;
-        padding-top: 2%;
-      }
+    }
+  }
+}
+
+.single-page-hero {
+  @include mobile {
+    max-height: 362px;
+  }
+
+  .hero-content{
+    .tag-line {
+
+
     }
   }
 }

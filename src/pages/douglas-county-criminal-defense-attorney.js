@@ -16,7 +16,7 @@ export default () => {
       subPage={true}
     >
       <Capabilities />
-      <CountyContent />
+      <CountyContent location='Douglas County' />
       <Contact />
     </Layout>
   )

@@ -11,9 +11,12 @@
     z-index: 1;
     width: 100%;
     top: 16px;
+    max-width: 100vw;
 
     @include mobile {
       padding-left: 0;
+      padding-right: 0;
+      width: 92%;
     }
 
     .brand {
@@ -85,7 +88,7 @@
       }
 
       @include mobile {
-        right: 35px;
+        right: 9px;
       }
       @include tablet {
         right: 35px;
@@ -107,11 +110,10 @@
         border-radius: 4px;
         .navbar-nav {
           a.nav-link {
-            @include  variableBPDown(992px){
+            @include variableBPDown(992px) {
               display: block;
               padding: 10px 0 10px 20px;
-            };
-          
+            }
           }
         }
 
@@ -137,6 +139,8 @@
   }
 }
 
+
+
 .hero {
   width: 100%;
   background-position: center center;
@@ -153,10 +157,10 @@
       margin-bottom: 10px;
       color: #415169;
 
-      @media only screen and (min-width: 400px) and (max-width: 450px) {
-        font-size: 50px;
+      @media only screen and (max-width: 450px) {
+        font-size: 36px;
         margin-top: 23%;
-        line-height: 55px;
+        line-height: 38px;
       }
 
       @media only screen and (min-width: 450px) and (max-width: 600px) {
@@ -212,108 +216,6 @@
       @media only screen and (min-width: 1200px) {
         font-size: 46px;
         margin-bottom: 31%;
-      }
-    }
-  }
-}
-
-.hero {
-  .hero-content.dui {
-    .tag-line {
-      font-size: 40px;
-      @media only screen and (min-width: 450px) and (max-width: 600px) {
-        font-size: 46px;
-      }
-      @media only screen and (min-width: 600px) and (max-width: 1000px) {
-        font-size: 62px;
-      }
-
-      @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-        font-size: 72px;
-      }
-
-      @media only screen and (min-width: 1200px) {
-        font-size: 86px;
-      }
-    }
-  }
-
-  .hero-content.felony {
-    .tag-line {
-      font-size: 40px;
-      @media only screen and (min-width: 450px) and (max-width: 600px) {
-        font-size: 46px;
-      }
-      @media only screen and (min-width: 600px) and (max-width: 1000px) {
-        font-size: 62px;
-      }
-
-      @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-        font-size: 72px;
-      }
-
-      @media only screen and (min-width: 1200px) {
-        font-size: 86px;
-      }
-    }
-  }
-
-  .hero-content.juvenile {
-    .tag-line {
-      font-size: 40px;
-      @media only screen and (min-width: 450px) and (max-width: 600px) {
-        font-size: 46px;
-      }
-      @media only screen and (min-width: 600px) and (max-width: 1000px) {
-        font-size: 62px;
-      }
-
-      @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-        font-size: 72px;
-      }
-
-      @media only screen and (min-width: 1200px) {
-        font-size: 86px;
-      }
-    }
-  }
-
-  .hero-content.municipal {
-    .tag-line {
-      font-size: 40px;
-      @media only screen and (min-width: 450px) and (max-width: 600px) {
-        font-size: 46px;
-      }
-      @media only screen and (min-width: 600px) and (max-width: 1000px) {
-        font-size: 62px;
-      }
-
-      @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-        font-size: 72px;
-      }
-
-      @media only screen and (min-width: 1200px) {
-        font-size: 86px;
-      }
-    }
-  }
-
-  .hero-content.domestic {
-    .tag-line {
-      font-size: 40px;
-      @media only screen and (min-width: 450px) and (max-width: 600px) {
-        font-size: 46px;
-      }
-      @media only screen and (min-width: 600px) and (max-width: 1000px) {
-        font-size: 62px;
-      }
-
-      @media only screen and (min-width: 1000px) and (max-width: 1200px) {
-        font-size: 72px;
-      }
-
-      @media only screen and (min-width: 1200px) {
-        font-size: 86px;
       }
     }
   }
