@@ -1,17 +1,11 @@
 @import "./variables.scss";
 
 .contact {
-  text-align: center;
   background-image: linear-gradient(to top, #7589a3, #415169);
-  padding: 50px 0 20px;
+  padding: 120px 0 120px;
 
-  @media only screen and (min-width: 600px) {
-    padding: 120px 0 120px;
-  }
-
-  @media only screen and (min-width: 991px) {
-    text-align: left;
-    padding: 120px 0 120px;
+  @include mobile {
+    padding: 50px 0 20px;
   }
 
   .header {
@@ -79,7 +73,6 @@
       .disclaimer {
         margin-top: 30px;
         font-size: 14px;
-        margin: auto;
         margin: 40px auto;
         @media only screen and (min-width: 991px) {
           margin-left: 0;

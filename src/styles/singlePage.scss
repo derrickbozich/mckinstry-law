@@ -1,30 +1,30 @@
 @import "./variables.scss";
 
 .single-page-hero {
+
+  @include mobile {
+    max-height: 362px;
+  }
   .hero-content {
+    margin-top: 50vh;
+    transform: translateY(-50%);
+
+    @include mobile{
+      margin-top: calc(362px / 2);
+    }
     h1.tag-line {
       color: #415169;
       font-size: 72px;
       line-height: 80px;
+      max-width: 70%;
+      margin: 0 auto;
 
-      @include mobile{
-        padding-top: 76px;
-        font-size: 32px;
-        line-height: 42px
+      @include mobile {
+        // padding-top: 76px;
+        font-size: 34px;
+        line-height: 42px;
+        // max-width: 100%;
       }
-    }
-  }
-}
-
-.single-page-hero {
-  @include mobile {
-    max-height: 362px;
-  }
-
-  .hero-content{
-    .tag-line {
-
-
     }
   }
 }
@@ -35,7 +35,6 @@
   @include mobile {
     padding-top: 50px;
   }
-
 
   .single-page-content {
     padding-right: 24px;
@@ -79,5 +78,4 @@
       line-height: 28px;
     }
   }
-
 }

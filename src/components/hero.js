@@ -86,7 +86,7 @@ function Hero({ children, headline, tagline, page, subPage }) {
       break
     case "cherry-creek":
     image = data.imageFive.childImageSharp.fluid
-    overlay = true
+    overlay = true 
     description =
       "A view of the skyline of Denver, Colorado. Municipal Ordinance and General Violations"
       break
