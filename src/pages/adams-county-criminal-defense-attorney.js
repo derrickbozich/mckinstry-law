@@ -16,7 +16,7 @@ export default () => {
       subPage={true}
     >
       <Capabilities />
-      <CountyContent location='Adams County' />
+      <CountyContent location='Adams County' burglary='Felony Burglary charges are on the increase in Thornton, the rest of Adams County, and in Colorado Courts along the Front Range.' />
       <Contact />
     </Layout>
   )

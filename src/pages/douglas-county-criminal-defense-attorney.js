@@ -16,7 +16,7 @@ export default () => {
       subPage={true}
     >
       <Capabilities />
-      <CountyContent location='Douglas County' />
+      <CountyContent location='Douglas County' burglary='Felony Burglary charges are on the increase in Parker, the rest of Douglas County, and in Colorado Courts along the Front Range.' />
       <Contact />
     </Layout>
   )

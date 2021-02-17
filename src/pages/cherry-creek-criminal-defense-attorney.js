@@ -15,7 +15,7 @@ export default () => {
       subPage={true}
     >
       <Capabilities />
-      <CountyContent location='Cherry Creek' />
+      <CountyContent location='Cherry Creek' burglary='Felony Burglary charges are on the increase in Cherry Creek, the rest of Denver, and in Colorado Courts along the Front Range.' />
       <Contact />
     </Layout>
   )

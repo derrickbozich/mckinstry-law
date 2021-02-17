@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-function CountyContent({ location }) {
+function CountyContent({ location, burglary }) {
   return (
     <div className="single-page single-page-content cherry-creek">
       <h2 className="header">DUI & DWAI Related Offenses</h2>
@@ -123,11 +123,9 @@ function CountyContent({ location }) {
 
       <div className="body">
         <p>
-          Felony Burglary charges are on the increase in {location}, the rest of
-          Denver, and in Colorado Courts along the Front Range. The McKinstry
-          Law Firm specializes in Felony Burglary defense. We have achieved
-          excellent results for clients facing Burglary charges in Colorado
-          District Courts.
+          {burglary} The McKinstry Law Firm specializes in Felony Burglary
+          defense. We have achieved excellent results for clients facing
+          Burglary charges in Colorado District Courts.
         </p>
       </div>
 

@@ -14,7 +14,7 @@ export default () => {
       subPage={true}
     >
       <Capabilities />
-      <CountyContent location='Arapahoe County' />
+      <CountyContent location='Arapahoe County' burglary='Felony Burglary charges are on the increase in Centennial, the rest of Arapahoe County, and in Colorado Courts along the Front Range.' />
 
       <Contact />
     </Layout>

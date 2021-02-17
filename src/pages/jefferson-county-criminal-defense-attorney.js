@@ -15,7 +15,7 @@ export default () => {
       subPage={true}
     >
       <Capabilities />
-      <CountyContent location='Jefferson County' />
+      <CountyContent location='Jefferson County' burglary='Felony Burglary charges are on the increase in Lakewood, the rest of Jefferson County, and in Colorado Courts along the Front Range.' />
       <Contact />
     </Layout>
   )
