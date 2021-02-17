@@ -21,18 +21,18 @@
     transition: all 0.3s ease;
   }
 
-  @include mobile {
-    text-align: center;
-    &:after {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
+  // @include mobile {
+  //   text-align: center;
+  //   &::after {
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //   }
+  // }
 
   &:hover {
+    color:  #415169;
     &:after {
-      width: calc(100% + 10px);
-      left: -5px;
+      border-bottom: 6px solid #415169;
     }
   }
 }

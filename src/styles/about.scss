@@ -25,11 +25,13 @@ padding: 134px 0 134px;
     @include mobile {
       font-size: 34px;
       padding-bottom: 14px;
+      margin-bottom: 0;
       display: block;
     }
     @include tablet {
       font-size: 34px;
       padding-bottom: 14px;
+      margin-bottom: 0;
       display: block;
     }
 
