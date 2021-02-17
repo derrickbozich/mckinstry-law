@@ -18,18 +18,24 @@
       padding-right: 0;
       width: 92%;
     }
+    .navbar-brand{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
 
     .brand {
-      margin-bottom: 3px;
+      margin-bottom: 0px;
       font-size: 32px;
       color: $navy;
+      padding-top: 0;
+      padding-bottom: 0;
 
       &:hover {
         text-decoration: underline;
       }
 
       @include mobile {
-        font-size: 16px;
+        font-size: 18px;
       }
 
       @include tablet {
@@ -42,7 +48,8 @@
       padding: 0;
       position: absolute;
       right: 0px;
-      top: 3px;
+      top: 5px;
+      // transform: translateY(-50%);
       border: 0px solid black;
       .navbar-toggler-icon {
         width: 32px;
@@ -69,13 +76,17 @@
 
       &.show,
       &.collapsing {
+        margin-top: 15px;
         background-color: white;
         border-radius: 4px;
+        padding-top: 12px;
+        padding-bottom: 12px;
         .navbar-nav {
           a.nav-link {
             @include variableBPDown(992px) {
+              font-size: 18px;
               display: block;
-              padding: 10px 0 10px 20px;
+              padding: 13px 0 13px 20px;
             }
           }
         }
@@ -86,7 +97,8 @@
           padding-left: 10px;
 
           a.dropdown-item {
-            padding: 10px 0 10px 30px;
+            font-size: 18px;
+            padding: 13px 0 13px 30px;
           }
         }
       }
