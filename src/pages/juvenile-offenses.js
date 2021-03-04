@@ -23,7 +23,7 @@ export default () => {
           <p>
             If your son or daughter is facing criminal charges, it’s vital that
             you seek legal assistance from an attorney with experience handling
-            juvenile offenses. Juveniles are entitled to the same presumption of
+            juvenile offenses. Youths are entitled to the same presumption of
             innocence and due process as adults, and the government is held to
             the same high standards of proof in prosecuting juvenile defendants.{" "}
           </p>
