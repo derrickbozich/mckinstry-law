@@ -15,19 +15,19 @@ const Links = () => {
         },
         {
           title: "State Felony and Misdemeanor",
-          link: "/state-felony-and-misdemeanor",
+          link: "/denver-felony-defense-lawyer",
         },
         {
           title: "Juvenile Offenses",
-          link: "/juvenile-offenses",
+          link: "/denver-juvenile-attorney",
         },
         {
           title: "Municipal Ordinance and General Violations",
-          link: "/municipal",
+          link: "/municipal-attorney-denver",
         },
         {
           title: "Domestic Violence",
-          link: "/domestic-violence",
+          link: "/denver-domestic-violence-lawyer",
         },
       ],
     },

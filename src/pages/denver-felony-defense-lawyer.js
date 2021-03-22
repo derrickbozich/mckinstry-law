@@ -3,14 +3,20 @@ import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
 import Contact from "../components/contact"
 import { Link } from "gatsby"
+import AboutContent from "../components/aboutContent"
 
 export default () => {
   return (
-    <Layout headline="State Felony and Misdemeanor" page="felony" subPage={true}>
+    <Layout
+      headline="State Felony and Misdemeanor Attorney in Denver"
+      page="felony"
+      subPage={true}
+      description="remove"
+      title="Felony Defense Lawyers Denver | Felonies & Misdemeanors Attorney"
+    >
       <Capabilities />
       <div className="single-page single-page-content felony">
-        <h1 className="header">State Felony and Misdemeanor</h1>
-
+        <h2 className="header">Colorado Felony and Misdemeanor</h2>
         <div className="body">
           <p>
             If you are facing misdemeanor or felony charges in the state of
@@ -53,6 +59,51 @@ export default () => {
             assault to theft and trespass.
           </p>
         </div>
+        <h3 className="header">Burglary</h3>
+        <div className="body">
+          <p>
+            Felony Burglary charges are on the increase in Thornton, the rest of
+            Adams County, and in Colorado Courts along the Front Range. The
+            McKinstry Law Firm specializes in Felony Burglary defense. We have
+            achieved excellent results for clients facing Burglary charges in
+            Colorado District Courts.
+          </p>
+        </div>
+        <h3 className="header">Identity Theft</h3>
+        <div className="body">
+          <p>
+            Identity Theft charges are also on the rise, and like Burglary
+            charges, such offenses can result in loss of liberty, loss of
+            present and future employment, and reputation. We know how to defend
+            against Identity Theft charges, and will fight to clear you name and
+            preserve your liberty.
+          </p>
+        </div>
+
+        <h3 className="header">Assault</h3>
+        <div className="body">
+          <p>
+            Felony Assault charges, including Domestic Violence Assault, are
+            often brought against citizens who are merely defending themselves.
+            The McKinstry Law Firm has litigated Assault cases in front of
+            Colorado juries, and won acquittals based on the theory of
+            self-defense.
+          </p>
+        </div>
+
+        <h3 className="header">Drug Possession</h3>
+        <div className="body">
+          <p>
+            Felony Drug Possession, Distribution, Manufacture and Sale charges
+            are serious, and can affect all aspects of your life, including
+            potential loss of liberty, loss of present and future employment,
+            and damage to reputation. The McKinstry Law Firm has achieved
+            excellent results in defending cases involving Drug Possession,
+            Distribution, Manufacture, and Sale.
+          </p>
+        </div>
+
+        <AboutContent />
         <Link to="/#contact">
           {" "}
           <div className="content-footer">Contact Mr. McKinstry</div>

@@ -3,13 +3,21 @@ import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
 import Contact from "../components/contact"
 import { Link } from "gatsby"
+import AboutContent from "../components/aboutContent"
+
 
 export default () => {
   return (
-    <Layout headline="Domestic Violence" page="domestic" subPage={true}>
+    <Layout
+      headline="Denver Domestic Violence Attorney"
+      page="domestic"
+      subPage={true}
+      description="remove"
+      title="Domestic Violence Lawyer Denver | Domestic Assault Attorneys"
+    >
       <Capabilities />
       <div className="single-page single-page-content domestic">
-        <h1 className="header">Domestic Violence</h1>
+        <h2 className="header">Domestic Violence</h2>
 
         <div className="body">
           <p>
@@ -39,6 +47,7 @@ export default () => {
             expose and exploit the weaknesses in the state’s case.
           </p>
         </div>
+        <AboutContent />
         <Link to="/#contact">
           {" "}
           <div className="content-footer">Contact Mr. McKinstry</div>

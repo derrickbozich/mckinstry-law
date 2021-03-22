@@ -68,7 +68,7 @@ function PracticeAreas() {
           </div>
         </Link>
 
-        <Link className="p-area" to="/state-felony-and-misdemeanor">
+        <Link className="p-area" to="/denver-felony-defense-lawyer">
           <div className="box">
             <div className="text">
               <h3 className="header">State Felony and Misdemeanor</h3>
@@ -89,7 +89,7 @@ function PracticeAreas() {
           </div>
         </Link>
 
-        <Link className="p-area" to="/juvenile-offenses">
+        <Link className="p-area" to="/denver-juvenile-attorney">
           <div className="box">
             <div className="text">
               <h3 className="header">
@@ -112,7 +112,7 @@ function PracticeAreas() {
           </div>
         </Link>
 
-        <Link className="p-area" to="/municipal">
+        <Link className="p-area" to="/municipal-attorney-denver">
           <div className="box">
             <div className="text">
               <h3 className="header">
@@ -135,7 +135,7 @@ function PracticeAreas() {
           </div>
         </Link>
 
-        <Link className="p-area" to="/domestic-violence">
+        <Link className="p-area" to="/denver-domestic-violence-lawyer">
           <div className="box">
             <div className="text">
               <h3 className="header">Domestic Violence</h3>

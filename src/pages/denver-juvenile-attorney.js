@@ -3,13 +3,24 @@ import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
 import Contact from "../components/contact"
 import { Link } from "gatsby"
+import AboutContent from "../components/aboutContent"
+
 
 export default () => {
   return (
-    <Layout headline="Juvenile Offenses: Felony, Misdemeanor, and Municipal" page="juvenile" subPage={true}>
+    <Layout
+      headline="Denver Juvenile Lawyer"
+      page="juvenile"
+      subPage={true}
+      description="remove"
+      title="Juvenile Lawyer Denver | Colorado Youth Defense Attorneys"
+
+    >
       <Capabilities />
       <div className="single-page single-page-content juvenile">
-        <h1 className="header">Juvenile Offenses: Felony, Misdemeanor, and Municipal</h1>
+        <h2 className="header">
+          Juvenile Offenses: Felony, Misdemeanor, and Municipal
+        </h2>
 
         <div className="body">
           <p>
@@ -42,6 +53,7 @@ export default () => {
             that exist in every case, offering your best chance at an acquittal.
           </p>
         </div>
+        <AboutContent />
         <Link to="/#contact">
           {" "}
           <div className="content-footer">Contact Mr. McKinstry</div>
