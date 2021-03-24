@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
 import Contact from "../components/contact"
 import { Link } from "gatsby"
+import AboutContent from "../components/aboutContent"
+
 
 export default () => {
   return (
@@ -60,6 +62,8 @@ export default () => {
             front of Colorado juries.{" "}
           </p>
         </div>
+        <AboutContent />
+
         <Link to="/#contact">
           {" "}
           <div className="content-footer">Contact Mr. McKinstry</div>
