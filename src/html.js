@@ -1,5 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
+// import { StructuredData } from '/components/structuredData'
+
 
 export default function HTML(props) {
   return (
@@ -11,7 +13,12 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta name="ahrefs-site-verification" content="2fdd531719fe42383393f32d84d36c035d8ad6db579b091cc91c0a6efa8c0c98"/>
+        <meta
+          name="ahrefs-site-verification"
+          content="2fdd531719fe42383393f32d84d36c035d8ad6db579b091cc91c0a6efa8c0c98"
+        />
+
+
 
         {props.headComponents}
       </head>
