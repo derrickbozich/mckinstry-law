@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 function About() {
   return (
@@ -46,11 +47,16 @@ function About() {
               and confidential consultation.
             </div>
 
-            <a href="/#attorney-profile">
+            {/* <a href="/#attorney-profile">
               <div className="content-footer meet-patrick">
                 Meet Patrick McKinstry
               </div>
-            </a>
+            </a> */}
+            <Link to="/#attorney-profile">
+              <div className="content-footer meet-patrick">
+                Meet Patrick McKinstry
+              </div>
+            </Link>
           </div>
         </div>
       </div>
