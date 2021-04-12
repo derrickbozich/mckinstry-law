@@ -8,7 +8,7 @@ import { Link } from "gatsby"
 export default () => {
   return (
     <Layout
-      headline="Denver Juvenile Lawyer"
+      headline="Juvenile Offenses: Felony, Misdemeanor, and Municipal"
       page="juvenile"
       subPage={true}
       description="remove"

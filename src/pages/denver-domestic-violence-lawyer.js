@@ -8,7 +8,7 @@ import { Link } from "gatsby"
 export default () => {
   return (
     <Layout
-      headline="Denver Domestic Violence Attorney"
+      headline="Domestic Violence"
       page="domestic"
       subPage={true}
       description="remove"

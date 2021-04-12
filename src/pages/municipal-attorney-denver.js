@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 export default () => {
   return (
     <Layout
-      headline="Denver Municipal Lawyer"
+      headline="Municipal Ordinance and General Violations"
       page="municipal"
       subPage={true}
       title="Denver Municipal Law Attorneys | Lawyers for Muni Cases"
