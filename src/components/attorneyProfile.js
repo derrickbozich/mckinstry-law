@@ -5,9 +5,9 @@ import { useStaticQuery, graphql } from "gatsby"
 function AttorneyProfile() {
   const data = useStaticQuery(graphql`
     query AttorneyProfileQuery {
-      imageOne: file(relativePath: { eq: "profile.jpg" }) {
+      imageOne: file(relativePath: { eq: "profile.jpeg" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1000) {
+          fluid(quality: 100, maxWidth: 922) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
