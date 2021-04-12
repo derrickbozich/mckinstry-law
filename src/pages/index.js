@@ -20,7 +20,7 @@ export default () => {
   return (
     <Layout
       headline={data.site.siteMetadata.title}
-      tagline="Criminal Defense in Colorado"
+      tagline="Your Best Defense"
       page="home"
     >
       <Capabilities />

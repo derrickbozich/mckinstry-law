@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
 import Contact from "../components/contact"
 import { Link } from "gatsby"
-import AboutContent from "../components/aboutContent"
 
 
 export default () => {
@@ -47,7 +46,6 @@ export default () => {
             expose and exploit the weaknesses in the state’s case.
           </p>
         </div>
-        <AboutContent />
         <Link to="/#contact">
           {" "}
           <div className="content-footer">Contact Mr. McKinstry</div>

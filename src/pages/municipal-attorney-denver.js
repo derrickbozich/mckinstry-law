@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import Capabilities from "../components/capabilities"
-import AboutContent from "../components/aboutContent"
 import Contact from "../components/contact"
 import { Link } from "gatsby"
 
@@ -50,7 +49,6 @@ export default () => {
             violence, threats, harassment, and assault charges.
           </p>
         </div>
-        <AboutContent />
         <Link to="/#contact">
           {" "}
           <div className="content-footer">Contact Mr. McKinstry</div>
